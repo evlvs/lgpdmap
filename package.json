@@ -9,10 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@videojs/themes": "^1.0.1",
     "next": "11.0.1",
     "node-sass": "4.14.1",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-feather": "^2.0.9"
   },
   "devDependencies": {
     "@types/node": "^16.3.1",
@@ -29,6 +31,7 @@
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-react": "^7.24.0",
     "prettier": "^2.3.2",
-    "typescript": "^4.3.5"
+    "typescript": "^4.3.5",
+    "video.js": "^7.13.3"
   }
 }

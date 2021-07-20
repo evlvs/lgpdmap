@@ -68,12 +68,12 @@
   }
 }
 
-section {
+.divider1 {
   width: 100vw;
   height: 20vh;
   position: relative;
   background: linear-gradient(178.24deg, #753BC5 47.57%, rgba(117, 59, 197, 0) 47.58%);
-
+  
   .wave {
     position: absolute;
     top: 0;
@@ -101,7 +101,7 @@ section {
     }
 
     &.wave3 {
-      animation: animate3 10s linear infinite;
+      animation: animate3 10s linear iDivider1nfinite;
       z-index: 998;
       opacity: .2;
       animation-delay: -2s;
@@ -132,6 +132,98 @@ section {
       100% {
         background-position-x: -1000px;
       }
+    }
+  }
+}
+
+.knowMore {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: #F5F5FB;
+
+  .grayWave {
+    width: 100%;
+    height: 141px;
+    background: url('../../public/assets/gray-wave.png');
+    opacity: 1;
+    position: absolute;
+    bottom: -100px;
+  }
+
+  .ballsColored {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    background: url('../../public/assets/ballsColored.png');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 10%;
+    opacity: .3;
+    animation: ballsColored 20s linear infinite;
+    animation-delay: 0s;
+  }
+
+  @keyframes ballsColored {
+    0% {
+      background-position: right top;
+    }
+    25% {
+      background-position-y: bottom;
+    }
+    50% {
+      background-position: center top;
+    }
+    75% {
+      background-position-y: bottom;
+    }
+    100% {
+      background-position: left top;
+    }
+  }
+
+  .ballsOutlined {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    background: url('../../public/assets/ballsOutlined.png');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 10%;
+    opacity: .3;
+    animation: ballsOutlined 20s linear infinite;
+    animation-delay: 0s;
+  }
+
+  @keyframes ballsOutlined {
+    0% {
+      background-position: right center;
+    }
+    25% {
+      background-position-y: top;
+    }
+    50% {
+      background-position: center center;
+    }
+    75% {
+      background-position-y: top;
+    }
+    100% {
+      background-position: left center;
+    }
+  }
+
+  h2 {
+    color: #6359CF;
+    width: 200px;
+    text-align: center;
+    margin-top: 140px;
+    margin-bottom: 20px;
+
+    span {
+      font-weight: 500;
     }
   }
 }
