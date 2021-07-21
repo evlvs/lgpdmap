@@ -1,3 +1,4 @@
+import React from 'react'
 import Head from 'next/head'
 import Presentation from '../components/Presentation'
 import KnowMore from '../components/KnowMore'
@@ -9,11 +10,13 @@ const videoJsOptions = {
   poster: './assets/video-bg.png',
   responsive: true,
   width: '720',
-  sources: [{
-    src: './assets/mov_bbb.mp4',
-    type: 'video/mp4'
-  }]
-};
+  sources: [
+    {
+      src: './assets/mov_bbb.mp4',
+      type: 'video/mp4'
+    }
+  ]
+}
 
 const Home: React.FC = () => {
   return (

@@ -1,3 +1,5 @@
+import React from 'react'
+
 function OurNumbers() {
   return (
     <>
@@ -11,17 +13,23 @@ function OurNumbers() {
         <ul>
           <li>
             <h6>mais de</h6>
-            <h5>30<span>mil</span></h5>
+            <h5>
+              30<span>mil</span>
+            </h5>
             <p>Clientes ativos</p>
           </li>
           <li>
             <h6>mais de</h6>
-            <h5>200<span>mil</span></h5>
+            <h5>
+              200<span>mil</span>
+            </h5>
             <p>Empresas adequadas à LGPD</p>
           </li>
           <li>
             <h6>mais de</h6>
-            <h5>650<span>mil</span></h5>
+            <h5>
+              650<span>mil</span>
+            </h5>
             <p>Volumes de dados mapeados</p>
           </li>
         </ul>
@@ -30,4 +38,4 @@ function OurNumbers() {
   )
 }
 
-export default OurNumbers;
+export default OurNumbers
