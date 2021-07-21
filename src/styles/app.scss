@@ -243,11 +243,116 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: left;
+  align-items: start;
   position: relative;
   background: #fff;
+  padding: 40px;
+  max-width: 1280px;
+  margin: 0 auto;
 
+  .ballsColored {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    background: url('../../public/assets/ballsColored.png');
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 10%;
+    opacity: .3;
+    animation: ballsLColored 20s linear infinite;
+    animation-delay: 0s;
+    top: 50px;
+  }
+
+  @keyframes ballsLColored {
+    0% {
+      background-position: left top;
+    }
+    25% {
+      background-position-y: bottom;
+    }
+    50% {
+      background-position: center top;
+    }
+    75% {
+      background-position-y: bottom;
+    }
+    100% {
+      background-position: right top;
+    }
+  }
+
+  .ballsOutlined {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    background: url('../../public/assets/ballsOutlined.png');
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 10%;
+    opacity: .3;
+    animation: ballsLOutlined 20s linear infinite;
+    animation-delay: 0s;
+    top: 50px;
+  }
+
+  @keyframes ballsLOutlined {
+    0% {
+      background-position: left center;
+    }
+    25% {
+      background-position-y: top;
+    }
+    50% {
+      background-position: center center;
+    }
+    75% {
+      background-position-y: top;
+    }
+    100% {
+      background-position: right center;
+    }
+  }
   h2 {
     margin-top: 20px;
+    color: #6359CF;
+    width: 200px;
+    text-align: left;
+    margin-bottom: 40px;
+
+    span {
+      font-weight: 500;
+    }
+  }
+
+  ul {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    
+    li{
+      width: 33.3%;
+      list-style: none;
+      
+      h6 {
+        font-weight: normal;
+        font-size: 20px;
+      }
+
+      h5 {
+        font-size: 90px;
+        color: #6359CF;
+        weight: 700;
+  
+        span {
+          font-size: 45px;
+        }
+      }
+
+      p {
+        font-size: 20px;
+        color: #51505E;
+      }
+    }
   }
 }
