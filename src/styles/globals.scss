@@ -66,6 +66,8 @@ button {
 .vjs-lgpd.video-js {
   color: #4D33AC;
   box-shadow: 0 0 25px #4D33AC;
+  position: relative;
+  z-index: 9999;
 }
 
 .vjs-icon-play:before, .video-js .vjs-play-control .vjs-icon-placeholder:before, .video-js .vjs-big-play-button .vjs-icon-placeholder:before {
