@@ -1,9 +1,9 @@
 .banner {
   width: 100vw;
-  height: 75vh;
+  height: 100vh;
   background: linear-gradient(180deg, #3C2CA0 1.58%, #753BC5 98.61%);
   display: flex;
-  align-content: center;
+  align-items: center;
   overflow-x: hidden;
   position: relative;
 
@@ -16,6 +16,11 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+
+    img {
+      width: 100%;
+      max-width: 320px;
+    }
   
     h1 {
       color: #fff;
@@ -48,7 +53,7 @@
     top: 0;
     left: 0;
     width: 80%;
-    height: 70vh;
+    height: 80vh;
     background: url('../../public/assets/illustration-home.svg') no-repeat;
     background-position: right 100%;
     background-size: 40%;
@@ -72,6 +77,7 @@
   width: 100vw;
   height: 20vh;
   position: relative;
+  z-index: -1;
   background: linear-gradient(178.24deg, #753BC5 47.57%, rgba(117, 59, 197, 0) 47.58%);
   
   .wave {
@@ -135,23 +141,19 @@
     }
   }
 }
-
+.c-player {
+  background: #f5f5fb;
+  z-index: -2;
+  position: relative;
+  top: -50px;
+}
 .knowMore {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
   background: #F5F5FB;
-
-  .grayWave {
-    width: 100%;
-    height: 141px;
-    background: url('../../public/assets/gray-wave.png');
-    opacity: 1;
-    position: absolute;
-    bottom: -100px;
-  }
+  padding-bottom: 40px;
 
   .ballsColored {
     position: absolute;
@@ -219,11 +221,33 @@
     color: #6359CF;
     width: 200px;
     text-align: center;
-    margin-top: 140px;
-    margin-bottom: 20px;
+    margin-top: 170px;
+    margin-bottom: 40px;
 
     span {
       font-weight: 500;
     }
+  }
+}
+
+.grayWave {
+  width: 100%;
+  height: 250px;
+  background: url('../../public/assets/gray-wave.png') bottom;
+  opacity: 1;
+  top: -50px;
+  position: relative
+}
+
+.ourNumbers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  position: relative;
+  background: #fff;
+
+  h2 {
+    margin-top: 20px;
   }
 }
