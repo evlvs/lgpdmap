@@ -9,7 +9,6 @@
 
   .presentation {
     width: 50vw;
-    height: 75vh;
     position: relative;
   
     display: flex;
@@ -53,7 +52,7 @@
     top: 0;
     left: 0;
     width: 80%;
-    height: 80vh;
+    height: 100vh;
     background: url('../../public/assets/illustration-home.svg') no-repeat;
     background-position: right 100%;
     background-size: 40%;
@@ -170,19 +169,13 @@
 
   @keyframes ballsColored {
     0% {
-      background-position: right top;
-    }
-    25% {
-      background-position-y: bottom;
+      background-position-y: top;
     }
     50% {
-      background-position: center top;
-    }
-    75% {
-      background-position-y: bottom;
+      background-position-y: center;
     }
     100% {
-      background-position: left top;
+      background-position-y: top;
     }
   }
 
@@ -195,25 +188,19 @@
     background-position: right top;
     background-size: 10%;
     opacity: .3;
-    animation: ballsOutlined 20s linear infinite;
+    animation: ballsOutlined 15s linear infinite;
     animation-delay: 0s;
   }
 
   @keyframes ballsOutlined {
     0% {
-      background-position: right center;
-    }
-    25% {
       background-position-y: top;
     }
     50% {
-      background-position: center center;
-    }
-    75% {
-      background-position-y: top;
+      background-position-y: center;
     }
     100% {
-      background-position: left center;
+      background-position-y: top;
     }
   }
 
@@ -246,7 +233,6 @@
   align-items: flex-start;
   position: relative;
   background: #fff;
-  padding: 40px;
   max-width: 1280px;
   margin: 0 auto;
 
@@ -257,28 +243,22 @@
     background: url('../../public/assets/ballsColored.png');
     background-repeat: no-repeat;
     background-position: left top;
-    background-size: 10%;
+    background-size: 7%;
     opacity: .3;
-    animation: ballsLColored 20s linear infinite;
+    animation: ballsLColored 15s linear infinite;
     animation-delay: 0s;
     top: 50px;
   }
 
   @keyframes ballsLColored {
     0% {
-      background-position: left top;
-    }
-    25% {
-      background-position-y: bottom;
+      background-position-y: top;
     }
     50% {
-      background-position: center top;
-    }
-    75% {
-      background-position-y: bottom;
+      background-position-y: center;
     }
     100% {
-      background-position: right top;
+      background-position-y: top;
     }
   }
 
@@ -289,7 +269,7 @@
     background: url('../../public/assets/ballsOutlined.png');
     background-repeat: no-repeat;
     background-position: left top;
-    background-size: 10%;
+    background-size: 7%;
     opacity: .3;
     animation: ballsLOutlined 20s linear infinite;
     animation-delay: 0s;
@@ -298,19 +278,13 @@
 
   @keyframes ballsLOutlined {
     0% {
-      background-position: left center;
-    }
-    25% {
       background-position-y: top;
     }
     50% {
-      background-position: center center;
-    }
-    75% {
-      background-position-y: top;
+      background-position-y: center;
     }
     100% {
-      background-position: right center;
+      background-position-y: top;
     }
   }
   h2 {
@@ -340,12 +314,13 @@
       }
 
       h5 {
-        font-size: 90px;
+        font-size: 45px;
         color: #6359CF;
-        weight: 700;
-  
+        font-weight: 700;
+       
+        
         span {
-          font-size: 45px;
+          font-size: 90px;
         }
       }
 

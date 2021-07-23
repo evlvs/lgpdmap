@@ -13,8 +13,11 @@
     "next": "11.0.1",
     "node-sass": "4.14.1",
     "react": "17.0.2",
+    "react-countup": "^4.4.0",
     "react-dom": "17.0.2",
-    "react-feather": "^2.0.9"
+    "react-feather": "^2.0.9",
+    "react-reveal": "^1.2.2",
+    "react-visibility-sensor": "^5.1.1"
   },
   "devDependencies": {
     "@types/node": "^16.3.1",
