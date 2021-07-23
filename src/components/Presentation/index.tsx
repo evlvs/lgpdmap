@@ -1,24 +1,25 @@
 import React from 'react'
+import styles from './styles.module.scss'
 
 function Presentation() {
   return (
     <>
-      <section className="banner">
-        <div className="presentation">
+      <section className={styles.banner}>
+        <div className={styles.presentation}>
           <img src="/assets/logo.svg" alt="Logo LGPD Map" />
           <h1>Nunca foi tão fácil implementar a LGPD no seu negócio.</h1>
-          <h2>
+          <p>
             Diga adeus as consultorias complicadas com valores exorbitantes,
             chegou a hora de automatizar o processo da implimentação LGPD.
-          </h2>
+          </p>
           <a href="#">Quer saber como funciona?</a>
         </div>
-        <div className="bannerIllustration"></div>
+        <div className={styles.bannerIllustration}></div>
       </section>
-      <section className="divider1">
-        <div className="wave wave1"></div>
-        <div className="wave wave2"></div>
-        <div className="wave wave3"></div>
+      <section className={styles.divider1}>
+        <div className={`${styles.wave} ${styles.wave1}`}></div>
+        <div className={`${styles.wave} ${styles.wave2}`}></div>
+        <div className={`${styles.wave} ${styles.wave3}`}></div>
       </section>
     </>
   )

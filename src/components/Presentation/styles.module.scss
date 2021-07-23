@@ -1,0 +1,140 @@
+.banner {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(180deg, #3C2CA0 1.58%, #753BC5 98.61%);
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+  position: relative;
+
+  .presentation {
+    width: 50vw;
+    position: relative;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    img {
+      width: 100%;
+      max-width: 320px;
+    }
+  
+    h1 {
+      color: #fff;
+      max-width: 320px;
+    }
+  
+    p{
+      font-weight: 400;
+      max-width: 320px;
+      color: #fff
+    }
+  
+    a {
+      max-width: 320px;
+      width: 100%;
+      text-align: center;
+      padding: 10px 25px;
+      background-color: #fff;
+      border-radius: 20px;
+      text-decoration: none;
+      color: #4D33AC;
+      font-weight: 700;
+    }
+  }
+
+  .bannerIllustration {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100vh;
+    background: url('/assets/illustration-home.svg') no-repeat;
+    background-position: right 100%;
+    background-size: 40%;
+    animation: bannerIllustration 3s linear infinite;
+  }
+
+  @keyframes bannerIllustration {
+    0% {
+      background-position-y: 50%;
+    }
+    50% {
+      background-position-y: 55%;
+    }
+    100% {
+      background-position-y: 50%;
+    }
+  }
+}
+
+.divider1 {
+  width: 100vw;
+  height: 20vh;
+  position: relative;
+  z-index: 2;
+  background: linear-gradient(178.24deg, #753BC5 47.57%, rgba(117, 59, 197, 0) 47.58%);
+  
+  .wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 115%;
+    height: 241px;
+    background: url('/assets/wave1.png');
+    background-size: 1000px 241px;  
+    opacity: 0;
+
+    &.wave1 {
+      animation: animate 30s linear infinite;
+      z-index: 1000;
+      opacity: 1;
+      animation-delay: 0s;
+      bottom: 0;
+    }
+
+    &.wave2 {
+      animation: animate2 15s linear infinite;
+      z-index: 999;
+      opacity: .5;
+      animation-delay: -5s;
+      bottom: 0;
+    }
+
+    &.wave3 {
+      animation: animate3 10s linear iDivider1nfinite;
+      z-index: 998;
+      opacity: .2;
+      animation-delay: -2s;
+      bottom: 15;
+    }
+
+    @keyframes animate {
+      0% {
+        background-position-x: 0;
+      }
+      100% {
+        background-position-x: -1000px;
+      }
+    }
+
+    @keyframes animate2 {
+      0% {
+        background-position-x: 0;
+      }
+      100% {
+        background-position-x: 1000px;
+      }
+    }
+    @keyframes animate3 {
+      0% {
+        background-position-x: 0;
+      }
+      100% {
+        background-position-x: -1000px;
+      }
+    }
+  }
+}

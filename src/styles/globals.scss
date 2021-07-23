@@ -9,18 +9,17 @@
 :root {
   --white: #FFF;
 
-  --gray-50: #F7F8FA;
-  --gray-100: #E6E8EB;
-  --gray-200: #AFB2B1;
-  --gray-500: #808080;
-  --gray-800: #494D4B;
-
-  --green-500: #04D361;
+  --gray-50: #F5F5FB;
+  --gray-100: #ECECEC;
+  --gray-200: #B3B1B7;
+  --gray-300: #51505E;
   
-  --purple-300: #9F75FF;
-  --purple-400: #9164FA; 
-  --purple-500: #8257E5;
-  --purple-800: #6F48C9;
+
+  --green-500: #6ACF59;
+  
+  --purple-300: #6359CF;
+  --purple-400: #5437B2; 
+  --purple-800: #2A2895;
 }
 
 @media (max-width: 1080px) {
@@ -52,20 +51,56 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.65rem;
 }
 
 h2 {
   font-size: 1.5rem;
+  color: #6359CF;
+  width: 200px;
+  text-align: center;
+  margin-top: 170px;
+  margin-bottom: 40px;
+
+  span {
+    font-weight: 500;
+  }
+}
+
+h4{
+  font-size: 20px;
+  font-weight: 300;
+  color: #51505E
+}
+
+h5 {
+  font-size: 45px;
+  color: #6359CF;
+  font-weight: 700;
+ 
+  span {
+    font-size: 90px;
+  }
+}
+
+h6 {
+  font-weight: normal;
+  font-size: 14px;
+  color: var(--gray-300);
 }
 
 button {
   cursor: pointer
 }
 
+p {
+  font-size: .875rem; 
+  color: #51505E;
+}
+
 .vjs-lgpd.video-js {
   color: #4D33AC;
-  box-shadow: 0 0 25px #4D33AC;
+  box-shadow: 0 0 3rem #4D33AC;
   position: relative;
   z-index: 9999;
 }
@@ -237,3 +272,4 @@ button {
 .react-reveal {
   display: inline;
 }
+

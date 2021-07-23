@@ -2,8 +2,9 @@ import React from 'react'
 import videojs from 'video.js'
 
 import 'video.js/dist/video-js.css'
+import styles from './styles.module.scss'
 
-interface VideoPlayerPropsInferface {
+interface VideoPlayerPropsInterface {
   videoJsOptions: videojs.PlayerOptions
 }
 
@@ -11,7 +12,7 @@ export default class KnowMore extends React.Component {
   private player?: videojs.Player
   private videoNode?: HTMLVideoElement
 
-  constructor(props: VideoPlayerPropsInferface) {
+  constructor(props: VideoPlayerPropsInterface) {
     super(props)
     this.player = undefined
     this.videoNode = undefined
@@ -30,10 +31,10 @@ export default class KnowMore extends React.Component {
   render() {
     return (
       <>
-        <div className="c-player">
-          <div className="knowMore">
-            <div className="ballsColored"></div>
-            <div className="ballsOutlined"></div>
+        <div className={styles.cplayer}>
+          <div className={styles.knowMore}>
+            <div className={styles.ballsColored}></div>
+            <div className={styles.ballsOutlined}></div>
             <h2>
               Conheça mais da Lgpd<span>map</span>
             </h2>
@@ -72,7 +73,7 @@ export default class KnowMore extends React.Component {
             </div>
           </div>
         </div>
-        <div className="grayWave"></div>
+        <div className={styles.grayWave}></div>
       </>
     )
   }
