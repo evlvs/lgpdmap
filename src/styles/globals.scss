@@ -18,7 +18,7 @@
   --green-500: #6ACF59;
   
   --purple-300: #6359CF;
-  --purple-400: #5437B2; 
+  --purple-400: #8E3AFF; 
   --purple-800: #2A2895;
 }
 
@@ -96,6 +96,18 @@ button {
 p {
   font-size: .875rem; 
   color: #51505E;
+}
+
+a {
+  max-width: 320px;
+  width: 100%;
+  text-align: center;
+  padding: 10px 25px;
+  background-color: #fff;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #4D33AC;
+  font-weight: 700;
 }
 
 .vjs-lgpd.video-js {

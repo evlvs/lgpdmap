@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Presentation from '../components/Presentation'
 import KnowMore from '../components/KnowMore'
 import OurNumbers from '../components/OurNumbers'
+import Steps from '../components/Steps'
 
 const videoJsOptions = {
   autoplay: false,
@@ -29,6 +30,7 @@ const Home: React.FC = () => {
       <Presentation />
       <KnowMore {...videoJsOptions} />
       <OurNumbers />
+      <Steps />
     </div>
   )
 }

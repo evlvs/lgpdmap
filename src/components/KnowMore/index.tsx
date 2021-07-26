@@ -18,17 +18,17 @@ export default class KnowMore extends React.Component {
     this.videoNode = undefined
   }
 
-  componentDidMount() {
+  componentDidMount(): void {
     this.player = videojs(this.videoNode, this.props).ready()
   }
 
-  componentWillUnmount() {
+  componentWillUnmount(): void {
     if (this.player) {
       this.player.dispose()
     }
   }
 
-  render() {
+  render(): JSX.Element {
     return (
       <>
         <div className={styles.cplayer}>

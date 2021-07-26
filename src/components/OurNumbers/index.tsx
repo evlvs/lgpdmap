@@ -5,7 +5,7 @@ import VisibilitySensor from 'react-visibility-sensor'
 
 import styles from './styles.module.scss'
 
-function OurNumbers() {
+function OurNumbers(): JSX.Element {
   return (
     <>
       <section className={styles.ourNumbers}>
