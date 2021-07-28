@@ -1,7 +1,7 @@
 import React from 'react'
-import Fade from 'react-reveal/Fade'
-import CountUp from 'react-countup'
-import VisibilitySensor from 'react-visibility-sensor'
+// import Fade from 'react-reveal/Fade'
+// import CountUp from 'react-countup'
+// import VisibilitySensor from 'react-visibility-sensor'
 
 import styles from './styles.module.scss'
 
@@ -15,7 +15,7 @@ function OurNumbers(): JSX.Element {
           Conheça mais da Lgpd<span>map</span>
         </h2>
 
-        <ul>
+        {/* <ul>
           <li>
             <h6>mais de</h6>
             <h5>
@@ -64,7 +64,7 @@ function OurNumbers(): JSX.Element {
             </h5>
             <h4>Volumes de dados mapeados</h4>
           </li>
-        </ul>
+        </ul> */}
       </section>
     </>
   )

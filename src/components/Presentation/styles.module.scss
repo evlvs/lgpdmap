@@ -10,7 +10,6 @@
   .presentation {
     width: 50vw;
     position: relative;
-  
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -29,7 +28,7 @@
     p{
       font-weight: 400;
       max-width: 320px;
-      color: #fff
+      color: #fff;
     }
   
     
@@ -94,7 +93,7 @@
     }
 
     &.wave3 {
-      animation: animate3 10s linear iDivider1nfinite;
+      animation: animate3 10s linear infinite;
       z-index: 998;
       opacity: .2;
       animation-delay: -2s;

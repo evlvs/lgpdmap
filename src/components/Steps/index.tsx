@@ -1,10 +1,10 @@
 import React from 'react'
-import styles from './styles.module.scss'
+// import styles from './styles.module.scss'
 
 const Steps: React.FC = () => {
   return (
     <>
-      <div className={`${styles.startWave}`}></div>
+      {/* <div className={styles.startWave}></div>
       <div className={styles.steps}>
         <div className={styles.callToAction}>
           <h1>
@@ -52,7 +52,7 @@ const Steps: React.FC = () => {
           </li>
         </ul>
       </div>
-      <div className={`${styles.endWave}`}></div>
+      <div className={`${styles.endWave}`}></div> */}
     </>
   )
 }
