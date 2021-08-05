@@ -22,6 +22,10 @@
   --purple-800: #2A2895;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @media (max-width: 1080px) {
   html {
       font-size: 93.75%; //15px
@@ -64,6 +68,10 @@ h2 {
 
   span {
     font-weight: 500;
+  }
+
+  strong {
+    font-weight: 900;
   }
 }
 
@@ -108,6 +116,8 @@ a {
   text-decoration: none;
   color: #4D33AC;
   font-weight: 700;
+  cursor: pointer;
+  z-index: 9999999999;
 }
 
 .vjs-lgpd.video-js {
@@ -285,3 +295,225 @@ a {
   display: inline;
 }
 
+.ballsRC {
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  background: url('/assets/ballsColored.png');
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 10%;
+  opacity: .3;
+  animation: ballsRC 20s linear infinite;
+  animation-delay: 0s;
+}
+
+@keyframes ballsRC {
+  0% {
+    background-position-y: top;
+  }
+  50% {
+    background-position-y: center;
+  }
+  100% {
+    background-position-y: top;
+  }
+}
+
+.ballsRO {
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  background: url('/assets/ballsOutlined.png');
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 10%;
+  opacity: .3;
+  animation: ballsRO 15s linear infinite;
+  animation-delay: 0s;
+}
+
+@keyframes ballsRO {
+  0% {
+    background-position-y: top;
+  }
+  50% {
+    background-position-y: center;
+  }
+  100% {
+    background-position-y: top;
+  }
+}
+
+.ballsLC {
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  background: url('/assets/ballsColored.png');
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 7%;
+  opacity: .3;
+  animation: ballsLC 15s linear infinite;
+  animation-delay: 0s;
+  top: 50px;
+}
+
+@keyframes ballsLC {
+  0% {
+    background-position-y: top;
+  }
+  50% {
+    background-position-y: center;
+  }
+  100% {
+    background-position-y: top;
+  }
+}
+
+.ballsLO {
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  background: url('/assets/ballsOutlined.png');
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 7%;
+  opacity: .3;
+  animation: ballsLO 20s linear infinite;
+  animation-delay: 0s;
+  top: 50px;
+}
+
+@keyframes ballsLO {
+  0% {
+    background-position-y: top;
+  }
+  50% {
+    background-position-y: center;
+  }
+  100% {
+    background-position-y: top;
+  }
+}
+
+.swiper-container {
+  overflow: visible!important;
+}
+
+.swiper-slide {
+  margin-bottom: 80px;
+ .testimonialBox {
+   
+
+  &:after {
+    content: ' ';
+    height: 100%;
+    width: 40%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(270deg, #FFFFFF 9.75%, rgba(255, 255, 255, 0) 100%);
+    z-index: 1;
+    border-radius: 20px;
+  }
+ }
+}
+
+.swiper-slide-active {
+  display: block;
+  width: 1290px!important;
+
+  .testimonialBox {
+    background: var(--white);
+    width: 645px!important;
+    border: 5px solid #4043AF;
+    box-shadow: 0px 20px 0px rgba(156, 105, 226, 0.3);
+    border-radius: 20px;
+    padding: 20px;
+    overflow-x: hidden;
+    display: block;
+    z-index: 2;
+
+    &:after {
+      background: transparent;
+      opacity: 0;
+    }
+
+    .testimonialBody {
+      margin-top: 20px;
+      font-size: 20px;
+      line-height: 180%;
+      width: 430px;
+    }
+  }
+}
+
+.testimonialBox {
+  background: var(--white);
+  width: 400px!important;
+  border: 5px solid #4043AF;
+  box-shadow: 0px 20px 0px rgba(156, 105, 226, 0.3);
+  border-radius: 20px;
+  padding: 20px;
+  overflow-x: hidden;
+
+  
+
+  .testimonialHeader {
+    display: flex;
+
+    .testimonialPerson {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      margin-left: 20px;
+
+      .stars {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span {
+          font-size: 14px;
+          mix-blend-mode: normal;
+          opacity: 0.5;
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+
+  .testimonialBody {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 180%;
+    margin-left: 110px;
+    width: 430px;
+    overflow-x: hidden;
+    position: relative;
+
+    p{
+      font-size: 20px;
+      line-height: 180%;
+    }
+  }
+}
+
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets {
+   width: auto!important;
+   display: flex;
+    align-items: center;
+}
+
+.swiper-pagination-bullet {
+  background: #fff!important;
+  opacity: 1!important;
+
+  &.swiper-pagination-bullet-active {
+    width: 12px;
+    height: 12px;
+    opacity: 1!important;
+    background: #443C93!important;
+  }
+}

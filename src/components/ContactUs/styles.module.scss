@@ -1,0 +1,48 @@
+.contactUs {
+  width: 100vw;
+  background: var(--white);
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+
+  .illustration {
+    width: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: illustration 3s linear infinite;
+
+
+    svg {
+      width:100%;
+    }    
+
+    @keyframes illustration {
+      0% {
+        transform: translateY(10px);
+      }
+      50% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(10px);
+      }
+    }
+  }
+
+  .callToAction {
+    margin-left: 50px;
+    z-index: 9999;
+
+    h2 {
+      text-align: left;
+    }
+
+    a {
+      background: #6ACF59;
+      color: #fff;
+      z-index: 9999999;
+    }
+  }
+}

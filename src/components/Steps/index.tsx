@@ -9,9 +9,9 @@ const Steps: React.FC = () => {
         <div className={styles.callToAction}>
           <h1>
             <span>4</span> para <strong>adequar</strong> a sua
-            <strong>empresa</strong>
+            <strong> empresa</strong>
           </h1>
-          <a href="#">Quer saber como funciona?</a>
+          <a href="#contactUs">Quer saber como funciona?</a>
         </div>
         <ul className={styles.services}>
           <li>

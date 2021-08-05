@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './styles.module.scss'
+import Link from 'next/link'
 
 function Presentation(): JSX.Element {
   return (
@@ -12,7 +13,9 @@ function Presentation(): JSX.Element {
             Diga adeus as consultorias complicadas com valores exorbitantes,
             chegou a hora de automatizar o processo da implimentação LGPD.
           </p>
-          <a href="#">Quer saber como funciona?</a>
+          <Link data-scroll href="#contactUs" scroll={false}>
+            <a>Quer saber como funciona?</a>
+          </Link>
         </div>
         <div className={styles.bannerIllustration}></div>
       </section>

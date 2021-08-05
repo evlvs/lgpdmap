@@ -33,8 +33,8 @@ export default class KnowMore extends React.Component {
       <>
         <div className={styles.cplayer}>
           <div className={styles.knowMore}>
-            <div className={styles.ballsColored}></div>
-            <div className={styles.ballsOutlined}></div>
+            <div className="ballsRC"></div>
+            <div className="ballsRO"></div>
             <h2>
               Conheça mais da Lgpd<span>map</span>
             </h2>

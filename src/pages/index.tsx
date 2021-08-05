@@ -4,6 +4,8 @@ import Presentation from '../components/Presentation'
 import KnowMore from '../components/KnowMore'
 import OurNumbers from '../components/OurNumbers'
 import Steps from '../components/Steps'
+import ContactUs from '../components/ContactUs'
+import Testimonials from '../components/Testimonials'
 
 const videoJsOptions = {
   autoplay: false,
@@ -31,6 +33,8 @@ const Home: React.FC = () => {
       <KnowMore {...videoJsOptions} />
       <OurNumbers />
       <Steps />
+      <ContactUs />
+      <Testimonials />
     </div>
   )
 }

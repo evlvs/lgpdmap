@@ -8,68 +8,22 @@
   max-width: 1280px;
   margin: 0 auto;
 
-  .ballsColored {
-    position: absolute;
-    width: 100%;
-    height: 500px;
-    background: url('/assets/ballsColored.png');
-    background-repeat: no-repeat;
-    background-position: left top;
-    background-size: 7%;
-    opacity: .3;
-    animation: ballsLColored 15s linear infinite;
-    animation-delay: 0s;
-    top: 50px;
-  }
-
-  @keyframes ballsLColored {
-    0% {
-      background-position-y: top;
-    }
-    50% {
-      background-position-y: center;
-    }
-    100% {
-      background-position-y: top;
-    }
-  }
-
-  .ballsOutlined {
-    position: absolute;
-    width: 100%;
-    height: 500px;
-    background: url('/assets/ballsOutlined.png');
-    background-repeat: no-repeat;
-    background-position: left top;
-    background-size: 7%;
-    opacity: .3;
-    animation: ballsLOutlined 20s linear infinite;
-    animation-delay: 0s;
-    top: 50px;
-  }
-
-  @keyframes ballsLOutlined {
-    0% {
-      background-position-y: top;
-    }
-    50% {
-      background-position-y: center;
-    }
-    100% {
-      background-position-y: top;
-    }
-  }
+  
   h2 {
     margin-top: 20px;
     width: 200px;
     text-align: left;
     margin-bottom: 40px;
+    z-index: 9999;
+
   }
 
   ul {
     display: flex;
     justify-content: flex-start;
     width: 100%;
+    z-index: 9999;
+
     
     li{
       width: 33.3%;
