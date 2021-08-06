@@ -1,0 +1,213 @@
+.plans {
+  width: 100vw;
+  background-image: linear-gradient(#5432af, #753bc5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+
+  .plansIllustration {
+    width: 100%;
+    max-width: 445px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: illustration 3s linear infinite;
+
+    img {
+      width: 100%;
+    }
+
+    @keyframes illustration {
+      0% {
+        transform: translateY(10px);
+      }
+      50% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(10px);
+      }
+    }
+  }
+
+  .callToAction {
+    margin-left: 50px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    h2 {
+      text-align: left;
+      margin: 40px 0 40px 10px;
+      color: var(--white);
+      width: 640px;
+      font-size: 50px;
+      text-align: right;
+    }
+
+    p {
+      width: 596px;
+      text-align: right;
+      font-size: 26px;
+      line-height: 140%;
+      color: var(--white);
+      margin-bottom: 20px;
+    }
+
+    a {
+      background: var(--white);
+      color: var(--purple-800);
+      z-index: 9999999;
+      font-size: 26px;
+      line-height: 120%;
+      border-radius: 26px;
+    }
+  }
+}
+
+.divider1 {
+  width: 100vw;
+  height: 20vh;
+  position: relative;
+  z-index: 2;
+  background: linear-gradient(
+    178.24deg,
+    #753bc5 47.57%,
+    rgba(117, 59, 197, 0) 47.58%
+  );
+
+  .wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 299px;
+    background: url('/assets/wave1.png') repeat;
+    background-size: cover;
+    background-position: center top;
+    opacity: 0;
+
+    &.wave1 {
+      animation: animate 30s linear infinite;
+      z-index: 1000;
+      opacity: 1;
+      animation-delay: 0s;
+      bottom: 0;
+    }
+
+    &.wave2 {
+      animation: animate2 15s linear infinite;
+      z-index: 999;
+      opacity: 0.5;
+      animation-delay: -5s;
+      bottom: 0;
+    }
+
+    &.wave3 {
+      animation: animate3 10s linear infinite;
+      z-index: 998;
+      opacity: 0.2;
+      animation-delay: -2s;
+      bottom: 15;
+    }
+
+    @keyframes animate {
+      0% {
+        background-position-x: 0;
+      }
+      100% {
+        background-position-x: -1000px;
+      }
+    }
+
+    @keyframes animate2 {
+      0% {
+        background-position-x: 0;
+      }
+      100% {
+        background-position-x: 1000px;
+      }
+    }
+    @keyframes animate3 {
+      0% {
+        background-position-x: 0;
+      }
+      100% {
+        background-position-x: -1000px;
+      }
+    }
+  }
+}
+
+.divider2 {
+  width: 100vw;
+  height: 20vh;
+  position: relative;
+  z-index: 2;
+
+  .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 328px;
+    background: url('/assets/waves/plansTopWave.png');
+    background-size: 105%;
+    background-position: center top;
+    opacity: 0;
+
+    &.wave1 {
+      animation: animate 30s linear infinite;
+      z-index: 1000;
+      opacity: 1;
+      animation-delay: 0s;
+      bottom: 0;
+    }
+
+    &.wave2 {
+      animation: animate2 15s linear infinite;
+      z-index: 999;
+      opacity: 0.5;
+      animation-delay: -5s;
+      bottom: 0;
+    }
+
+    &.wave3 {
+      animation: animate3 10s linear infinite;
+      z-index: 998;
+      opacity: 0.2;
+      animation-delay: -2s;
+      bottom: 15;
+    }
+
+    @keyframes animate {
+      0% {
+        background-position-x: 0;
+      }
+      100% {
+        background-position-x: -1000px;
+      }
+    }
+
+    @keyframes animate2 {
+      0% {
+        background-position-x: 0;
+      }
+      100% {
+        background-position-x: 1000px;
+      }
+    }
+    @keyframes animate3 {
+      0% {
+        background-position-x: 0;
+      }
+      100% {
+        background-position-x: -1000px;
+      }
+    }
+  }
+}

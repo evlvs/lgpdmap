@@ -5,18 +5,19 @@
   justify-content: center;
   overflow: hidden;
   position: relative;
+  padding-bottom: 80px;
 
   .illustration {
-    width: 50vh;
+    width: 100%;
+    max-width: 445px;
     display: flex;
     justify-content: center;
     align-items: center;
     animation: illustration 3s linear infinite;
 
-
-    svg {
-      width:100%;
-    }    
+    img {
+      width: 100%;
+    }
 
     @keyframes illustration {
       0% {
@@ -37,10 +38,11 @@
 
     h2 {
       text-align: left;
+      margin: 40px 0 40px 10px;
     }
 
     a {
-      background: #6ACF59;
+      background: #6acf59;
       color: #fff;
       z-index: 9999999;
     }

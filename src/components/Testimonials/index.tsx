@@ -12,6 +12,11 @@ function Testimonials(): JSX.Element {
           <ImageSlider />
         </div>
       </div>
+      <img
+        src="./assets/peoplestar.png"
+        alt="Depoimentos"
+        className="peopleStar"
+      />
     </section>
   )
 }
