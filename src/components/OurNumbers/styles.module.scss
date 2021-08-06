@@ -27,3 +27,23 @@
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .ourNumbers {
+    h2 {
+      margin: 10px;
+    }
+    ul {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+
+      li {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+    }
+  }
+}

@@ -11,7 +11,7 @@ const ImageSlider: React.FC = () => {
   return (
     <>
       <Swiper
-        spaceBetween={-600}
+        spaceBetween={100}
         slidesPerView={1}
         navigation
         pagination={{ clickable: true }}

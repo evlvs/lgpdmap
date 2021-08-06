@@ -3,6 +3,7 @@
   z-index: 1;
   position: relative;
   top: -70px;
+  padding: 100px 0;
 }
 
 .knowMore {
@@ -10,12 +11,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #F5F5FB;
+  background: #f5f5fb;
   padding-bottom: 40px;
 
   h2 {
     z-index: 9999;
-
   }
 }
 
@@ -25,5 +25,5 @@
   background: url('/assets/gray-wave.png') bottom;
   opacity: 1;
   top: -70px;
-  position: relative
+  position: relative;
 }

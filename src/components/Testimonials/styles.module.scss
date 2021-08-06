@@ -46,7 +46,6 @@
       h2 {
         color: #fff;
         width: 80%;
-        font-size: 3em;
         max-width: 918px;
         margin: 40px auto;
         text-align: left;
@@ -58,5 +57,20 @@
     position: absolute;
     bottom: 0;
     left: calc(50% - 36px);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .testimonials {
+    .mainSlider {
+      .boxSlider {
+        padding: 20px;
+        h2 {
+          margin: 0;
+          line-height: auto;
+          font-size: 36px;
+        }
+      }
+    }
   }
 }

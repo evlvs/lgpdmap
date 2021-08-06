@@ -48,3 +48,18 @@
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .contactUs {
+    flex-direction: column;
+    align-items: center;
+
+    .illustration {
+      width: 90%;
+    }
+
+    .callToAction {
+      margin-left: 0;
+    }
+  }
+}

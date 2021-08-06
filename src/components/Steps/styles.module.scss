@@ -6,7 +6,7 @@
 }
 
 .steps {
-  background: var(--purple-400);
+  background-image: linear-gradient(#8e3aff, #412da3);
   background-size: initial;
   background-attachment: scroll;
   width: 100vw;
@@ -24,14 +24,13 @@
     align-items: center;
     flex-direction: column;
 
-    h2 {
+    h3 {
       color: var(--white);
       max-width: 424px;
       margin: 20px 0;
       text-align: left;
 
       span {
-        font-size: 2em;
         font-size: 80px;
         font-weight: 700;
       }
@@ -44,7 +43,8 @@
   }
 
   .services {
-    width: 50%;
+    width: 100%;
+    max-width: 690px;
     display: flex;
     list-style: none;
     flex-wrap: wrap;
@@ -53,21 +53,26 @@
       margin: 0px;
     }
     li {
-      background: var(--gray-100);
+      background: #ecf2ff;
       text-align: center;
       margin: 20px;
       border-radius: 15px;
       border: 10px solid var(--white);
-      padding: 40px 0;
+      padding: 20px;
+      width: 288px;
+      height: 288px;
       color: var(--gray-200);
       display: flex;
       align-items: center;
+      justify-content: center;
       flex-direction: column;
       cursor: pointer;
-      transition: transform ease-in-out 0.2s;
+      transition: all ease-in-out 0.2s;
+      box-shadow: 21px 21px 1px #ae9dff;
 
       &:hover {
         transform: scale(1.2);
+        box-shadow: 21px 21px 100px rgba(174, 157, 255, 0);
       }
 
       .stepsIcon {
@@ -101,4 +106,31 @@
   background-size: 100vw 200px;
   position: relative;
   top: -6px;
+}
+
+@media only screen and (max-width: 768px) {
+  .steps {
+    flex-direction: column;
+    padding: 10px;
+
+    .callToAction {
+      width: 100%;
+
+      h3 {
+        max-width: 320px;
+        margin: 0;
+        margin-bottom: 20px;
+
+        span {
+          font-size: 60px;
+          font-weight: 700;
+        }
+
+        strong {
+          font-weight: 700;
+          font-size: 40px;
+        }
+      }
+    }
+  }
 }

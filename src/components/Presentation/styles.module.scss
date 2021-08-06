@@ -4,7 +4,7 @@
   background: linear-gradient(180deg, #3c2ca0 1.58%, #753bc5 98.61%);
   display: flex;
   align-items: center;
-  overflow-x: hidden;
+  overflow: hidden;
   position: relative;
 
   .presentation {
@@ -24,13 +24,14 @@
     h1 {
       color: #fff;
       max-width: 585px;
+      margin-bottom: 20px;
     }
 
     p {
       font-weight: 400;
       max-width: 585px;
       color: #fff;
-      font-size: 26px;
+      margin-bottom: 20px;
     }
   }
 
@@ -44,6 +45,7 @@
 
     img {
       width: 100%;
+      overflow: hidden;
     }
 
     @keyframes illustration {
@@ -130,6 +132,22 @@
       100% {
         background-position-x: -1000px;
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .banner {
+    height: auto;
+    flex-direction: column;
+
+    .presentation {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .bannerIllustration {
+      margin-top: 20px;
     }
   }
 }

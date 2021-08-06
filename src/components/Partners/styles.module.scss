@@ -14,7 +14,6 @@
 
   h2 {
     width: 100%;
-    font-size: 50px;
     line-height: 120%;
     text-align: center;
   }
@@ -365,6 +364,88 @@
 
     img.partner7 {
       transition: transform ease-in-out 0.3s;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .partnersMain {
+    height: auto;
+    .partners {
+      margin: 0;
+      margin-bottom: 200px;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+
+      .boxImg1,
+      .boxImg2,
+      .boxImg3,
+      .boxImg4,
+      .boxImg5,
+      .boxImg6,
+      .boxImg7 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: transparent;
+        width: 100px;
+        height: 100px;
+        margin: 20px 10px;
+
+        img.partner1,
+        img.partner2,
+        img.partner3,
+        img.partner4,
+        img.partner5,
+        img.partner6,
+        img.partner7 {
+          pointer-events: none;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        &:hover {
+          position: relative;
+          overflow: visible;
+          width: 100px;
+          height: 100px;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          z-index: 0;
+          box-shadow: none;
+          background: transparent;
+
+          img.partner1,
+          img.partner2,
+          img.partner3,
+          img.partner4,
+          img.partner5,
+          img.partner6,
+          img.partner7 {
+            pointer-events: none;
+            position: relative;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            transition: none;
+            transform: scale(1);
+          }
+        }
+      }
     }
   }
 }

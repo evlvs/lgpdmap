@@ -7,10 +7,10 @@ const Steps: React.FC = () => {
       <div className={styles.startWave}></div>
       <div className={styles.steps}>
         <div className={styles.callToAction}>
-          <h2>
+          <h3>
             <span>4</span> para <strong>adequar</strong> a sua
             <strong> empresa</strong>
-          </h2>
+          </h3>
           <a href="#contactUs">Quer saber como funciona?</a>
         </div>
         <ul className={styles.services}>
@@ -18,14 +18,14 @@ const Steps: React.FC = () => {
             <div className={styles.stepsIcon}>
               <img src="/assets/diagnostics.png" alt="Diagnósticos" />
             </div>
-            <h2>Diagnóstico</h2>
+            <h3>Diagnóstico</h3>
             Inicio de jornada
           </li>
           <li>
             <div className={styles.stepsIcon}>
               <img src="/assets/mapping.png" alt="Mapeamento" />
             </div>
-            <h2>Mapeamento</h2>
+            <h3>Mapeamento</h3>
             Perícia das atividades
           </li>
           <li>
@@ -36,7 +36,7 @@ const Steps: React.FC = () => {
                 alt="Análise de riscos"
               />
             </div>
-            <h2>Análise de riscos</h2>
+            <h3>Análise de riscos</h3>
             Garantir o Sucesso
           </li>
           <li>
@@ -47,7 +47,7 @@ const Steps: React.FC = () => {
                 alt="Ações"
               />
             </div>
-            <h2>Ações</h2>
+            <h3>Ações</h3>
             Mão na massa
           </li>
         </ul>

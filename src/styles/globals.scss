@@ -84,6 +84,10 @@ h2 {
     font-weight: 900;
   }
 }
+h3 {
+  font-size: 26px;
+  color: var(--purple-300);
+}
 
 h4 {
   font-size: 20px;
@@ -112,7 +116,7 @@ button {
 }
 
 p {
-  font-size: 0.875rem;
+  font-size: 26px;
   color: #51505e;
 }
 
@@ -441,7 +445,9 @@ a {
 
 .swiper-slide-active {
   display: block;
-  width: 1290px !important;
+  z-index: 99999;
+
+  width: 600px !important;
 
   .testimonialBox {
     background: var(--white);
@@ -452,7 +458,6 @@ a {
     padding: 20px;
     overflow-x: hidden;
     display: block;
-    z-index: 2;
     transition: all ease-in-out 1s;
 
     &:after {
@@ -586,4 +591,129 @@ a {
 .swiper-container-rtl .swiper-button-prev:after {
   visibility: hidden;
   display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    width: 100%;
+    max-width: 300px;
+    font-size: 40px;
+  }
+  p {
+    font-size: 12px;
+  }
+
+  a {
+    font-size: 14px;
+    height: 42px;
+  }
+
+  .vjs_video_3-dimensions {
+    width: 90% !important;
+    max-width: 720px;
+    height: 320px !important;
+  }
+
+  .videoIcons {
+    display: none;
+  }
+
+  .ballsRO,
+  .ballsRC,
+  .ballsLC,
+  .ballsLO {
+    display: none;
+  }
+
+  .swiper-container {
+    overflow: visible !important;
+  }
+
+  .swiper-slide {
+    margin-bottom: 80px;
+    .testimonialBox {
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  .swiper-slide-active {
+    width: 420px !important;
+
+    .testimonialBox {
+      max-width: 260px;
+      width: 100% !important;
+
+      .testimonialBody {
+        margin-top: 0;
+        font-size: 12px;
+        line-height: 100%;
+        width: 240px;
+      }
+    }
+  }
+
+  .testimonialBox {
+    width: 260px !important;
+
+    .testimonialBody {
+      font-size: 12px;
+      line-height: 100%;
+      margin-left: 0;
+      width: 240px;
+
+      p {
+        font-size: 12px;
+        line-height: 180%;
+      }
+    }
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+
+  .swiper-button-prev,
+  .swiper-container-rtl .swiper-button-next {
+    left: auto !important;
+    right: 135px !important;
+  }
+  .swiper-button-next,
+  .swiper-container-rtl .swiper-button-prev {
+    right: 85px !important;
+    left: auto !important;
+  }
+
+  .swiper-button-prev:before,
+  .swiper-container-rtl .swiper-button-next:before {
+    content: ' ';
+    width: 20px;
+    height: 15px;
+    background-image: url('/assets/arrow/smallLeftArrow.svg');
+  }
+
+  .swiper-button-prev:after,
+  .swiper-container-rtl .swiper-button-next:after {
+    visibility: hidden;
+    display: none;
+  }
+
+  .swiper-button-next:before,
+  .swiper-container-rtl .swiper-button-prev:before {
+    content: ' ';
+    width: 42px;
+    height: 15px;
+    background-image: url('/assets/arrow/bigRightArrow.svg');
+  }
+
+  .swiper-button-next:after,
+  .swiper-container-rtl .swiper-button-prev:after {
+    visibility: hidden;
+    display: none;
+  }
 }
