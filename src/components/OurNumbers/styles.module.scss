@@ -8,14 +8,11 @@
   max-width: 1280px;
   margin: 0 auto;
 
-  
   h2 {
     margin-top: 20px;
-    width: 200px;
     text-align: left;
     margin-bottom: 40px;
     z-index: 9999;
-
   }
 
   ul {
@@ -24,8 +21,7 @@
     width: 100%;
     z-index: 9999;
 
-    
-    li{
+    li {
       width: 33.3%;
       list-style: none;
     }

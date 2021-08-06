@@ -34,7 +34,7 @@ const Accordion: React.FC = () => {
                   : styles.accordionBody
               }`}
             >
-              <p>{accordion.answer}</p>
+              {accordion.answer}
             </div>
           </div>
         )

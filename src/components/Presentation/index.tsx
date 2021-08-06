@@ -17,7 +17,9 @@ function Presentation(): JSX.Element {
             <a>Quer saber como funciona?</a>
           </Link>
         </div>
-        <div className={styles.bannerIllustration}></div>
+        <div className={styles.bannerIllustration}>
+          <img src="./assets/illustration-home.svg" alt="Whatsapp" />
+        </div>
       </section>
       <section className={styles.divider1}>
         <div className={`${styles.wave} ${styles.wave1}`}></div>

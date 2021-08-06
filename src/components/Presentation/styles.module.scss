@@ -1,7 +1,7 @@
 .banner {
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(180deg, #3C2CA0 1.58%, #753BC5 98.61%);
+  background: linear-gradient(180deg, #3c2ca0 1.58%, #753bc5 98.61%);
   display: flex;
   align-items: center;
   overflow-x: hidden;
@@ -13,49 +13,49 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+    margin-left: 10%;
     z-index: 9999;
 
     img {
       width: 100%;
-      max-width: 320px;
+      max-width: 382px;
     }
-  
+
     h1 {
       color: #fff;
-      max-width: 320px;
+      max-width: 585px;
     }
-  
-    p{
+
+    p {
       font-weight: 400;
-      max-width: 320px;
+      max-width: 585px;
       color: #fff;
+      font-size: 26px;
     }
-  
-    
   }
 
   .bannerIllustration {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 80%;
-    height: 100vh;
-    background: url('/assets/illustration-home.svg') no-repeat;
-    background-position: right 100%;
-    background-size: 40%;
-    animation: bannerIllustration 3s linear infinite;
-  }
+    width: 100%;
+    max-width: 445px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: illustration 3s linear infinite;
 
-  @keyframes bannerIllustration {
-    0% {
-      background-position-y: 50%;
+    img {
+      width: 100%;
     }
-    50% {
-      background-position-y: 55%;
-    }
-    100% {
-      background-position-y: 50%;
+
+    @keyframes illustration {
+      0% {
+        transform: translateY(10px);
+      }
+      50% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(10px);
+      }
     }
   }
 }
@@ -65,8 +65,12 @@
   height: 20vh;
   position: relative;
   z-index: 2;
-  background: linear-gradient(178.24deg, #753BC5 47.57%, rgba(117, 59, 197, 0) 47.58%);
-  
+  background: linear-gradient(
+    178.24deg,
+    #753bc5 47.57%,
+    rgba(117, 59, 197, 0) 47.58%
+  );
+
   .wave {
     position: absolute;
     top: 0;
@@ -89,7 +93,7 @@
     &.wave2 {
       animation: animate2 15s linear infinite;
       z-index: 999;
-      opacity: .5;
+      opacity: 0.5;
       animation-delay: -5s;
       bottom: 0;
     }
@@ -97,7 +101,7 @@
     &.wave3 {
       animation: animate3 10s linear infinite;
       z-index: 998;
-      opacity: .2;
+      opacity: 0.2;
       animation-delay: -2s;
       bottom: 15;
     }

@@ -13,11 +13,13 @@ function Partners(): JSX.Element {
       </h2>
 
       <div className={styles.partners}>
-        <img
-          src="./assets/partners/Poco.svg"
-          alt="Poco"
-          className={styles.primary}
-        />
+        <div className={styles.boxImg1}>
+          <img
+            src="./assets/partners/Poco.svg"
+            alt="Poco"
+            className={styles.partner1}
+          />
+        </div>
         <div className={styles.boxImg2}>
           <img
             src="./assets/partners/partner2.svg"

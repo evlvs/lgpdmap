@@ -7,10 +7,10 @@ const Steps: React.FC = () => {
       <div className={styles.startWave}></div>
       <div className={styles.steps}>
         <div className={styles.callToAction}>
-          <h1>
+          <h2>
             <span>4</span> para <strong>adequar</strong> a sua
             <strong> empresa</strong>
-          </h1>
+          </h2>
           <a href="#contactUs">Quer saber como funciona?</a>
         </div>
         <ul className={styles.services}>
