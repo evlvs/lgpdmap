@@ -645,26 +645,44 @@ a {
     width: 420px !important;
 
     .testimonialBox {
-      max-width: 260px;
+      max-width: 250px;
       width: 100% !important;
 
       .testimonialBody {
         margin-top: 0;
         font-size: 12px;
         line-height: 100%;
-        width: 240px;
+        width: 210px;
       }
     }
   }
 
   .testimonialBox {
-    width: 260px !important;
+    width: 250px !important;
+
+    .testimonialHeader {
+      margin-bottom: 10px;
+      img {
+        width: 70px;
+        margin-right: 10px;
+      }
+
+      .testimonialPerson {
+        margin-left: 0;
+
+        span {
+          &:last-child {
+            display: none;
+          }
+        }
+      }
+    }
 
     .testimonialBody {
       font-size: 12px;
       line-height: 100%;
       margin-left: 0;
-      width: 240px;
+      width: 210px;
 
       p {
         font-size: 12px;
