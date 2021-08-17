@@ -1,32 +1,34 @@
 export const Data = [
   {
-    question: 'Como Funciona a ferramenta LGPDmap?',
+    question:
+      'Preciso instalar algo no meu computador para utilizar o Lgpdmap?',
     answer:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vehicula nulla posuere odio vestibulum euismod. Praesent molestie scelerisque blandit. Donec at justo eu felis ullamcorper tincidunt. Cras a quam sit amet sem laoreet faucibus. Integer sit amet magna risus. Cras accumsan facilisis ex a dapibus. Donec consectetur sapien posuere eros cursus, quis pharetra sapien cursus. Nunc euismod ligula eu tempor efficitur. Vivamus imperdiet odio mi, vitae ornare purus aliquet in. Sed facilisis tincidunt interdum. Pellentesque ullamcorper, lorem ac euismod suscipit, sapien mauris porttitor lorem, in ornare purus diam vel dui. Aenean congue, tortor sit amet suscipit mollis, orci ante finibus magna, eu blandit leo quam non erat. Vivamus risus massa, ullamcorper a malesuada nec, pellentesque sagittis odio. Praesent posuere bibendum felis. Proin at consectetur magna, in consequat mauris. Cras eu sagittis nibh, eget tempor felis.'
+      'Não. O ambiente funciona totalmente online, em nuvem, com acesso através do seu login e senha.'
   },
   {
-    question: 'Como são os planos? ',
+    question: 'Em caso de dúvidas na utilização do Lgpdmap, com quem eu falo?',
     answer:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vehicula nulla posuere odio vestibulum euismod. Praesent molestie scelerisque blandit. Donec at justo eu felis ullamcorper tincidunt. Cras a quam sit amet sem laoreet faucibus. Integer sit amet magna risus. Cras accumsan facilisis ex a dapibus. Donec consectetur sapien posuere eros cursus, quis pharetra sapien cursus. Nunc euismod ligula eu tempor efficitur. Vivamus imperdiet odio mi, vitae ornare purus aliquet in. Sed facilisis tincidunt interdum. Pellentesque ullamcorper, lorem ac euismod suscipit, sapien mauris porttitor lorem, in ornare purus diam vel dui. Aenean congue, tortor sit amet suscipit mollis, orci ante finibus magna, eu blandit leo quam non erat. Vivamus risus massa, ullamcorper a malesuada nec, pellentesque sagittis odio. Praesent posuere bibendum felis. Proin at consectetur magna, in consequat mauris. Cras eu sagittis nibh, eget tempor felis.'
+      'Para esclarecer dúvidas sobre o uso da ferramenta, você pode abrir um ticket no ícone de Ajuda (colocar o ícone “?”), dentro do seu ambiente.'
   },
   {
-    question: 'Quais formas de pagamento eu consigo pagar?',
+    question:
+      'Para quem posso enviar sugestões de melhorias ou novas funcionalidades?',
     answer:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vehicula nulla posuere odio vestibulum euismod. Praesent molestie scelerisque blandit. Donec at justo eu felis ullamcorper tincidunt. Cras a quam sit amet sem laoreet faucibus. Integer sit amet magna risus. Cras accumsan facilisis ex a dapibus. Donec consectetur sapien posuere eros cursus, quis pharetra sapien cursus. Nunc euismod ligula eu tempor efficitur. Vivamus imperdiet odio mi, vitae ornare purus aliquet in. Sed facilisis tincidunt interdum. Pellentesque ullamcorper, lorem ac euismod suscipit, sapien mauris porttitor lorem, in ornare purus diam vel dui. Aenean congue, tortor sit amet suscipit mollis, orci ante finibus magna, eu blandit leo quam non erat. Vivamus risus massa, ullamcorper a malesuada nec, pellentesque sagittis odio. Praesent posuere bibendum felis. Proin at consectetur magna, in consequat mauris. Cras eu sagittis nibh, eget tempor felis.'
+      'Sugestões para melhoria da ferramenta podem ser enviados através do ícone de Ajuda (colocar o ícone “?”), dentro do seu ambiente.'
   },
   {
-    question: 'Já inicie um projeto de adequação e agora?',
+    question: 'Em caso de mudanças na legislação, o Lgpdmap será atualizado?',
     answer:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vehicula nulla posuere odio vestibulum euismod. Praesent molestie scelerisque blandit. Donec at justo eu felis ullamcorper tincidunt. Cras a quam sit amet sem laoreet faucibus. Integer sit amet magna risus. Cras accumsan facilisis ex a dapibus. Donec consectetur sapien posuere eros cursus, quis pharetra sapien cursus. Nunc euismod ligula eu tempor efficitur. Vivamus imperdiet odio mi, vitae ornare purus aliquet in. Sed facilisis tincidunt interdum. Pellentesque ullamcorper, lorem ac euismod suscipit, sapien mauris porttitor lorem, in ornare purus diam vel dui. Aenean congue, tortor sit amet suscipit mollis, orci ante finibus magna, eu blandit leo quam non erat. Vivamus risus massa, ullamcorper a malesuada nec, pellentesque sagittis odio. Praesent posuere bibendum felis. Proin at consectetur magna, in consequat mauris. Cras eu sagittis nibh, eget tempor felis.'
+      'Sim! Para qualquer alteração na legislação notificaremos os Clientes através do ícone de Notificações (colocar o ícone “sino”) e por e-mail. Para notificações por e-mail, esta opção deve estar habilitada nas Configurações (colocar ícone da “engrenagem”).'
   },
   {
-    question: 'Depois de adequado, eu preciso manter o plano?',
+    question: 'Estarei seguro em relação aos dados lançados no Lgpdmap?',
     answer:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vehicula nulla posuere odio vestibulum euismod. Praesent molestie scelerisque blandit. Donec at justo eu felis ullamcorper tincidunt. Cras a quam sit amet sem laoreet faucibus. Integer sit amet magna risus. Cras accumsan facilisis ex a dapibus. Donec consectetur sapien posuere eros cursus, quis pharetra sapien cursus. Nunc euismod ligula eu tempor efficitur. Vivamus imperdiet odio mi, vitae ornare purus aliquet in. Sed facilisis tincidunt interdum. Pellentesque ullamcorper, lorem ac euismod suscipit, sapien mauris porttitor lorem, in ornare purus diam vel dui. Aenean congue, tortor sit amet suscipit mollis, orci ante finibus magna, eu blandit leo quam non erat. Vivamus risus massa, ullamcorper a malesuada nec, pellentesque sagittis odio. Praesent posuere bibendum felis. Proin at consectetur magna, in consequat mauris. Cras eu sagittis nibh, eget tempor felis.'
+      'Sim! Todo o sistema foi projetado pensando em todos os aspectos da LGPD, principalmente nas questões que envolvem a Segurança da Informação.'
   },
   {
-    question: 'Tenho mais de um CNPJ, como funciona a contratação?',
+    question: 'Em caso de desistência do plano, terei acesso aos meus dados?',
     answer:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vehicula nulla posuere odio vestibulum euismod. Praesent molestie scelerisque blandit. Donec at justo eu felis ullamcorper tincidunt. Cras a quam sit amet sem laoreet faucibus. Integer sit amet magna risus. Cras accumsan facilisis ex a dapibus. Donec consectetur sapien posuere eros cursus, quis pharetra sapien cursus. Nunc euismod ligula eu tempor efficitur. Vivamus imperdiet odio mi, vitae ornare purus aliquet in. Sed facilisis tincidunt interdum. Pellentesque ullamcorper, lorem ac euismod suscipit, sapien mauris porttitor lorem, in ornare purus diam vel dui. Aenean congue, tortor sit amet suscipit mollis, orci ante finibus magna, eu blandit leo quam non erat. Vivamus risus massa, ullamcorper a malesuada nec, pellentesque sagittis odio. Praesent posuere bibendum felis. Proin at consectetur magna, in consequat mauris. Cras eu sagittis nibh, eget tempor felis.'
+      ' Sim! Os dados são exportáveis em formato compatível para importação em planilhas eletrônicas.'
   }
 ]
