@@ -36,7 +36,7 @@ export default class KnowMore extends React.Component {
             <div className="ballsRC"></div>
             <div className="ballsRO"></div>
             <h2>
-              Conheça mais da Lgpd<span>map</span>
+              Conheça o Lgpd<span>map</span>
             </h2>
             <div className="c-player__screen" data-vjs-player="true">
               <video

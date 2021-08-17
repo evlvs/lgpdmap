@@ -8,7 +8,9 @@ function Testimonials(): JSX.Element {
     <section className={styles.testimonials}>
       <div className={styles.mainSlider}>
         <div className={styles.boxSlider}>
-          <h2>Depoimentos de quem automatizou o processo LGPD.</h2>
+          <h2>
+            Depoimentos que quem já implementou a LGPD utilizando o Lgpdmap
+          </h2>
           <ImageSlider />
         </div>
       </div>

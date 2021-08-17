@@ -8,10 +8,11 @@ function Presentation(): JSX.Element {
       <section className={styles.banner}>
         <div className={styles.presentation}>
           <img src="/assets/logo.svg" alt="Logo LGPD Map" />
-          <h1>Nunca foi tão fácil implementar a LGPD no seu negócio.</h1>
+          <h1>Nunca foi tão fácil adequar a sua empresa à LGPD.</h1>
           <p>
-            Diga adeus as consultorias complicadas com valores exorbitantes,
-            chegou a hora de automatizar o processo da implimentação LGPD.
+            Diga adeus às planilhas ou ferramentas complexas, com recursos
+            desnecessários. Implemente a LGPD de forma simples e centralizada,
+            com uma só ferramenta.
           </p>
           <Link data-scroll href="#contactUs" scroll={false}>
             <a>Quer saber como funciona?</a>

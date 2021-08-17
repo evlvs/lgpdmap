@@ -8,8 +8,8 @@ function Partners(): JSX.Element {
       <div className="ballsRO"></div>
 
       <h2>
-        Empresas que acreditam em um processo seguro para seus clientes e
-        funcionários.
+        Empresas que confiam no Lgpdmap para o processo de implementação e
+        manutenção da adequação à LPGD.
       </h2>
 
       <div className={styles.partners}>

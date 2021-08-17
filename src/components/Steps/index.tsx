@@ -8,8 +8,11 @@ const Steps: React.FC = () => {
       <div className={styles.steps}>
         <div className={styles.callToAction}>
           <h3>
-            <span>4</span> para <strong>adequar</strong> a sua
-            <strong> empresa</strong>
+            Processos <br />
+            para <strong>adequar</strong>
+            <br />a sua <strong>empresa</strong>
+            <br />
+            <span>a LGPD</span>
           </h3>
           <a href="#contactUs">Quer saber como funciona?</a>
         </div>
@@ -18,15 +21,19 @@ const Steps: React.FC = () => {
             <div className={styles.stepsIcon}>
               <img src="/assets/diagnostics.png" alt="Diagnósticos" />
             </div>
-            <h3>Diagnóstico</h3>
-            Inicio de jornada
+            <div className={styles.infoBox}>
+              <h3>Diagnóstico</h3>
+              Inicio de jornada
+            </div>
           </li>
           <li>
             <div className={styles.stepsIcon}>
               <img src="/assets/mapping.png" alt="Mapeamento" />
             </div>
-            <h3>Mapeamento</h3>
-            Perícia das atividades
+            <div className={styles.infoBox}>
+              <h3>Mapeamento</h3>
+              Perícia das atividades
+            </div>
           </li>
           <li>
             <div className={styles.stepsIcon}>
@@ -36,8 +43,10 @@ const Steps: React.FC = () => {
                 alt="Análise de riscos"
               />
             </div>
-            <h3>Análise de riscos</h3>
-            Garantir o Sucesso
+            <div className={styles.infoBox}>
+              <h3>Análise de riscos</h3>
+              Garantir o Sucesso
+            </div>
           </li>
           <li>
             <div className={styles.stepsIcon}>
@@ -47,8 +56,23 @@ const Steps: React.FC = () => {
                 alt="Ações"
               />
             </div>
-            <h3>Ações</h3>
-            Mão na massa
+            <div className={styles.infoBox}>
+              <h3>Ações</h3>
+              Mão na massa
+            </div>
+          </li>
+          <li>
+            <div className={styles.stepsIcon}>
+              <img
+                className={styles.plus}
+                src="/assets/action.png"
+                alt="Ações"
+              />
+            </div>
+            <div className={styles.infoBox}>
+              <h3>Monitoramento</h3>
+              Manutenção da LGPD
+            </div>
           </li>
         </ul>
       </div>

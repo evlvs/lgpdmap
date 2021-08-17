@@ -15,14 +15,16 @@ function Plans(): JSX.Element {
           <img src="./assets/illustrationPlans.svg" alt="Whatsapp" />
         </div>
         <div className={styles.callToAction}>
-          <h2>Possuimos um plano ideal para seu negócio!</h2>
+          <h2>
+            Possuimos um <strong>plano ideal</strong> para seu negócio!
+          </h2>
           <p>
-            Fique tranquilo e despreocupado que a ferramenta Lgpdmap veio para
-            agregar e facilitar o seu dia a dia, nós estamos em atualização
-            diárias para seu negócio sempre estar adequado a LGPD.
+            Tenha tranquilidade e facilidade para implementação e gerenciamento
+            dos processos exigidos pela legislação com o Lgpdmap. Mantenha-se
+            atualizado para que sua empresa esteja sempre adequada à LGPD.
           </p>
           <Link href="#contactUs">
-            <a>Conhecer os planos</a>
+            <a>Conheça os planos</a>
           </Link>
         </div>
       </section>

@@ -9,23 +9,9 @@ function OurNumbers(): JSX.Element {
     <section className={styles.ourNumbers}>
       <div className="ballsLC"></div>
       <div className="ballsLO"></div>
-      <h2>Confiamos em números!</h2>
+      <h2>Impacto em números!</h2>
 
       <ul>
-        <li>
-          <h6>mais de</h6>
-          <h5>
-            <CountUp end={30} redraw={true}>
-              {({ countUpRef, start }) => (
-                <VisibilitySensor onChange={start} delayedCall>
-                  <span ref={countUpRef} />
-                </VisibilitySensor>
-              )}
-            </CountUp>
-            mil
-          </h5>
-          <h4>Clientes ativos</h4>
-        </li>
         <li>
           <h6>mais de</h6>
           <h5>
@@ -43,6 +29,20 @@ function OurNumbers(): JSX.Element {
         <li>
           <h6>mais de</h6>
           <h5>
+            <CountUp end={2} redraw={true}>
+              {({ countUpRef, start }) => (
+                <VisibilitySensor onChange={start} delayedCall>
+                  <span ref={countUpRef} />
+                </VisibilitySensor>
+              )}
+            </CountUp>
+            mil
+          </h5>
+          <h4>Encarregados de Dados (DPOs) utilizando</h4>
+        </li>
+        <li>
+          <h6>mais de</h6>
+          <h5>
             <CountUp end={650} redraw={true}>
               {({ countUpRef, start }) => (
                 <VisibilitySensor onChange={start} delayedCall>
@@ -52,7 +52,7 @@ function OurNumbers(): JSX.Element {
             </CountUp>
             mil
           </h5>
-          <h4>Volumes de dados mapeados</h4>
+          <h4>Processos de dados mapeados</h4>
         </li>
       </ul>
     </section>
