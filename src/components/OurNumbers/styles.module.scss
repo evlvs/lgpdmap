@@ -6,7 +6,7 @@
   position: relative;
   background: #fff;
   max-width: 1280px;
-  margin: 0 auto;
+  margin: 0 10%;
 
   h2 {
     margin-top: 20px;
@@ -22,8 +22,17 @@
     z-index: 9999;
 
     li {
-      width: 33.3%;
+      width: 30%;
       list-style: none;
+      margin: 0 3%;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
     }
   }
 }

@@ -19,7 +19,7 @@ const videoJsOptions = {
   width: '720',
   sources: [
     {
-      src: './assets/mov_bbb.mp4',
+      src: './assets/LGPD_FINAL.mp4',
       type: 'video/mp4'
     }
   ]
