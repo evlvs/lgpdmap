@@ -2,18 +2,14 @@ import React from 'react'
 import styles from './styles.module.scss'
 import Link from 'next/link'
 
-function Presentation(): JSX.Element {
+function Presentation(props): JSX.Element {
   return (
     <>
       <section className={styles.banner}>
         <div className={styles.presentation}>
           <img src="/assets/logo.svg" alt="Logo LGPD Map" />
-          <h1>Nunca foi tão fácil adequar a sua empresa à LGPD.</h1>
-          <p>
-            Diga adeus às planilhas ou ferramentas complexas, com recursos
-            desnecessários. Implemente a LGPD de forma simples e centralizada,
-            com uma só ferramenta.
-          </p>
+          <h1>{props.title}</h1>
+          <p>{props.paragraph}</p>
           <Link data-scroll href="#contactUs" scroll={false}>
             <a>Quer saber como funciona?</a>
           </Link>

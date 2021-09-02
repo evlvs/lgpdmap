@@ -23,7 +23,7 @@ function Plans(): JSX.Element {
             dos processos exigidos pela legislação com o Lgpdmap. Mantenha-se
             atualizado para que sua empresa esteja sempre adequada à LGPD.
           </p>
-          <Link href="#contactUs">
+          <Link href="/plans">
             <a>Conheça os planos</a>
           </Link>
         </div>
