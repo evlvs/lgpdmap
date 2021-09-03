@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { PlansData } from './PlansData'
 import styles from './styles.module.scss'
 import { CheckCircle, XCircle } from 'react-feather'

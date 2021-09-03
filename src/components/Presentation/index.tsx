@@ -2,7 +2,10 @@ import React from 'react'
 import styles from './styles.module.scss'
 import Link from 'next/link'
 
-function Presentation(props): JSX.Element {
+function Presentation(props: {
+  title: string
+  paragraph: string
+}): JSX.Element {
   return (
     <>
       <section className={styles.banner}>
