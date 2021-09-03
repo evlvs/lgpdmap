@@ -11,16 +11,12 @@ function PlansPage(): JSX.Element {
         Planos Lgpd<span>map</span>
       </h2>
       <form>
-        <input
-          type="radio"
-          id="month"
-          value="month"
-          name="price"
-          checked={true}
-        />
-        <label htmlFor="month">Mensal</label>
-        <input type="radio" id="anual" value="anual" name="price" />
-        <label htmlFor="anual">Anual</label>
+        <div className="radio-group">
+          <input type="radio" id="option-one" name="selector" checked />
+          <label htmlFor="option-one">Mensal</label>
+          <input type="radio" id="option-two" name="selector" />
+          <label htmlFor="option-two">Anual</label>
+        </div>
       </form>
 
       <p>
