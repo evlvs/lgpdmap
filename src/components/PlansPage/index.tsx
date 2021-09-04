@@ -1,10 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { PlansData } from './PlansData'
 import styles from './styles.module.scss'
 import { CheckCircle, XCircle } from 'react-feather'
 import Link from 'next/link'
 
 function PlansPage(): JSX.Element {
+  const [radioBtn, setRadioBtn] = useState('month')
+
+  function refreshPrice(e) {
+    const { value } = e.target
+    setRadioBtn(value)
+  }
+
   return (
     <div className={styles.plansPage}>
       <h2>
@@ -12,10 +19,22 @@ function PlansPage(): JSX.Element {
       </h2>
       <form>
         <div className="radio-group">
-          <input type="radio" id="option-one" name="selector" checked />
-          <label htmlFor="option-one">Mensal</label>
-          <input type="radio" id="option-two" name="selector" />
-          <label htmlFor="option-two">Anual</label>
+          <input
+            type="radio"
+            id="month"
+            name="selector"
+            value="month"
+            onChange={refreshPrice}
+          />
+          <label htmlFor="month">Mensal</label>
+          <input
+            type="radio"
+            id="anual"
+            name="selector"
+            value="anual"
+            onChange={refreshPrice}
+          />
+          <label htmlFor="anual">Anual</label>
         </div>
       </form>
 
@@ -33,8 +52,13 @@ function PlansPage(): JSX.Element {
                 <li className={styles.basicPlan}>
                   <h6>{plans.plansType.basic}</h6>
                   <p>
-                    R$<strong>{plans.value.basic}</strong>
-                    <span>/mês</span>
+                    R$
+                    <strong>
+                      {radioBtn === 'month'
+                        ? plans.value.basic
+                        : plans.value.basic * 12}
+                    </strong>
+                    <span>{radioBtn === 'month' ? '/mês' : '/ano'}</span>
                   </p>
 
                   <ul>
@@ -65,8 +89,13 @@ function PlansPage(): JSX.Element {
                   <div className={styles.recommended}>RECOMENDADO</div>
                   <h6>{plans.plansType.intermediate}</h6>
                   <p>
-                    R$<strong>{plans.value.intermediate}</strong>
-                    <span>/mês</span>
+                    R$
+                    <strong>
+                      {radioBtn === 'month'
+                        ? plans.value.intermediate
+                        : plans.value.intermediate * 12}
+                    </strong>
+                    <span>{radioBtn === 'month' ? '/mês' : '/ano'}</span>
                   </p>
 
                   <ul>
@@ -96,8 +125,13 @@ function PlansPage(): JSX.Element {
                 <li className={styles.advancedPlan}>
                   <h6>{plans.plansType.advanced}</h6>
                   <p>
-                    R$<strong>{plans.value.advanced}</strong>
-                    <span>/mês</span>
+                    R$
+                    <strong>
+                      {radioBtn === 'month'
+                        ? plans.value.advanced
+                        : plans.value.advanced * 12}
+                    </strong>
+                    <span>{radioBtn === 'month' ? '/mês' : '/ano'}</span>
                   </p>
 
                   <ul>
@@ -127,8 +161,13 @@ function PlansPage(): JSX.Element {
                 <li className={styles.platinumPlan}>
                   <h6>{plans.plansType.platinum}</h6>
                   <p>
-                    R$<strong>{plans.value.platinum}</strong>
-                    <span>/mês</span>
+                    R$
+                    <strong>
+                      {radioBtn === 'month'
+                        ? plans.value.platinum
+                        : plans.value.platinum * 12}
+                    </strong>
+                    <span>{radioBtn === 'month' ? '/mês' : '/ano'}</span>
                   </p>
 
                   <ul>
