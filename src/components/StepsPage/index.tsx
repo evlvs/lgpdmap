@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styles from './styles.module.scss'
 // import { useSpring, animated } from 'react-spring'
 // import VisibilitySensor from 'react-visibility-sensor'
