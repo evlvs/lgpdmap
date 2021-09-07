@@ -1,28 +1,28 @@
 import React, { useState } from 'react'
 import styles from './styles.module.scss'
-import { useSpring, animated } from 'react-spring'
-import VisibilitySensor from 'react-visibility-sensor'
+// import { useSpring, animated } from 'react-spring'
+// import VisibilitySensor from 'react-visibility-sensor'
 
-const FadeIn = ({ isVisible, children }) => {
-  const props = useSpring({
-    opacity: isVisible ? 1 : 0
-  })
-  return <animated.div style={props}>{children}</animated.div>
-}
+// const FadeIn = ({ isVisible, children }) => {
+//   const props = useSpring({
+//     opacity: isVisible ? 1 : 0
+//   })
+//   return <animated.div style={props}>{children}</animated.div>
+// }
 
-export const FadeInContainer = ({ children }) => {
-  const [isVisible, setVisibility] = useState(false)
+// export const FadeInContainer = ({ children }) => {
+//   const [isVisible, setVisibility] = useState(false)
 
-  const onChange = visiblity => {
-    visiblity && setVisibility(visiblity)
-  }
+//   const onChange = visiblity => {
+//     visiblity && setVisibility(visiblity)
+//   }
 
-  return (
-    <VisibilitySensor onChange={onChange}>
-      <FadeIn isVisible={isVisible}>{children}</FadeIn>
-    </VisibilitySensor>
-  )
-}
+//   return (
+//     <VisibilitySensor onChange={onChange}>
+//       <FadeIn isVisible={isVisible}>{children}</FadeIn>
+//     </VisibilitySensor>
+//   )
+// }
 
 const StepsPage: React.FC = () => {
   return (
