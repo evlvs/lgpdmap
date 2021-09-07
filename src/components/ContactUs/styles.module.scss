@@ -35,6 +35,7 @@
   .callToAction {
     margin-left: 50px;
     z-index: 9999;
+    width: 50%;
 
     h2 {
       text-align: left;
@@ -45,6 +46,40 @@
       background: #6acf59;
       color: #fff;
       z-index: 9999999;
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1680px) {
+  .contactUs {
+    padding-bottom: 80px;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .illustration {
+      width: 50%;
+      max-width: 100%;
+
+      img {
+        width: 80%;
+        margin: 0 10%;
+      }
+    }
+
+    .callToAction {
+      margin-left: 10px;
+
+      h2 {
+        max-width: 80%;
+        margin: 0 10%;
+      }
+
+      a {
+        width: 80%;
+        margin: 20px 10%;
+      }
     }
   }
 }

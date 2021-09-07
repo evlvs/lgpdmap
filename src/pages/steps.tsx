@@ -3,7 +3,6 @@ import Head from 'next/head'
 import Presentation from '../components/Presentation'
 import ContactUs from '../components/ContactUs'
 
-import Steps from '../components/Steps/'
 import Footer from '../components/Footer'
 import FAQ from '../components/FAQ'
 import StepsPage from '../components/StepsPage'
@@ -23,7 +22,6 @@ const Home: React.FC = () => {
       <StepsPage />
       <ContactUs />
       <Plans />
-      <Steps />
       <FAQ />
       <Footer />
     </div>

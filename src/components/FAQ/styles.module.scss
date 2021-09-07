@@ -87,6 +87,16 @@
   }
 }
 
+@media (min-width: 769px) and (max-width: 1680px) {
+  .FAQ {
+    .accordionHead {
+      h3 {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .FAQ {
     h2 {

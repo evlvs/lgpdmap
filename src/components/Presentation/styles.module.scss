@@ -135,6 +135,24 @@
   }
 }
 
+@media (min-width: 769px) and (max-width: 1680px) {
+  .banner {
+    height: auto;
+
+    .presentation {
+      width: 80%;
+      margin: 0 10%;
+    }
+
+    .bannerIllustration {
+      margin-top: 20px;
+      margin-right: 10%;
+      max-width: 320px;
+    }
+  }
+}
+
+
 @media only screen and (max-width: 768px) {
   .banner {
     height: auto;
