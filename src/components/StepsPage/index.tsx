@@ -29,63 +29,61 @@ const StepsPage: React.FC = () => {
     <>
       <div className={styles.steps}>
         <ul className={styles.services}>
-            <li>
-              <div className={styles.stepsIcon}>
-                <img src="/assets/diagnostics.png" alt="Diagnósticos" />
+          <li>
+            <div className={styles.stepsIcon}>
+              <img src="/assets/diagnostics.png" alt="Diagnósticos" />
+            </div>
+            <div className={styles.infoBox}>
+              <h3>Diagnóstico</h3>
+              Inicio de jornada
+              <div className={styles.textBox}>
+                <h3>Este é o início da caminhada rumo à adequação da LGDP.</h3>
+                <p>
+                  Esta fase é fundamental para que sejam colhidos os melhores
+                  resultados no final do projeto. É neste momento em que a
+                  empresa faz uma análise de 360º tanto do seu ambiente quanto
+                  dos seus recursos.
+                </p>
+                <p>
+                  Neste momento os sócios, seus colaboradores e todos aqueles
+                  que de alguma forma estão envolvidos com o cotidiano da
+                  empresa tomam consciência da importância da LGPD para o
+                  negócio.
+                </p>
+                <p>
+                  O resultado desta fase servirá de base para todas as outras
+                  desta incrível caminhada.
+                </p>
               </div>
-              <div className={styles.infoBox}>
-                <h3>Diagnóstico</h3>
-                Inicio de jornada
-                <div className={styles.textBox}>
-                  <h3>
-                    Este é o início da caminhada rumo à adequação da LGDP.
-                  </h3>
-                  <p>
-                    Esta fase é fundamental para que sejam colhidos os melhores
-                    resultados no final do projeto. É neste momento em que a
-                    empresa faz uma análise de 360º tanto do seu ambiente quanto
-                    dos seus recursos.
-                  </p>
-                  <p>
-                    Neste momento os sócios, seus colaboradores e todos aqueles
-                    que de alguma forma estão envolvidos com o cotidiano da
-                    empresa tomam consciência da importância da LGPD para o
-                    negócio.
-                  </p>
-                  <p>
-                    O resultado desta fase servirá de base para todas as outras
-                    desta incrível caminhada.
-                  </p>
-                </div>
+            </div>
+          </li>
+          <li>
+            <div className={styles.stepsIcon}>
+              <img src="/assets/mapping.png" alt="Mapeamento" />
+            </div>
+            <div className={styles.infoBox}>
+              <h3>Mapeamento</h3>
+              Conhecendo os processos
+              <div className={styles.textBox}>
+                <h3>
+                  Esta fase exige uma boa perícia de quem está no comando das
+                  atividades.
+                </h3>
+                <p>
+                  Agora é a hora de aprofundar o trabalho focando os esforços na
+                  análise dos dados que são coletados em qualquer um dos
+                  processos da empresa, sejam impressos ou eletrônicos, em todo
+                  e qualquer sistema.
+                </p>
+                <p>
+                  Uma boa análise e organização destes dados garantirá
+                  tranquilidade absoluta nas próximas fases. Para que tudo saia
+                  conforme o planejado, nada melhor do que a tecnologia e um bom
+                  sistema para auxiliar neste processo.
+                </p>
               </div>
-            </li>
-            <li>
-              <div className={styles.stepsIcon}>
-                <img src="/assets/mapping.png" alt="Mapeamento" />
-              </div>
-              <div className={styles.infoBox}>
-                <h3>Mapeamento</h3>
-                Conhecendo os processos
-                <div className={styles.textBox}>
-                  <h3>
-                    Esta fase exige uma boa perícia de quem está no comando das
-                    atividades.
-                  </h3>
-                  <p>
-                    Agora é a hora de aprofundar o trabalho focando os esforços
-                    na análise dos dados que são coletados em qualquer um dos
-                    processos da empresa, sejam impressos ou eletrônicos, em
-                    todo e qualquer sistema.
-                  </p>
-                  <p>
-                    Uma boa análise e organização destes dados garantirá
-                    tranquilidade absoluta nas próximas fases. Para que tudo
-                    saia conforme o planejado, nada melhor do que a tecnologia e
-                    um bom sistema para auxiliar neste processo.
-                  </p>
-                </div>
-              </div>
-            </li>
+            </div>
+          </li>
           <li>
             <div className={styles.stepsIcon}>
               <img
