@@ -7,6 +7,7 @@
   align-items: center;
   margin: 100px auto;
   margin-left: calc(50% - 822px);
+
   .services {
     width: 100%;
     display: flex;
@@ -107,6 +108,15 @@
         }
       }
     }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1680px) {
+  .steps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: calc(100% - 800px);
   }
 }
 

@@ -14,7 +14,7 @@ const Steps: React.FC = () => {
             <br />
             <span>a LGPD</span>
           </h3>
-          <a href="#contactUs">Quer saber como funciona?</a>
+          <a href="/steps">Quer saber como funciona?</a>
         </div>
         <ul className={styles.services}>
           <li>

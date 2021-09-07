@@ -60,6 +60,24 @@
   }
 }
 
+@media (min-width: 769px) and (max-width: 1680px) {
+  .testimonials {
+
+    &:after {
+      content: ' ';
+      width: 100%;
+      height: 198px;
+      background: url('/assets/bottomGWave.svg') no-repeat;
+      background-size: cover;
+      background-position: center bottom;
+    }
+
+    img {
+      height: 125px;
+    }
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .testimonials {
     .mainSlider {

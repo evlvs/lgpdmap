@@ -28,3 +28,13 @@
   top: -70px;
   position: relative;
 }
+
+@media (min-width: 769px) and (max-width: 1680px) {
+  .knowMore {
+    padding: 0;
+  }
+
+  .grayWave {
+    height: 150px;
+  }
+}
