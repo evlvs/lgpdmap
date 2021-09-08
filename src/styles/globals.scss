@@ -629,7 +629,14 @@ a {
     display: none;
   }
 
-  // 
+  //
+}
+
+html:not(.no-js) [data-aos^='fade'][data-aos^='fade'].aos-animate {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  z-index: 999999999;
 }
 
 @media only screen and (max-width: 768px) {

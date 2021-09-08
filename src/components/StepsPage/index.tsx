@@ -1,41 +1,29 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styles from './styles.module.scss'
-// import { useSpring, animated } from 'react-spring'
-// import VisibilitySensor from 'react-visibility-sensor'
-
-// const FadeIn = ({ isVisible, children }) => {
-//   const props = useSpring({
-//     opacity: isVisible ? 1 : 0
-//   })
-//   return <animated.div style={props}>{children}</animated.div>
-// }
-
-// export const FadeInContainer = ({ children }) => {
-//   const [isVisible, setVisibility] = useState(false)
-
-//   const onChange = visiblity => {
-//     visiblity && setVisibility(visiblity)
-//   }
-
-//   return (
-//     <VisibilitySensor onChange={onChange}>
-//       <FadeIn isVisible={isVisible}>{children}</FadeIn>
-//     </VisibilitySensor>
-//   )
-// }
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const StepsPage: React.FC = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 3000
+    })
+  }, [])
   return (
     <>
       <div className={styles.steps}>
         <ul className={styles.services}>
           <li>
-            <div className={styles.stepsIcon}>
-              <img src="/assets/diagnostics.png" alt="Diagnósticos" />
+            <div className={styles.infoHead} data-aos="fade">
+              <div className={styles.stepsIcon}>
+                <img src="/assets/diagnostics.png" alt="Diagnósticos" />
+              </div>
             </div>
-            <div className={styles.infoBox}>
-              <h3>Diagnóstico</h3>
-              Inicio de jornada
+            <div className={styles.infoBody} data-aos="fade-left">
+              <div className={styles.stepsTitle}>
+                <h3>Diagnóstico</h3>
+                Inicio de jornada
+              </div>
               <div className={styles.textBox}>
                 <h3>Este é o início da caminhada rumo à adequação da LGDP.</h3>
                 <p>
@@ -58,12 +46,11 @@ const StepsPage: React.FC = () => {
             </div>
           </li>
           <li>
-            <div className={styles.stepsIcon}>
-              <img src="/assets/mapping.png" alt="Mapeamento" />
-            </div>
-            <div className={styles.infoBox}>
-              <h3>Mapeamento</h3>
-              Conhecendo os processos
+            <div className={styles.infoBody} data-aos="fade-right">
+              <div className={styles.stepsTitle}>
+                <h3>Mapeamento</h3>
+                Conhecendo os processos
+              </div>
               <div className={styles.textBox}>
                 <h3>
                   Esta fase exige uma boa perícia de quem está no comando das
@@ -83,16 +70,20 @@ const StepsPage: React.FC = () => {
                 </p>
               </div>
             </div>
+            <div className={styles.infoHead} data-aos="fade">
+              <div className={styles.stepsIcon}>
+                <img src="/assets/mapping.png" alt="Mapeamento" />
+              </div>
+            </div>
           </li>
           <li>
-            <div className={styles.stepsIcon}>
-              <img
-                className={styles.plus}
-                src="/assets/risks.png"
-                alt="Análise de riscos"
-              />
+            <div className={styles.infoHead} data-aos="fade">
+              <div className={styles.stepsIcon}>
+                <img src="/assets/risks.png" alt="Análise de riscos" />
+              </div>
             </div>
-            <div className={styles.infoBox}>
+
+            <div className={styles.infoBody} data-aos="fade-left">
               <h3>Análise de riscos</h3>
               Criação de estratégias para mitigá-los
               <div className={styles.textBox}>
@@ -115,14 +106,7 @@ const StepsPage: React.FC = () => {
             </div>
           </li>
           <li>
-            <div className={styles.stepsIcon}>
-              <img
-                className={styles.plus}
-                src="/assets/action.png"
-                alt="Ações"
-              />
-            </div>
-            <div className={styles.infoBox}>
+            <div className={styles.infoBody} data-aos="fade-right">
               <h3>Ações</h3>
               Mão na massa
               <div className={styles.textBox}>
@@ -150,16 +134,21 @@ const StepsPage: React.FC = () => {
                 </p>
               </div>
             </div>
+
+            <div className={styles.infoHead} data-aos="fade">
+              <div className={styles.stepsIcon}>
+                <img src="/assets/action.png" alt="Ações" />
+              </div>
+            </div>
           </li>
           <li>
-            <div className={styles.stepsIcon}>
-              <img
-                className={styles.plus}
-                src="/assets/action.png"
-                alt="Ações"
-              />
+            <div className={styles.infoHead} data-aos="fade">
+              <div className={styles.stepsIcon}>
+                <img src="/assets/action.png" alt="Monitoramento" />
+              </div>
             </div>
-            <div className={styles.infoBox}>
+
+            <div className={styles.infoBody} data-aos="fade-left">
               <h3>Monitoramento</h3>
               Manutenção da LGPD
               <div className={styles.textBox}>
