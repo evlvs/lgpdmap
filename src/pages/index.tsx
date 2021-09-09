@@ -34,7 +34,7 @@ const Home: React.FC = () => {
       </Head>
 
       <Presentation
-        title="Nunca foi tão fácil adequar a sua empresa à LGPD."
+        title="Nunca foi tão fácil adequar sua empresa à LGPD."
         paragraph="Diga adeus às planilhas ou ferramentas complexas, com recursos
             desnecessários. Implemente a LGPD de forma simples e centralizada,
             com uma só ferramenta."

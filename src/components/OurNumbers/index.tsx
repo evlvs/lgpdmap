@@ -9,7 +9,7 @@ function OurNumbers(): JSX.Element {
     <section className={styles.ourNumbers}>
       <div className="ballsLC"></div>
       <div className="ballsLO"></div>
-      <h2>Impacto em números!</h2>
+      <h2>Impacto em números:</h2>
 
       <ul>
         <li>

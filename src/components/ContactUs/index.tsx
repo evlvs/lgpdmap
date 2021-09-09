@@ -14,12 +14,12 @@ function ContactUs(): JSX.Element {
       </div>
       <div className={styles.callToAction}>
         <h2>
-          Fale com um <strong>consultor</strong> e veja como é fácil{' '}
+          Fale com um <strong>Especialista</strong> e veja como é fácil{' '}
           <strong>adequar</strong> a sua empresa à <strong>LGPD</strong> com o
           Lgpdmap
         </h2>
         <Link href="https://whats.link/lgpdmap">
-          <a>Fale com um Consultor</a>
+          <a>Fale com um Especialista</a>
         </Link>
       </div>
     </section>

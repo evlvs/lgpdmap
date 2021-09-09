@@ -13,7 +13,7 @@ const StepsPage: React.FC = () => {
     <>
       <div className={styles.steps}>
         <ul className={styles.services}>
-          <li>
+          {/* <li>
             <div className={styles.infoHead} data-aos="fade">
               <div className={styles.stepsIcon}>
                 <img src="/assets/diagnostics.png" alt="Diagnósticos" />
@@ -44,7 +44,7 @@ const StepsPage: React.FC = () => {
                 </p>
               </div>
             </div>
-          </li>
+          </li> */}
           <li>
             <div className={styles.infoBody} data-aos="zoom-in-up">
               <div className={styles.stepsTitle}>
@@ -89,13 +89,13 @@ const StepsPage: React.FC = () => {
               <div className={styles.textBox}>
                 <h3>
                   Neste ponto, já ultrapassamos metade da nossa caminhada,
-                  portanto a fazer a lição de casa e garantir o sucesso.
+                  portanto é fazer a lição de casa e garantir o sucesso.
                 </h3>
                 <p>
                   A análise de riscos nada mais é do que mapear tudo aquilo que
                   pode gerar algum possível problema futuro para a empresa. Ou
                   seja, tirado o raio-X nas etapas anteriores, basta entender o
-                  que é se tornará um risco, qual sua gravidade, como e se é
+                  que se tornará um risco, qual sua gravidade, como e se é
                   viável mitigá-lo.
                 </p>
                 <p>

@@ -7,12 +7,19 @@ export const PlansData = [
       advanced: 'Avançado',
       platinum: 'Avançado Platinum'
     },
-    value: {
+    valueMonth: {
       title: ' ',
-      basic: 299,
-      intermediate: 499,
-      advanced: 899,
-      platinum: 2499
+      basic: 290,
+      intermediate: 690,
+      advanced: 1090,
+      platinum: 2290
+    },
+    valueAnual: {
+      title: ' ',
+      basic: 240,
+      intermediate: 570,
+      advanced: 910,
+      platinum: 1940
     },
     CNPJAmount: {
       title: 'CNPJ`s',
@@ -22,11 +29,11 @@ export const PlansData = [
       platinum: '10'
     },
     userAmount: {
-      title: 'Usuários',
-      basic: '01',
-      intermediate: '01',
-      advanced: '03',
-      platinum: '05'
+      title: 'Multi usuários',
+      basic: '02',
+      intermediate: '06',
+      advanced: '10',
+      platinum: '20'
     },
     companyMapping: {
       title: 'Mapeamento da empresa',
@@ -36,27 +43,26 @@ export const PlansData = [
       platinum: true
     },
     dataMapping: {
-      title: 'Mapeamento dos dados',
+      title: 'Mapeamento de dados',
       basic: true,
       intermediate: true,
       advanced: true,
       platinum: true
     },
     dataManagement: {
-      title: 'Análise de riscos',
+      title: 'Mapeamento dos fluxos de dados',
       basic: true,
       intermediate: true,
       advanced: true,
       platinum: true
     },
     riskAnalysis: {
-      title: 'Teste de legítimo interesse',
+      title: 'Análise de riscos',
       basic: true,
       intermediate: true,
       advanced: true,
       platinum: true
     },
-
     legitimateInterestTest: {
       title: 'Teste de legítimo interesse',
       basic: true,
@@ -65,7 +71,7 @@ export const PlansData = [
       platinum: true
     },
     actions: {
-      title: 'Gestão, documentação e ações',
+      title: 'Gestão inividual dos dados',
       basic: true,
       intermediate: true,
       advanced: true,
@@ -107,8 +113,8 @@ export const PlansData = [
       platinum: true
     },
     customReports: {
-      title: 'Relatórios personalizados',
-      basic: false,
+      title: 'Relatórios de impacto à proteção de dados',
+      basic: true,
       intermediate: true,
       advanced: true,
       platinum: true
