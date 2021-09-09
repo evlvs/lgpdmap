@@ -6,7 +6,7 @@ import 'aos/dist/aos.css'
 const StepsPage: React.FC = () => {
   useEffect(() => {
     AOS.init({
-      duration: 3000
+      duration: 500
     })
   }, [])
   return (
@@ -19,7 +19,7 @@ const StepsPage: React.FC = () => {
                 <img src="/assets/diagnostics.png" alt="Diagnósticos" />
               </div>
             </div>
-            <div className={styles.infoBody} data-aos="fade-left">
+            <div className={styles.infoBody} data-aos="zoom-in-up">
               <div className={styles.stepsTitle}>
                 <h3>Diagnóstico</h3>
                 Inicio de jornada
@@ -46,7 +46,7 @@ const StepsPage: React.FC = () => {
             </div>
           </li>
           <li>
-            <div className={styles.infoBody} data-aos="fade-right">
+            <div className={styles.infoBody} data-aos="zoom-in-up">
               <div className={styles.stepsTitle}>
                 <h3>Mapeamento</h3>
                 Conhecendo os processos
@@ -83,7 +83,7 @@ const StepsPage: React.FC = () => {
               </div>
             </div>
 
-            <div className={styles.infoBody} data-aos="fade-left">
+            <div className={styles.infoBody} data-aos="zoom-in-up">
               <h3>Análise de riscos</h3>
               Criação de estratégias para mitigá-los
               <div className={styles.textBox}>
@@ -106,7 +106,7 @@ const StepsPage: React.FC = () => {
             </div>
           </li>
           <li>
-            <div className={styles.infoBody} data-aos="fade-right">
+            <div className={styles.infoBody} data-aos="zoom-in-up">
               <h3>Ações</h3>
               Mão na massa
               <div className={styles.textBox}>
@@ -148,7 +148,7 @@ const StepsPage: React.FC = () => {
               </div>
             </div>
 
-            <div className={styles.infoBody} data-aos="fade-left">
+            <div className={styles.infoBody} data-aos="zoom-in-up">
               <h3>Monitoramento</h3>
               Manutenção da LGPD
               <div className={styles.textBox}>

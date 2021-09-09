@@ -195,496 +195,503 @@ function PlansPage(): JSX.Element {
                 </li>
               </ul>
             </div>
-            <h2>
-              A LGPD<span>map tem um </span> plano ideal para você
-            </h2>
             <table key={index} className={styles.tableInfo}>
-              <tr>
-                <th>{plans.plansType.title}</th>
-                <th>{plans.plansType.basic}</th>
-                <th>{plans.plansType.intermediate}</th>
-                <th>{plans.plansType.advanced}</th>
-                <th>{plans.plansType.platinum}</th>
-              </tr>
-              <tr>
-                <td>{plans.CNPJAmount.title}</td>
-                <td>{plans.CNPJAmount.basic}</td>
-                <td>{plans.CNPJAmount.intermediate}</td>
-                <td>{plans.CNPJAmount.advanced}</td>
-                <td>{plans.CNPJAmount.platinum}</td>
-              </tr>
-              <tr>
-                <td>{plans.userAmount.title}</td>
-                <td>{plans.userAmount.basic}</td>
-                <td>{plans.userAmount.intermediate}</td>
-                <td>{plans.userAmount.advanced}</td>
-                <td>{plans.userAmount.platinum}</td>
-              </tr>
-              <tr>
-                <td>{plans.companyMapping.title}</td>
-                <td>
-                  {plans.companyMapping.basic === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-                <td>
-                  {plans.companyMapping.intermediate === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-                <td>
-                  {plans.companyMapping.advanced === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-                <td>
-                  {plans.companyMapping.platinum === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-              </tr>
-              <tr>
-                <td>{plans.dataMapping.title}</td>
-                <td>
-                  {plans.dataMapping.basic === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-                <td>
-                  {plans.dataMapping.intermediate === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-                <td>
-                  {plans.dataMapping.advanced === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-                <td>
-                  {plans.dataMapping.platinum === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-              </tr>
-              <tr>
-                <td>{plans.dataManagement.title}</td>
-                <td>
-                  {plans.dataManagement.basic === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-                <td>
-                  {plans.dataManagement.intermediate === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-                <td>
-                  {plans.dataManagement.advanced === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-                <td>
-                  {plans.dataManagement.platinum === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-              </tr>
-              <tr>
-                <td>{plans.riskAnalysis.title}</td>
-                <td>
-                  {plans.riskAnalysis.basic === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-                <td>
-                  {plans.riskAnalysis.intermediate === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-                <td>
-                  {plans.riskAnalysis.advanced === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-                <td>
-                  {plans.riskAnalysis.platinum === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-              </tr>
-              <tr>
-                <td>{plans.legitimateInterestTest.title}</td>
-                <td>
-                  {plans.legitimateInterestTest.basic === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-                <td>
-                  {plans.legitimateInterestTest.intermediate === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-                <td>
-                  {plans.legitimateInterestTest.advanced === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-                <td>
-                  {plans.legitimateInterestTest.platinum === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-              </tr>
-              <tr>
-                <td>{plans.actions.title}</td>
-                <td>
-                  {plans.actions.basic === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-                <td>
-                  {plans.actions.intermediate === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-                <td>
-                  {plans.actions.advanced === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-                <td>
-                  {plans.actions.platinum === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-              </tr>
-              <tr>
-                <td>{plans.dataProtection.title}</td>
-                <td>
-                  {plans.dataProtection.basic === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-                <td>
-                  {plans.dataProtection.intermediate === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-                <td>
-                  {plans.dataProtection.advanced === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-                <td>
-                  {plans.dataProtection.platinum === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-              </tr>
-              <tr>
-                <td>{plans.dashboard.title}</td>
-                <td>
-                  {plans.dashboard.basic === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-                <td>
-                  {plans.dashboard.intermediate === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-                <td>
-                  {plans.dashboard.advanced === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-                <td>
-                  {plans.dashboard.platinum === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-              </tr>
-              <tr>
-                <td>{plans.EAD.title}</td>
-                <td>
-                  {plans.EAD.basic === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-                <td>
-                  {plans.EAD.intermediate === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-                <td>
-                  {plans.EAD.advanced === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-                <td>
-                  {plans.EAD.platinum === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-              </tr>
-              <tr>
-                <td>{plans.processTemplate.title}</td>
-                <td>
-                  {plans.processTemplate.basic === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-                <td>
-                  {plans.processTemplate.intermediate === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-                <td>
-                  {plans.processTemplate.advanced === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-                <td>
-                  {plans.legislation.platinum === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-              </tr>
-              <tr>
-                <td>{plans.customReports.title}</td>
-                <td>
-                  {plans.customReports.basic === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-                <td>
-                  {plans.customReports.intermediate === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-                <td>
-                  {plans.customReports.advanced === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-                <td>
-                  {plans.customReports.platinum === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-              </tr>
-              <tr>
-                <td>{plans.IncidentManagement.title}</td>
-                <td>
-                  {plans.IncidentManagement.basic === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-                <td>
-                  {plans.IncidentManagement.intermediate === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-                <td>
-                  {plans.IncidentManagement.advanced === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-                <td>
-                  {plans.IncidentManagement.platinum === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-              </tr>
-              <tr>
-                <td>{plans.semiannualAudit.title}</td>
-                <td>
-                  {plans.semiannualAudit.basic === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-                <td>
-                  {plans.semiannualAudit.intermediate === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-                <td>
-                  {plans.semiannualAudit.advanced === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-                <td>
-                  {plans.semiannualAudit.platinum === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-              </tr>
-              <tr>
-                <td>{plans.customizeForms.title}</td>
-                <td>
-                  {plans.customizeForms.basic === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-                <td>
-                  {plans.customizeForms.intermediate === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-                <td>
-                  {plans.customizeForms.advanced === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-                <td>
-                  {plans.customizeForms.platinum === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-              </tr>
-              <tr>
-                <td>{plans.customizeLogo.title}</td>
-                <td>
-                  {plans.customizeLogo.basic === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-                <td>
-                  {plans.customizeLogo.intermediate === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-                <td>
-                  {plans.customizeLogo.advanced === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-                <td>
-                  {plans.customizeLogo.platinum === true ? (
-                    <CheckCircle color="#3CCF8E" />
-                  ) : (
-                    <XCircle color="#CF3E27" />
-                  )}
-                </td>
-              </tr>
+              <caption>
+                <h2>
+                  A LGPD<span>map tem um </span> plano ideal para você
+                </h2>
+              </caption>
+
+              <thead>
+                <tr>
+                  <th>{plans.plansType.title}</th>
+                  <th>{plans.plansType.basic}</th>
+                  <th>{plans.plansType.intermediate}</th>
+                  <th>{plans.plansType.advanced}</th>
+                  <th>{plans.plansType.platinum}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>{plans.CNPJAmount.title}</td>
+                  <td>{plans.CNPJAmount.basic}</td>
+                  <td>{plans.CNPJAmount.intermediate}</td>
+                  <td>{plans.CNPJAmount.advanced}</td>
+                  <td>{plans.CNPJAmount.platinum}</td>
+                </tr>
+                <tr>
+                  <td>{plans.userAmount.title}</td>
+                  <td>{plans.userAmount.basic}</td>
+                  <td>{plans.userAmount.intermediate}</td>
+                  <td>{plans.userAmount.advanced}</td>
+                  <td>{plans.userAmount.platinum}</td>
+                </tr>
+                <tr>
+                  <td>{plans.companyMapping.title}</td>
+                  <td>
+                    {plans.companyMapping.basic === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                  <td>
+                    {plans.companyMapping.intermediate === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                  <td>
+                    {plans.companyMapping.advanced === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                  <td>
+                    {plans.companyMapping.platinum === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                </tr>
+                <tr>
+                  <td>{plans.dataMapping.title}</td>
+                  <td>
+                    {plans.dataMapping.basic === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                  <td>
+                    {plans.dataMapping.intermediate === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                  <td>
+                    {plans.dataMapping.advanced === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                  <td>
+                    {plans.dataMapping.platinum === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                </tr>
+                <tr>
+                  <td>{plans.dataManagement.title}</td>
+                  <td>
+                    {plans.dataManagement.basic === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                  <td>
+                    {plans.dataManagement.intermediate === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                  <td>
+                    {plans.dataManagement.advanced === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                  <td>
+                    {plans.dataManagement.platinum === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                </tr>
+                <tr>
+                  <td>{plans.riskAnalysis.title}</td>
+                  <td>
+                    {plans.riskAnalysis.basic === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                  <td>
+                    {plans.riskAnalysis.intermediate === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                  <td>
+                    {plans.riskAnalysis.advanced === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                  <td>
+                    {plans.riskAnalysis.platinum === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                </tr>
+                <tr>
+                  <td>{plans.legitimateInterestTest.title}</td>
+                  <td>
+                    {plans.legitimateInterestTest.basic === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                  <td>
+                    {plans.legitimateInterestTest.intermediate === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                  <td>
+                    {plans.legitimateInterestTest.advanced === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                  <td>
+                    {plans.legitimateInterestTest.platinum === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                </tr>
+                <tr>
+                  <td>{plans.actions.title}</td>
+                  <td>
+                    {plans.actions.basic === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                  <td>
+                    {plans.actions.intermediate === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                  <td>
+                    {plans.actions.advanced === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                  <td>
+                    {plans.actions.platinum === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                </tr>
+                <tr>
+                  <td>{plans.dataProtection.title}</td>
+                  <td>
+                    {plans.dataProtection.basic === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                  <td>
+                    {plans.dataProtection.intermediate === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                  <td>
+                    {plans.dataProtection.advanced === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                  <td>
+                    {plans.dataProtection.platinum === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                </tr>
+                <tr>
+                  <td>{plans.dashboard.title}</td>
+                  <td>
+                    {plans.dashboard.basic === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                  <td>
+                    {plans.dashboard.intermediate === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                  <td>
+                    {plans.dashboard.advanced === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                  <td>
+                    {plans.dashboard.platinum === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                </tr>
+                <tr>
+                  <td>{plans.EAD.title}</td>
+                  <td>
+                    {plans.EAD.basic === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                  <td>
+                    {plans.EAD.intermediate === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                  <td>
+                    {plans.EAD.advanced === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                  <td>
+                    {plans.EAD.platinum === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                </tr>
+                <tr>
+                  <td>{plans.processTemplate.title}</td>
+                  <td>
+                    {plans.processTemplate.basic === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                  <td>
+                    {plans.processTemplate.intermediate === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                  <td>
+                    {plans.processTemplate.advanced === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                  <td>
+                    {plans.legislation.platinum === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                </tr>
+                <tr>
+                  <td>{plans.customReports.title}</td>
+                  <td>
+                    {plans.customReports.basic === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                  <td>
+                    {plans.customReports.intermediate === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                  <td>
+                    {plans.customReports.advanced === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                  <td>
+                    {plans.customReports.platinum === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                </tr>
+                <tr>
+                  <td>{plans.IncidentManagement.title}</td>
+                  <td>
+                    {plans.IncidentManagement.basic === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                  <td>
+                    {plans.IncidentManagement.intermediate === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                  <td>
+                    {plans.IncidentManagement.advanced === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                  <td>
+                    {plans.IncidentManagement.platinum === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                </tr>
+                <tr>
+                  <td>{plans.semiannualAudit.title}</td>
+                  <td>
+                    {plans.semiannualAudit.basic === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                  <td>
+                    {plans.semiannualAudit.intermediate === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                  <td>
+                    {plans.semiannualAudit.advanced === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                  <td>
+                    {plans.semiannualAudit.platinum === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                </tr>
+                <tr>
+                  <td>{plans.customizeForms.title}</td>
+                  <td>
+                    {plans.customizeForms.basic === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                  <td>
+                    {plans.customizeForms.intermediate === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                  <td>
+                    {plans.customizeForms.advanced === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                  <td>
+                    {plans.customizeForms.platinum === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                </tr>
+                <tr>
+                  <td>{plans.customizeLogo.title}</td>
+                  <td>
+                    {plans.customizeLogo.basic === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                  <td>
+                    {plans.customizeLogo.intermediate === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                  <td>
+                    {plans.customizeLogo.advanced === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                  <td>
+                    {plans.customizeLogo.platinum === true ? (
+                      <CheckCircle color="#3CCF8E" />
+                    ) : (
+                      <XCircle color="#CF3E27" />
+                    )}
+                  </td>
+                </tr>
+              </tbody>
             </table>
           </>
         )

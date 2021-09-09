@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100vw;
 
   input[type='radio'] {
     position: absolute;
@@ -52,6 +53,7 @@
     justify-content: space-around;
     list-style: none;
     width: 100%;
+    overflow-x: auto;
 
     li {
       width: 23%;
@@ -149,11 +151,15 @@
     }
   }
 
-  table.tableInfo {
+  table {
     max-width: 1320px;
     margin: 0 10%;
     border: 0;
     border-spacing: 0;
+
+    caption {
+      width: 100%;
+    }
 
     tr {
       border-bottom: 2px solid var(--purple-300);
@@ -189,6 +195,34 @@
         padding: 0 30px;
         text-align: left;
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .plansPage {
+    overflow-x: scroll;
+
+    ul.plans {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      list-style: none;
+      width: 100%;
+      overflow-x: auto;
+      li {
+        width: 90%;
+        margin: 20px 5%;
+
+        &.intermediatePlan {
+          transform: scale(1);
+        }
+      }
+    }
+
+    table {
+      overflow-x: scroll;
+      display: none;
     }
   }
 }
