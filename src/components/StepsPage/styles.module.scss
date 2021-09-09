@@ -132,33 +132,33 @@
   .steps {
     flex-direction: column;
     padding: 10px;
-
-    .callToAction {
-      width: 100%;
-
-      h3 {
-        max-width: 320px;
-        margin: 0;
-        margin-bottom: 20px;
-
-        span {
-          font-size: 60px;
-          font-weight: 700;
-        }
-
-        strong {
-          font-weight: 700;
-          font-size: 40px;
-        }
-      }
-    }
+    overflow: hidden;
 
     .services {
+      margin-top: 60px;
+
       li {
-        width: 270px;
+        width: 100%;
+        margin: 20px 0;
+
+        &:nth-child(even) {
+          margin: 20px 0;
+        }
 
         h3 {
           font-size: 16px;
+        }
+
+        .infoHead {
+          display: none;
+        }
+
+        .infoBody {
+          margin-left: 0;
+
+          .textBox {
+            box-shadow: 11px 11px 1px #ae9dff;
+          }
         }
       }
     }
