@@ -10,14 +10,14 @@ const Steps: React.FC = () => {
           <h3>
             Processos <br />
             para <strong>adequar</strong>
-            <br />a sua <strong>empresa</strong>
+            <br /> sua <strong>empresa</strong>
             <br />
             <span>a LGPD</span>
           </h3>
           <a href="/steps">Quer saber como funciona?</a>
         </div>
         <ul className={styles.services}>
-          <li>
+          {/* <li>
             <div className={styles.stepsIcon}>
               <img src="/assets/diagnostics.png" alt="Diagnósticos" />
             </div>
@@ -25,7 +25,7 @@ const Steps: React.FC = () => {
               <h3>Diagnóstico</h3>
               Inicio de jornada
             </div>
-          </li>
+          </li> */}
           <li>
             <div className={styles.stepsIcon}>
               <img src="/assets/mapping.png" alt="Mapeamento" />

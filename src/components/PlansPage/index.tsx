@@ -55,23 +55,23 @@ function PlansPage(): JSX.Element {
                     R$
                     <strong>
                       {radioBtn === 'month'
-                        ? plans.value.basic
-                        : plans.value.basic * 12}
+                        ? plans.valueMonth.basic
+                        : plans.valueAnual.basic}
                     </strong>
                     <span>{radioBtn === 'month' ? '/mês' : '/ano'}</span>
                   </p>
 
                   <ul>
                     <li>
-                      <CheckCircle /> Cadastramento de até{' '}
+                      <CheckCircle color="#3CCF8E" /> Cadastramento de até{' '}
                       <strong>{plans.CNPJAmount.basic} CNPJ</strong>
                     </li>
                     <li>
-                      <CheckCircle /> Gerenciamento completo com{' '}
+                      <CheckCircle color="#3CCF8E" /> Gerenciamento completo com{' '}
                       <strong>{plans.userAmount.basic} usuário</strong>
                     </li>
                     <li>
-                      <CheckCircle /> Relatório de impacto à
+                      <CheckCircle color="#3CCF8E" /> Relatório de impacto à
                       <strong> proteção de dados</strong>
                     </li>
                   </ul>
@@ -92,23 +92,23 @@ function PlansPage(): JSX.Element {
                     R$
                     <strong>
                       {radioBtn === 'month'
-                        ? plans.value.intermediate
-                        : plans.value.intermediate * 12}
+                        ? plans.valueMonth.intermediate
+                        : plans.valueAnual.intermediate}
                     </strong>
                     <span>{radioBtn === 'month' ? '/mês' : '/ano'}</span>
                   </p>
 
                   <ul>
                     <li>
-                      <CheckCircle /> Cadastramento de até{' '}
+                      <CheckCircle color="#3CCF8E" /> Cadastramento de até{' '}
                       <strong>{plans.CNPJAmount.intermediate} CNPJ</strong>
                     </li>
                     <li>
-                      <CheckCircle /> Gerenciamento completo com{' '}
+                      <CheckCircle color="#3CCF8E" /> Gerenciamento completo com{' '}
                       <strong>{plans.userAmount.intermediate} usuário</strong>
                     </li>
                     <li>
-                      <CheckCircle /> Relatório de impacto à
+                      <CheckCircle color="#3CCF8E" /> Relatório de impacto à
                       <strong> proteção de dados</strong>
                     </li>
                   </ul>
@@ -128,23 +128,23 @@ function PlansPage(): JSX.Element {
                     R$
                     <strong>
                       {radioBtn === 'month'
-                        ? plans.value.advanced
-                        : plans.value.advanced * 12}
+                        ? plans.valueMonth.advanced
+                        : plans.valueAnual.advanced}
                     </strong>
                     <span>{radioBtn === 'month' ? '/mês' : '/ano'}</span>
                   </p>
 
                   <ul>
                     <li>
-                      <CheckCircle /> Cadastramento de até{' '}
+                      <CheckCircle color="#3CCF8E" /> Cadastramento de até{' '}
                       <strong>{plans.CNPJAmount.advanced} CNPJ</strong>
                     </li>
                     <li>
-                      <CheckCircle /> Gerenciamento completo com{' '}
+                      <CheckCircle color="#3CCF8E" /> Gerenciamento completo com{' '}
                       <strong>{plans.userAmount.advanced} usuário</strong>
                     </li>
                     <li>
-                      <CheckCircle /> Relatório de impacto à
+                      <CheckCircle color="#3CCF8E" /> Relatório de impacto à
                       <strong> proteção de dados</strong>
                     </li>
                   </ul>
@@ -164,23 +164,23 @@ function PlansPage(): JSX.Element {
                     R$
                     <strong>
                       {radioBtn === 'month'
-                        ? plans.value.platinum
-                        : plans.value.platinum * 12}
+                        ? plans.valueMonth.platinum
+                        : plans.valueAnual.platinum}
                     </strong>
                     <span>{radioBtn === 'month' ? '/mês' : '/ano'}</span>
                   </p>
 
                   <ul>
                     <li>
-                      <CheckCircle /> Cadastramento de até{' '}
+                      <CheckCircle color="#3CCF8E" /> Cadastramento de até{' '}
                       <strong>{plans.CNPJAmount.platinum} CNPJ</strong>
                     </li>
                     <li>
-                      <CheckCircle /> Gerenciamento completo com{' '}
+                      <CheckCircle color="#3CCF8E" /> Gerenciamento completo com{' '}
                       <strong>{plans.userAmount.platinum} usuário</strong>
                     </li>
                     <li>
-                      <CheckCircle /> Relatório de impacto à
+                      <CheckCircle color="#3CCF8E" /> Relatório de impacto à
                       <strong> proteção de dados</strong>
                     </li>
                   </ul>
@@ -204,83 +204,105 @@ function PlansPage(): JSX.Element {
 
               <thead>
                 <tr>
-                  <th>{plans.plansType.title}</th>
-                  <th>{plans.plansType.basic}</th>
-                  <th>{plans.plansType.intermediate}</th>
-                  <th>{plans.plansType.advanced}</th>
-                  <th>{plans.plansType.platinum}</th>
+                  <th scope="col">{plans.plansType.basic}</th>
+                  <th scope="col">{plans.plansType.title}</th>
+                  <th scope="col">{plans.plansType.intermediate}</th>
+                  <th scope="col">{plans.plansType.advanced}</th>
+                  <th scope="col">{plans.plansType.platinum}</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>{plans.CNPJAmount.title}</td>
-                  <td>{plans.CNPJAmount.basic}</td>
-                  <td>{plans.CNPJAmount.intermediate}</td>
-                  <td>{plans.CNPJAmount.advanced}</td>
-                  <td>{plans.CNPJAmount.platinum}</td>
+                  <td data-label={plans.plansType.title}>
+                    {plans.CNPJAmount.title}
+                  </td>
+                  <td data-label={plans.plansType.basic}>
+                    {plans.CNPJAmount.basic}
+                  </td>
+                  <td data-label={plans.plansType.intermediate}>
+                    {plans.CNPJAmount.intermediate}
+                  </td>
+                  <td data-label={plans.plansType.advanced}>
+                    {plans.CNPJAmount.advanced}
+                  </td>
+                  <td data-label={plans.plansType.platinum}>
+                    {plans.CNPJAmount.platinum}
+                  </td>
                 </tr>
                 <tr>
-                  <td>{plans.userAmount.title}</td>
-                  <td>{plans.userAmount.basic}</td>
-                  <td>{plans.userAmount.intermediate}</td>
-                  <td>{plans.userAmount.advanced}</td>
-                  <td>{plans.userAmount.platinum}</td>
+                  <td data-label={plans.plansType.title}>
+                    {plans.userAmount.title}
+                  </td>
+                  <td data-label={plans.plansType.basic}>
+                    {plans.userAmount.basic}
+                  </td>
+                  <td data-label={plans.plansType.intermediate}>
+                    {plans.userAmount.intermediate}
+                  </td>
+                  <td data-label={plans.plansType.advanced}>
+                    {plans.userAmount.advanced}
+                  </td>
+                  <td data-label={plans.plansType.platinum}>
+                    {plans.userAmount.platinum}
+                  </td>
                 </tr>
-                <tr>
-                  <td>{plans.companyMapping.title}</td>
-                  <td>
+                {/* <tr>
+                  <td data-label={plans.plansType.basic}>{plans.companyMapping.title}</td>
+                  <td data-label={plans.plansType.basic}>
                     {plans.companyMapping.basic === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
                       <XCircle color="#CF3E27" />
                     )}
                   </td>
-                  <td>
+                  <td data-label={plans.plansType.basic}>
                     {plans.companyMapping.intermediate === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
                       <XCircle color="#CF3E27" />
                     )}
                   </td>
-                  <td>
+                  <td data-label={plans.plansType.basic}>
                     {plans.companyMapping.advanced === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
                       <XCircle color="#CF3E27" />
                     )}
                   </td>
-                  <td>
+                  <td data-label={plans.plansType.basic}>
                     {plans.companyMapping.platinum === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
                       <XCircle color="#CF3E27" />
                     )}
                   </td>
-                </tr>
+                </tr> */}
                 <tr>
-                  <td>{plans.dataMapping.title}</td>
-                  <td>
+                  <td data-label={plans.plansType.title}>
+                    {plans.dataMapping.title}
+                  </td>
+                  <td data-label={plans.plansType.basic}>
                     {plans.dataMapping.basic === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
                       <XCircle color="#CF3E27" />
                     )}
                   </td>
-                  <td>
+                  <td data-label={plans.plansType.intermediate}>
                     {plans.dataMapping.intermediate === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
                       <XCircle color="#CF3E27" />
                     )}
                   </td>
-                  <td>
+                  <td data-label={plans.plansType.advanced}>
                     {plans.dataMapping.advanced === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
                       <XCircle color="#CF3E27" />
                     )}
                   </td>
-                  <td>
+                  <td data-label={plans.plansType.platinum}>
                     {plans.dataMapping.platinum === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
@@ -289,29 +311,31 @@ function PlansPage(): JSX.Element {
                   </td>
                 </tr>
                 <tr>
-                  <td>{plans.dataManagement.title}</td>
-                  <td>
+                  <td data-label={plans.plansType.title}>
+                    {plans.dataManagement.title}
+                  </td>
+                  <td data-label={plans.plansType.basic}>
                     {plans.dataManagement.basic === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
                       <XCircle color="#CF3E27" />
                     )}
                   </td>
-                  <td>
+                  <td data-label={plans.plansType.intermediate}>
                     {plans.dataManagement.intermediate === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
                       <XCircle color="#CF3E27" />
                     )}
                   </td>
-                  <td>
+                  <td data-label={plans.plansType.advanced}>
                     {plans.dataManagement.advanced === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
                       <XCircle color="#CF3E27" />
                     )}
                   </td>
-                  <td>
+                  <td data-label={plans.plansType.platinum}>
                     {plans.dataManagement.platinum === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
@@ -320,29 +344,31 @@ function PlansPage(): JSX.Element {
                   </td>
                 </tr>
                 <tr>
-                  <td>{plans.riskAnalysis.title}</td>
-                  <td>
+                  <td data-label={plans.plansType.title}>
+                    {plans.riskAnalysis.title}
+                  </td>
+                  <td data-label={plans.plansType.basic}>
                     {plans.riskAnalysis.basic === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
                       <XCircle color="#CF3E27" />
                     )}
                   </td>
-                  <td>
+                  <td data-label={plans.plansType.intermediate}>
                     {plans.riskAnalysis.intermediate === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
                       <XCircle color="#CF3E27" />
                     )}
                   </td>
-                  <td>
+                  <td data-label={plans.plansType.advanced}>
                     {plans.riskAnalysis.advanced === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
                       <XCircle color="#CF3E27" />
                     )}
                   </td>
-                  <td>
+                  <td data-label={plans.plansType.platinum}>
                     {plans.riskAnalysis.platinum === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
@@ -351,29 +377,31 @@ function PlansPage(): JSX.Element {
                   </td>
                 </tr>
                 <tr>
-                  <td>{plans.legitimateInterestTest.title}</td>
-                  <td>
+                  <td data-label={plans.plansType.title}>
+                    {plans.legitimateInterestTest.title}
+                  </td>
+                  <td data-label={plans.plansType.basic}>
                     {plans.legitimateInterestTest.basic === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
                       <XCircle color="#CF3E27" />
                     )}
                   </td>
-                  <td>
+                  <td data-label={plans.plansType.intermediate}>
                     {plans.legitimateInterestTest.intermediate === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
                       <XCircle color="#CF3E27" />
                     )}
                   </td>
-                  <td>
+                  <td data-label={plans.plansType.advanced}>
                     {plans.legitimateInterestTest.advanced === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
                       <XCircle color="#CF3E27" />
                     )}
                   </td>
-                  <td>
+                  <td data-label={plans.plansType.platinum}>
                     {plans.legitimateInterestTest.platinum === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
@@ -382,29 +410,31 @@ function PlansPage(): JSX.Element {
                   </td>
                 </tr>
                 <tr>
-                  <td>{plans.actions.title}</td>
-                  <td>
+                  <td data-label={plans.plansType.title}>
+                    {plans.actions.title}
+                  </td>
+                  <td data-label={plans.plansType.basic}>
                     {plans.actions.basic === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
                       <XCircle color="#CF3E27" />
                     )}
                   </td>
-                  <td>
+                  <td data-label={plans.plansType.intermediate}>
                     {plans.actions.intermediate === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
                       <XCircle color="#CF3E27" />
                     )}
                   </td>
-                  <td>
+                  <td data-label={plans.plansType.advanced}>
                     {plans.actions.advanced === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
                       <XCircle color="#CF3E27" />
                     )}
                   </td>
-                  <td>
+                  <td data-label={plans.plansType.platinum}>
                     {plans.actions.platinum === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
@@ -413,29 +443,31 @@ function PlansPage(): JSX.Element {
                   </td>
                 </tr>
                 <tr>
-                  <td>{plans.dataProtection.title}</td>
-                  <td>
+                  <td data-label={plans.plansType.title}>
+                    {plans.dataProtection.title}
+                  </td>
+                  <td data-label={plans.plansType.basic}>
                     {plans.dataProtection.basic === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
                       <XCircle color="#CF3E27" />
                     )}
                   </td>
-                  <td>
+                  <td data-label={plans.plansType.intermediate}>
                     {plans.dataProtection.intermediate === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
                       <XCircle color="#CF3E27" />
                     )}
                   </td>
-                  <td>
+                  <td data-label={plans.plansType.advanced}>
                     {plans.dataProtection.advanced === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
                       <XCircle color="#CF3E27" />
                     )}
                   </td>
-                  <td>
+                  <td data-label={plans.plansType.platinum}>
                     {plans.dataProtection.platinum === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
@@ -444,29 +476,31 @@ function PlansPage(): JSX.Element {
                   </td>
                 </tr>
                 <tr>
-                  <td>{plans.dashboard.title}</td>
-                  <td>
+                  <td data-label={plans.plansType.title}>
+                    {plans.dashboard.title}
+                  </td>
+                  <td data-label={plans.plansType.basic}>
                     {plans.dashboard.basic === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
                       <XCircle color="#CF3E27" />
                     )}
                   </td>
-                  <td>
+                  <td data-label={plans.plansType.intermediate}>
                     {plans.dashboard.intermediate === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
                       <XCircle color="#CF3E27" />
                     )}
                   </td>
-                  <td>
+                  <td data-label={plans.plansType.advanced}>
                     {plans.dashboard.advanced === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
                       <XCircle color="#CF3E27" />
                     )}
                   </td>
-                  <td>
+                  <td data-label={plans.plansType.platinum}>
                     {plans.dashboard.platinum === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
@@ -474,30 +508,30 @@ function PlansPage(): JSX.Element {
                     )}
                   </td>
                 </tr>
-                <tr>
-                  <td>{plans.EAD.title}</td>
-                  <td>
+                {/* <tr>
+                  <td data-label={plans.plansType.basic}>{plans.EAD.title}</td>
+                  <td data-label={plans.plansType.basic}>
                     {plans.EAD.basic === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
                       <XCircle color="#CF3E27" />
                     )}
                   </td>
-                  <td>
+                  <td data-label={plans.plansType.basic}>
                     {plans.EAD.intermediate === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
                       <XCircle color="#CF3E27" />
                     )}
                   </td>
-                  <td>
+                  <td data-label={plans.plansType.basic}>
                     {plans.EAD.advanced === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
                       <XCircle color="#CF3E27" />
                     )}
                   </td>
-                  <td>
+                  <td data-label={plans.plansType.basic}>
                     {plans.EAD.platinum === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
@@ -506,60 +540,62 @@ function PlansPage(): JSX.Element {
                   </td>
                 </tr>
                 <tr>
-                  <td>{plans.processTemplate.title}</td>
-                  <td>
+                  <td data-label={plans.plansType.basic}>{plans.processTemplate.title}</td>
+                  <td data-label={plans.plansType.basic}>
                     {plans.processTemplate.basic === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
                       <XCircle color="#CF3E27" />
                     )}
                   </td>
-                  <td>
+                  <td data-label={plans.plansType.basic}>
                     {plans.processTemplate.intermediate === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
                       <XCircle color="#CF3E27" />
                     )}
                   </td>
-                  <td>
+                  <td data-label={plans.plansType.basic}>
                     {plans.processTemplate.advanced === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
                       <XCircle color="#CF3E27" />
                     )}
                   </td>
-                  <td>
-                    {plans.legislation.platinum === true ? (
+                  <td data-label={plans.plansType.basic}>
+                    {plans.processTemplate.platinum === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
                       <XCircle color="#CF3E27" />
                     )}
                   </td>
-                </tr>
+                </tr> */}
                 <tr>
-                  <td>{plans.customReports.title}</td>
-                  <td>
+                  <td data-label={plans.plansType.title}>
+                    {plans.customReports.title}
+                  </td>
+                  <td data-label={plans.plansType.basic}>
                     {plans.customReports.basic === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
                       <XCircle color="#CF3E27" />
                     )}
                   </td>
-                  <td>
+                  <td data-label={plans.plansType.intermediate}>
                     {plans.customReports.intermediate === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
                       <XCircle color="#CF3E27" />
                     )}
                   </td>
-                  <td>
+                  <td data-label={plans.plansType.advanced}>
                     {plans.customReports.advanced === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
                       <XCircle color="#CF3E27" />
                     )}
                   </td>
-                  <td>
+                  <td data-label={plans.plansType.platinum}>
                     {plans.customReports.platinum === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
@@ -567,30 +603,30 @@ function PlansPage(): JSX.Element {
                     )}
                   </td>
                 </tr>
-                <tr>
-                  <td>{plans.IncidentManagement.title}</td>
-                  <td>
+                {/* <tr>
+                  <td data-label={plans.plansType.basic}>{plans.IncidentManagement.title}</td>
+                  <td data-label={plans.plansType.basic}>
                     {plans.IncidentManagement.basic === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
                       <XCircle color="#CF3E27" />
                     )}
                   </td>
-                  <td>
+                  <td data-label={plans.plansType.basic}>
                     {plans.IncidentManagement.intermediate === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
                       <XCircle color="#CF3E27" />
                     )}
                   </td>
-                  <td>
+                  <td data-label={plans.plansType.basic}>
                     {plans.IncidentManagement.advanced === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
                       <XCircle color="#CF3E27" />
                     )}
                   </td>
-                  <td>
+                  <td data-label={plans.plansType.basic}>
                     {plans.IncidentManagement.platinum === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
@@ -599,29 +635,29 @@ function PlansPage(): JSX.Element {
                   </td>
                 </tr>
                 <tr>
-                  <td>{plans.semiannualAudit.title}</td>
-                  <td>
+                  <td data-label={plans.plansType.basic}>{plans.semiannualAudit.title}</td>
+                  <td data-label={plans.plansType.basic}>
                     {plans.semiannualAudit.basic === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
                       <XCircle color="#CF3E27" />
                     )}
                   </td>
-                  <td>
+                  <td data-label={plans.plansType.basic}>
                     {plans.semiannualAudit.intermediate === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
                       <XCircle color="#CF3E27" />
                     )}
                   </td>
-                  <td>
+                  <td data-label={plans.plansType.basic}>
                     {plans.semiannualAudit.advanced === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
                       <XCircle color="#CF3E27" />
                     )}
                   </td>
-                  <td>
+                  <td data-label={plans.plansType.basic}>
                     {plans.semiannualAudit.platinum === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
@@ -630,29 +666,29 @@ function PlansPage(): JSX.Element {
                   </td>
                 </tr>
                 <tr>
-                  <td>{plans.customizeForms.title}</td>
-                  <td>
+                  <td data-label={plans.plansType.basic}>{plans.customizeForms.title}</td>
+                  <td data-label={plans.plansType.basic}>
                     {plans.customizeForms.basic === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
                       <XCircle color="#CF3E27" />
                     )}
                   </td>
-                  <td>
+                  <td data-label={plans.plansType.basic}>
                     {plans.customizeForms.intermediate === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
                       <XCircle color="#CF3E27" />
                     )}
                   </td>
-                  <td>
+                  <td data-label={plans.plansType.basic}>
                     {plans.customizeForms.advanced === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
                       <XCircle color="#CF3E27" />
                     )}
                   </td>
-                  <td>
+                  <td data-label={plans.plansType.basic}>
                     {plans.customizeForms.platinum === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
@@ -661,36 +697,36 @@ function PlansPage(): JSX.Element {
                   </td>
                 </tr>
                 <tr>
-                  <td>{plans.customizeLogo.title}</td>
-                  <td>
+                  <td data-label={plans.plansType.basic}>{plans.customizeLogo.title}</td>
+                  <td data-label={plans.plansType.basic}>
                     {plans.customizeLogo.basic === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
                       <XCircle color="#CF3E27" />
                     )}
                   </td>
-                  <td>
+                  <td data-label={plans.plansType.basic}>
                     {plans.customizeLogo.intermediate === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
                       <XCircle color="#CF3E27" />
                     )}
                   </td>
-                  <td>
+                  <td data-label={plans.plansType.basic}>
                     {plans.customizeLogo.advanced === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
                       <XCircle color="#CF3E27" />
                     )}
                   </td>
-                  <td>
+                  <td data-label={plans.plansType.basic}>
                     {plans.customizeLogo.platinum === true ? (
                       <CheckCircle color="#3CCF8E" />
                     ) : (
                       <XCircle color="#CF3E27" />
                     )}
                   </td>
-                </tr>
+                </tr> */}
               </tbody>
             </table>
           </>
