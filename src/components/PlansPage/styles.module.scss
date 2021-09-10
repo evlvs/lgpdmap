@@ -189,9 +189,17 @@
       border-bottom: 2px solid var(--purple-300);
       height: 45px;
       margin: 140px;
+      font-weight: 900;
 
       &:first-child {
         color: var(--gray-300);
+        font-weight: 500;
+        color: #000;
+      }
+
+      strong {
+        font-weight: 900;
+        color: var(--purple-300);
       }
 
       &:last-child {
@@ -217,11 +225,15 @@
       text-align: center;
       max-width: 140px;
       margin: 0 10px;
+      font-weight: 900;
+      color: var(--purple-300);
 
       &:first-child {
         max-width: 300px;
         padding: 0 30px;
         text-align: left;
+        font-weight: 400;
+        color: #000;
       }
 
       a {

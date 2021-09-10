@@ -203,6 +203,7 @@ function PlansPage(): JSX.Element {
                 </ul>
               </div>
               <div className={styles.bglines}></div>
+
               <table key={index} className={styles.tableInfo}>
                 <caption>
                   <h2>
@@ -222,7 +223,7 @@ function PlansPage(): JSX.Element {
                 <tbody>
                   <tr>
                     <td data-label={plans.plansType.title}>
-                      {plans.CNPJAmount.title}
+                      <strong>CNPJ`s</strong>
                     </td>
                     <td data-label={plans.plansType.basic}>
                       {plans.CNPJAmount.basic}
@@ -239,7 +240,7 @@ function PlansPage(): JSX.Element {
                   </tr>
                   <tr>
                     <td data-label={plans.plansType.title}>
-                      {plans.userAmount.title}
+                      Multi <strong>usuários</strong>
                     </td>
                     <td data-label={plans.plansType.basic}>
                       {plans.userAmount.basic}
@@ -287,7 +288,7 @@ function PlansPage(): JSX.Element {
                 </tr> */}
                   <tr>
                     <td data-label={plans.plansType.title}>
-                      {plans.dataMapping.title}
+                      <strong>Mapeamento</strong> de dados
                     </td>
                     <td data-label={plans.plansType.basic}>
                       {plans.dataMapping.basic === true ? (
@@ -320,7 +321,7 @@ function PlansPage(): JSX.Element {
                   </tr>
                   <tr>
                     <td data-label={plans.plansType.title}>
-                      {plans.dataManagement.title}
+                      <strong>Mapeamento</strong> dos fluxos de dados
                     </td>
                     <td data-label={plans.plansType.basic}>
                       {plans.dataManagement.basic === true ? (
@@ -353,7 +354,7 @@ function PlansPage(): JSX.Element {
                   </tr>
                   <tr>
                     <td data-label={plans.plansType.title}>
-                      {plans.riskAnalysis.title}
+                      <strong>Análise</strong> de riscos
                     </td>
                     <td data-label={plans.plansType.basic}>
                       {plans.riskAnalysis.basic === true ? (
@@ -386,7 +387,7 @@ function PlansPage(): JSX.Element {
                   </tr>
                   <tr>
                     <td data-label={plans.plansType.title}>
-                      {plans.legitimateInterestTest.title}
+                      Teste de <strong>legítimo interesse</strong>
                     </td>
                     <td data-label={plans.plansType.basic}>
                       {plans.legitimateInterestTest.basic === true ? (
@@ -419,7 +420,7 @@ function PlansPage(): JSX.Element {
                   </tr>
                   <tr>
                     <td data-label={plans.plansType.title}>
-                      {plans.actions.title}
+                      <strong>Gestão</strong> inividual dos dados
                     </td>
                     <td data-label={plans.plansType.basic}>
                       {plans.actions.basic === true ? (
@@ -452,7 +453,7 @@ function PlansPage(): JSX.Element {
                   </tr>
                   <tr>
                     <td data-label={plans.plansType.title}>
-                      {plans.dataProtection.title}
+                      Relatório de impacto à <strong>proteção de dados</strong>
                     </td>
                     <td data-label={plans.plansType.basic}>
                       {plans.dataProtection.basic === true ? (
@@ -485,7 +486,7 @@ function PlansPage(): JSX.Element {
                   </tr>
                   <tr>
                     <td data-label={plans.plansType.title}>
-                      {plans.dashboard.title}
+                      <strong>Dashoboard</strong>
                     </td>
                     <td data-label={plans.plansType.basic}>
                       {plans.dashboard.basic === true ? (
@@ -580,7 +581,7 @@ function PlansPage(): JSX.Element {
                 </tr> */}
                   <tr>
                     <td data-label={plans.plansType.title}>
-                      {plans.customReports.title}
+                      Relatório de <strong>plano de ações</strong>
                     </td>
                     <td data-label={plans.plansType.basic}>
                       {plans.customReports.basic === true ? (
