@@ -15,6 +15,15 @@
     margin-left: 10%;
     z-index: 9999;
 
+    a {
+      &:first-child {
+        background: transparent;
+        width: auto;
+        height: auto;
+        display: block;
+      }
+    }
+
     img {
       width: 100%;
       max-width: 382px;

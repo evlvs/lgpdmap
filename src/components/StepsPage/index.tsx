@@ -86,8 +86,10 @@ const StepsPage: React.FC = () => {
             </div>
 
             <div className={styles.infoBody} data-aos="zoom-in-up">
-              <h3>Análise de riscos</h3>
-              Criação de estratégias para mitigá-los
+              <div className={styles.stepsTitle}>
+                <h3>Análise de riscos</h3>
+                Criação de estratégias para mitigá-los
+              </div>
               <div className={styles.textBox}>
                 <h3>
                   Neste ponto, já ultrapassamos metade da nossa caminhada,
@@ -109,8 +111,10 @@ const StepsPage: React.FC = () => {
           </li>
           <li>
             <div className={styles.infoBody} data-aos="zoom-in-up">
-              <h3>Ações</h3>
-              Mão na massa
+              <div className={styles.stepsTitle}>
+                <h3>Ações</h3>
+                Mão na massa
+              </div>
               <div className={styles.textBox}>
                 <h3>
                   Já na reta final, esta fase vem para elencar todas as
@@ -151,8 +155,10 @@ const StepsPage: React.FC = () => {
             </div>
 
             <div className={styles.infoBody} data-aos="zoom-in-up">
-              <h3>Monitoramento</h3>
-              Manutenção da LGPD
+              <div className={styles.stepsTitle}>
+                <h3>Monitoramento</h3>
+                Manutenção da LGPD
+              </div>
               <div className={styles.textBox}>
                 <h3>
                   Texto para monitorameto que ainda não enviado, mas podemos
