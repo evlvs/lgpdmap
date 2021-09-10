@@ -611,6 +611,25 @@ function PlansPage(): JSX.Element {
                       )}
                     </td>
                   </tr>
+                  <tr>
+                    <td className="plansBtn"></td>
+
+                    <td className="plansBtn">
+                      <a href="#basic">Começar já</a>
+                    </td>
+
+                    <td className="plansBtn">
+                      <a href="#intermediate">Começar já</a>
+                    </td>
+
+                    <td className="plansBtn">
+                      <a href="#advanced">Começar já</a>
+                    </td>
+
+                    <td className="plansBtn">
+                      <a href="#platinum">Começar já</a>
+                    </td>
+                  </tr>
                   {/* <tr>
                   <td data-label={plans.plansType.basic}>{plans.IncidentManagement.title}</td>
                   <td data-label={plans.plansType.basic}>
@@ -735,21 +754,6 @@ function PlansPage(): JSX.Element {
                     )}
                   </td>
                 </tr> */}
-                  <tr>
-                    <td></td>
-                    <td>
-                      <a href="#basic">Começar já</a>
-                    </td>
-                    <td>
-                      <a href="#basic">Começar já</a>
-                    </td>
-                    <td>
-                      <a href="#basic">Começar já</a>
-                    </td>
-                    <td>
-                      <a href="#basic">Começar já</a>
-                    </td>
-                  </tr>
                 </tbody>
               </table>
             </>
