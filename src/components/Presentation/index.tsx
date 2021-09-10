@@ -11,11 +11,15 @@ function Presentation(props: {
     <>
       <section className={styles.banner}>
         <div className={styles.presentation}>
-          <img src="/assets/logo.svg" alt="Logo LGPD Map" />
+          <Link href="/">
+            <a>
+              <img src="/assets/logo.svg" alt="Logo LGPD Map" />
+            </a>
+          </Link>
           <h1>{props.title}</h1>
           <p>{props.paragraph}</p>
           {props.hasButton === 'true' ? (
-            <Link href="#contactUs">
+            <Link href="/steps">
               <a>Quer saber como funciona?</a>
             </Link>
           ) : (
