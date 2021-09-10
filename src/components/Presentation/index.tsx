@@ -5,6 +5,7 @@ import Link from 'next/link'
 function Presentation(props: {
   title: string
   paragraph: string
+  hasButton: string
 }): JSX.Element {
   return (
     <>
@@ -13,9 +14,13 @@ function Presentation(props: {
           <img src="/assets/logo.svg" alt="Logo LGPD Map" />
           <h1>{props.title}</h1>
           <p>{props.paragraph}</p>
-          <Link data-scroll href="#contactUs" scroll={false}>
-            <a>Quer saber como funciona?</a>
-          </Link>
+          {props.hasButton === 'true' ? (
+            <Link href="#contactUs">
+              <a>Quer saber como funciona?</a>
+            </Link>
+          ) : (
+            ' '
+          )}
         </div>
         <div className={styles.bannerIllustration}>
           <img src="./assets/illustration-home.svg" alt="Whatsapp" />

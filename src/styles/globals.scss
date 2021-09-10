@@ -143,11 +143,16 @@ a {
   width: 80%;
 }
 
+.video-js .vjs-tech {
+  border-radius: 10px;
+}
+
 .vjs-lgpd.video-js {
   color: #4d33ac;
   box-shadow: 0 0 3rem #4d33ac;
   position: relative;
   z-index: 9999;
+  border-radius: 10px;
 }
 
 .vjs-icon-play:before,
@@ -187,6 +192,7 @@ a {
 
 .vjs-poster {
   background-size: cover !important;
+  border-radius: 10px !important;
 }
 // .video-js .vjs-tech {
 //   height: auto !important;
@@ -222,10 +228,10 @@ a {
   content: '\f103' !important;
 }
 
-// .vjs_video_3-dimensions {
-//   width: 720px !important;
-//   height: 480px !important;
-// }
+.vjs_video_3-dimensions {
+  width: 720px !important;
+  height: 408px !important;
+}
 
 .vjs-has-started .videoIcons .twitterIcons,
 .vjs-has-started .videoIcons .sendIcons,
@@ -394,11 +400,10 @@ a {
   background: url('/assets/ballsColored.png');
   background-repeat: no-repeat;
   background-position: left top;
-  background-size: 7%;
+  background-size: 10%;
   opacity: 0.3;
-  animation: ballsLC 15s linear infinite;
+  animation: ballsRC 20s linear infinite;
   animation-delay: 0s;
-  top: 50px;
 }
 
 @keyframes ballsLC {
@@ -420,11 +425,10 @@ a {
   background: url('/assets/ballsOutlined.png');
   background-repeat: no-repeat;
   background-position: left top;
-  background-size: 7%;
+  background-size: 10%;
   opacity: 0.3;
-  animation: ballsLO 20s linear infinite;
+  animation: ballsRO 15s linear infinite;
   animation-delay: 0s;
-  top: 50px;
 }
 
 @keyframes ballsLO {
@@ -638,22 +642,9 @@ a {
 
   .vjs_video_3-dimensions {
     width: 90% !important;
-    max-width: 720px;
-    height: 320px !important;
+    max-width: 720px !important;
+    max-height: 408px;
   }
-
-  .videoIcons {
-    display: none;
-  }
-
-  .ballsRO,
-  .ballsRC,
-  .ballsLC,
-  .ballsLO {
-    display: none;
-  }
-
-  //
 }
 
 html:not(.no-js) [data-aos^='fade'][data-aos^='fade'].aos-animate {
@@ -682,9 +673,15 @@ html:not(.no-js) [data-aos^='fade'][data-aos^='fade'].aos-animate {
     max-width: 284px;
   }
 
+  .video-js .vjs-big-play-button {
+    font-size: 2.8em !important;
+  }
+
   .vjs_video_3-dimensions {
-    width: 90% !important;
-    max-width: 720px;
+    width: 100% !important;
+    max-width: 300px;
+    height: auto;
+    max-height: 172px;
   }
 
   .videoIcons {

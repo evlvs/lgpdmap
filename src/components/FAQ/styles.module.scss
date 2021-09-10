@@ -39,7 +39,6 @@
       flex-direction: column;
       width: 100%;
       cursor: pointer;
-      font-weight: 500;
 
       &:last-child .accordionHead {
         border-bottom: 0;
@@ -60,8 +59,10 @@
         padding: 10px 0;
         width: 100%;
         border-bottom: 1px solid #ececec;
+        padding: 25px 0;
+
         h3 {
-          font-weight: 400;
+          font-weight: 500;
           color: #51505e;
         }
       }
@@ -77,7 +78,7 @@
         transition: all ease-in-out 0.2s;
 
         &.active {
-          padding: 10px 40px;
+          padding: 45px;
           width: 100%;
           opacity: 1;
           height: auto;
@@ -90,6 +91,11 @@
 
 @media (min-width: 769px) and (max-width: 1680px) {
   .FAQ {
+    margin-top: 50px;
+
+    h2 {
+      margin: 100px 0;
+    }
     .accordionHead {
       h3 {
         font-size: 18px;

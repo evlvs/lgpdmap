@@ -13,240 +13,248 @@ function PlansPage(): JSX.Element {
   }
 
   return (
-    <div className={styles.plansPage}>
-      <h2>
-        Planos Lgpd<span>map</span>
-      </h2>
-      <form>
-        <div className="radio-group">
-          <input
-            type="radio"
-            id="month"
-            name="selector"
-            value="month"
-            onChange={refreshPrice}
-          />
-          <label htmlFor="month">Mensal</label>
-          <input
-            type="radio"
-            id="anual"
-            name="selector"
-            value="anual"
-            onChange={refreshPrice}
-          />
-          <label htmlFor="anual">Anual</label>
-        </div>
-      </form>
+    <>
+      <div className="ballsRC"></div>
+      <div className="ballsRO"></div>
+      <div className="ballsLC"></div>
+      <div className="ballsLO"></div>
 
-      <p>
-        Diga adeus às planilhas ou ferramentas complexas, com recursos
-        desnecessários. Implemente a LGPD de forma simples e centralizada, com
-        uma só ferramenta.
-      </p>
+      <div className={styles.plansPage}>
+        <h2>
+          Planos Lgpd<span>map</span>
+        </h2>
+        <form>
+          <div className="radio-group">
+            <input
+              type="radio"
+              id="month"
+              name="selector"
+              value="month"
+              onChange={refreshPrice}
+            />
+            <label htmlFor="month">Mensal</label>
+            <input
+              type="radio"
+              id="anual"
+              name="selector"
+              value="anual"
+              onChange={refreshPrice}
+            />
+            <label htmlFor="anual">Anual</label>
+          </div>
+        </form>
 
-      {PlansData.map((plans, index) => {
-        return (
-          <>
-            <div>
-              <ul className={styles.plans}>
-                <li className={styles.basicPlan}>
-                  <h6>{plans.plansType.basic}</h6>
-                  <p>
-                    R$
-                    <strong>
-                      {radioBtn === 'month'
-                        ? plans.valueMonth.basic
-                        : plans.valueAnual.basic}
-                    </strong>
-                    <span>{radioBtn === 'month' ? '/mês' : '/ano'}</span>
-                  </p>
+        <p>
+          Diga adeus às planilhas ou ferramentas complexas, com recursos
+          desnecessários. Implemente a LGPD de forma simples e centralizada, com
+          uma só ferramenta.
+        </p>
 
-                  <ul>
-                    <li>
-                      <CheckCircle color="#3CCF8E" /> Cadastramento de até{' '}
-                      <strong>{plans.CNPJAmount.basic} CNPJ</strong>
-                    </li>
-                    <li>
-                      <CheckCircle color="#3CCF8E" /> Gerenciamento completo com{' '}
-                      <strong>{plans.userAmount.basic} usuário</strong>
-                    </li>
-                    <li>
-                      <CheckCircle color="#3CCF8E" /> Relatório de impacto à
-                      <strong> proteção de dados</strong>
-                    </li>
-                  </ul>
+        {PlansData.map((plans, index) => {
+          return (
+            <>
+              <div>
+                <ul className={styles.plans}>
+                  <li className={styles.basicPlan}>
+                    <h6>{plans.plansType.basic}</h6>
+                    <p>
+                      R$
+                      <strong>
+                        {radioBtn === 'month'
+                          ? plans.valueMonth.basic
+                          : plans.valueAnual.basic}
+                      </strong>
+                      <span>{radioBtn === 'month' ? '/mês' : '/ano'}</span>
+                    </p>
 
-                  <Link href="#basicPlan">
-                    <button>COMEÇAR JÁ</button>
-                  </Link>
+                    <ul>
+                      <li>
+                        <CheckCircle color="#3CCF8E" /> Cadastramento de até{' '}
+                        <strong>{plans.CNPJAmount.basic} CNPJ</strong>
+                      </li>
+                      <li>
+                        <CheckCircle color="#3CCF8E" /> Gerenciamento completo
+                        com <strong>{plans.userAmount.basic} usuário</strong>
+                      </li>
+                      <li>
+                        <CheckCircle color="#3CCF8E" /> Relatório de impacto à
+                        <strong> proteção de dados</strong>
+                      </li>
+                    </ul>
 
-                  <Link href="#basicPlan">
-                    <a>Faça a comparação</a>
-                  </Link>
-                </li>
+                    <Link href="#basicPlan">
+                      <button>COMEÇAR JÁ</button>
+                    </Link>
 
-                <li className={styles.intermediatePlan}>
-                  <div className={styles.recommended}>RECOMENDADO</div>
-                  <h6>{plans.plansType.intermediate}</h6>
-                  <p>
-                    R$
-                    <strong>
-                      {radioBtn === 'month'
-                        ? plans.valueMonth.intermediate
-                        : plans.valueAnual.intermediate}
-                    </strong>
-                    <span>{radioBtn === 'month' ? '/mês' : '/ano'}</span>
-                  </p>
+                    <Link href="#basicPlan">
+                      <a>Faça a comparação</a>
+                    </Link>
+                  </li>
 
-                  <ul>
-                    <li>
-                      <CheckCircle color="#3CCF8E" /> Cadastramento de até{' '}
-                      <strong>{plans.CNPJAmount.intermediate} CNPJ</strong>
-                    </li>
-                    <li>
-                      <CheckCircle color="#3CCF8E" /> Gerenciamento completo com{' '}
-                      <strong>{plans.userAmount.intermediate} usuário</strong>
-                    </li>
-                    <li>
-                      <CheckCircle color="#3CCF8E" /> Relatório de impacto à
-                      <strong> proteção de dados</strong>
-                    </li>
-                  </ul>
+                  <li className={styles.intermediatePlan}>
+                    <div className={styles.recommended}>RECOMENDADO</div>
+                    <h6>{plans.plansType.intermediate}</h6>
+                    <p>
+                      R$
+                      <strong>
+                        {radioBtn === 'month'
+                          ? plans.valueMonth.intermediate
+                          : plans.valueAnual.intermediate}
+                      </strong>
+                      <span>{radioBtn === 'month' ? '/mês' : '/ano'}</span>
+                    </p>
 
-                  <Link href="#intermediatePlan">
-                    <button>COMEÇAR JÁ</button>
-                  </Link>
+                    <ul>
+                      <li>
+                        <CheckCircle color="#3CCF8E" /> Cadastramento de até{' '}
+                        <strong>{plans.CNPJAmount.intermediate} CNPJ</strong>
+                      </li>
+                      <li>
+                        <CheckCircle color="#3CCF8E" /> Gerenciamento completo
+                        com{' '}
+                        <strong>{plans.userAmount.intermediate} usuário</strong>
+                      </li>
+                      <li>
+                        <CheckCircle color="#3CCF8E" /> Relatório de impacto à
+                        <strong> proteção de dados</strong>
+                      </li>
+                    </ul>
 
-                  <Link href="#intermediatePlan">
-                    <a>Faça a comparação</a>
-                  </Link>
-                </li>
+                    <Link href="#intermediatePlan">
+                      <button>COMEÇAR JÁ</button>
+                    </Link>
 
-                <li className={styles.advancedPlan}>
-                  <h6>{plans.plansType.advanced}</h6>
-                  <p>
-                    R$
-                    <strong>
-                      {radioBtn === 'month'
-                        ? plans.valueMonth.advanced
-                        : plans.valueAnual.advanced}
-                    </strong>
-                    <span>{radioBtn === 'month' ? '/mês' : '/ano'}</span>
-                  </p>
+                    <Link href="#intermediatePlan">
+                      <a>Faça a comparação</a>
+                    </Link>
+                  </li>
 
-                  <ul>
-                    <li>
-                      <CheckCircle color="#3CCF8E" /> Cadastramento de até{' '}
-                      <strong>{plans.CNPJAmount.advanced} CNPJ</strong>
-                    </li>
-                    <li>
-                      <CheckCircle color="#3CCF8E" /> Gerenciamento completo com{' '}
-                      <strong>{plans.userAmount.advanced} usuário</strong>
-                    </li>
-                    <li>
-                      <CheckCircle color="#3CCF8E" /> Relatório de impacto à
-                      <strong> proteção de dados</strong>
-                    </li>
-                  </ul>
+                  <li className={styles.advancedPlan}>
+                    <h6>{plans.plansType.advanced}</h6>
+                    <p>
+                      R$
+                      <strong>
+                        {radioBtn === 'month'
+                          ? plans.valueMonth.advanced
+                          : plans.valueAnual.advanced}
+                      </strong>
+                      <span>{radioBtn === 'month' ? '/mês' : '/ano'}</span>
+                    </p>
 
-                  <Link href="#advancedPlan">
-                    <button>COMEÇAR JÁ</button>
-                  </Link>
+                    <ul>
+                      <li>
+                        <CheckCircle color="#3CCF8E" /> Cadastramento de até{' '}
+                        <strong>{plans.CNPJAmount.advanced} CNPJ</strong>
+                      </li>
+                      <li>
+                        <CheckCircle color="#3CCF8E" /> Gerenciamento completo
+                        com <strong>{plans.userAmount.advanced} usuário</strong>
+                      </li>
+                      <li>
+                        <CheckCircle color="#3CCF8E" /> Relatório de impacto à
+                        <strong> proteção de dados</strong>
+                      </li>
+                    </ul>
 
-                  <Link href="#advancedPlan">
-                    <a>Faça a comparação</a>
-                  </Link>
-                </li>
+                    <Link href="#advancedPlan">
+                      <button>COMEÇAR JÁ</button>
+                    </Link>
 
-                <li className={styles.platinumPlan}>
-                  <h6>{plans.plansType.platinum}</h6>
-                  <p>
-                    R$
-                    <strong>
-                      {radioBtn === 'month'
-                        ? plans.valueMonth.platinum
-                        : plans.valueAnual.platinum}
-                    </strong>
-                    <span>{radioBtn === 'month' ? '/mês' : '/ano'}</span>
-                  </p>
+                    <Link href="#advancedPlan">
+                      <a>Faça a comparação</a>
+                    </Link>
+                  </li>
 
-                  <ul>
-                    <li>
-                      <CheckCircle color="#3CCF8E" /> Cadastramento de até{' '}
-                      <strong>{plans.CNPJAmount.platinum} CNPJ</strong>
-                    </li>
-                    <li>
-                      <CheckCircle color="#3CCF8E" /> Gerenciamento completo com{' '}
-                      <strong>{plans.userAmount.platinum} usuário</strong>
-                    </li>
-                    <li>
-                      <CheckCircle color="#3CCF8E" /> Relatório de impacto à
-                      <strong> proteção de dados</strong>
-                    </li>
-                  </ul>
+                  <li className={styles.platinumPlan}>
+                    <h6>{plans.plansType.platinum}</h6>
+                    <p>
+                      R$
+                      <strong>
+                        {radioBtn === 'month'
+                          ? plans.valueMonth.platinum
+                          : plans.valueAnual.platinum}
+                      </strong>
+                      <span>{radioBtn === 'month' ? '/mês' : '/ano'}</span>
+                    </p>
 
-                  <Link href="#platinumPlan">
-                    <button>COMEÇAR JÁ</button>
-                  </Link>
+                    <ul>
+                      <li>
+                        <CheckCircle color="#3CCF8E" /> Cadastramento de até{' '}
+                        <strong>{plans.CNPJAmount.platinum} CNPJ</strong>
+                      </li>
+                      <li>
+                        <CheckCircle color="#3CCF8E" /> Gerenciamento completo
+                        com <strong>{plans.userAmount.platinum} usuário</strong>
+                      </li>
+                      <li>
+                        <CheckCircle color="#3CCF8E" /> Relatório de impacto à
+                        <strong> proteção de dados</strong>
+                      </li>
+                    </ul>
 
-                  <Link href="#platinumPlan">
-                    <a>Faça a comparação</a>
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <table key={index} className={styles.tableInfo}>
-              <caption>
-                <h2>
-                  A LGPD<span>map tem um </span> plano ideal para você
-                </h2>
-              </caption>
+                    <Link href="#platinumPlan">
+                      <button>COMEÇAR JÁ</button>
+                    </Link>
 
-              <thead>
-                <tr>
-                  <th scope="col">{plans.plansType.basic}</th>
-                  <th scope="col">{plans.plansType.title}</th>
-                  <th scope="col">{plans.plansType.intermediate}</th>
-                  <th scope="col">{plans.plansType.advanced}</th>
-                  <th scope="col">{plans.plansType.platinum}</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td data-label={plans.plansType.title}>
-                    {plans.CNPJAmount.title}
-                  </td>
-                  <td data-label={plans.plansType.basic}>
-                    {plans.CNPJAmount.basic}
-                  </td>
-                  <td data-label={plans.plansType.intermediate}>
-                    {plans.CNPJAmount.intermediate}
-                  </td>
-                  <td data-label={plans.plansType.advanced}>
-                    {plans.CNPJAmount.advanced}
-                  </td>
-                  <td data-label={plans.plansType.platinum}>
-                    {plans.CNPJAmount.platinum}
-                  </td>
-                </tr>
-                <tr>
-                  <td data-label={plans.plansType.title}>
-                    {plans.userAmount.title}
-                  </td>
-                  <td data-label={plans.plansType.basic}>
-                    {plans.userAmount.basic}
-                  </td>
-                  <td data-label={plans.plansType.intermediate}>
-                    {plans.userAmount.intermediate}
-                  </td>
-                  <td data-label={plans.plansType.advanced}>
-                    {plans.userAmount.advanced}
-                  </td>
-                  <td data-label={plans.plansType.platinum}>
-                    {plans.userAmount.platinum}
-                  </td>
-                </tr>
-                {/* <tr>
+                    <Link href="#platinumPlan">
+                      <a>Faça a comparação</a>
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+              <div className={styles.bglines}></div>
+              <table key={index} className={styles.tableInfo}>
+                <caption>
+                  <h2>
+                    A LGPD<span>map tem um </span> plano ideal para você
+                  </h2>
+                </caption>
+
+                <thead>
+                  <tr>
+                    <th scope="col">{plans.plansType.title}</th>
+                    <th scope="col">{plans.plansType.basic}</th>
+                    <th scope="col">{plans.plansType.intermediate}</th>
+                    <th scope="col">{plans.plansType.advanced}</th>
+                    <th scope="col">{plans.plansType.platinum}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-label={plans.plansType.title}>
+                      {plans.CNPJAmount.title}
+                    </td>
+                    <td data-label={plans.plansType.basic}>
+                      {plans.CNPJAmount.basic}
+                    </td>
+                    <td data-label={plans.plansType.intermediate}>
+                      {plans.CNPJAmount.intermediate}
+                    </td>
+                    <td data-label={plans.plansType.advanced}>
+                      {plans.CNPJAmount.advanced}
+                    </td>
+                    <td data-label={plans.plansType.platinum}>
+                      {plans.CNPJAmount.platinum}
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-label={plans.plansType.title}>
+                      {plans.userAmount.title}
+                    </td>
+                    <td data-label={plans.plansType.basic}>
+                      {plans.userAmount.basic}
+                    </td>
+                    <td data-label={plans.plansType.intermediate}>
+                      {plans.userAmount.intermediate}
+                    </td>
+                    <td data-label={plans.plansType.advanced}>
+                      {plans.userAmount.advanced}
+                    </td>
+                    <td data-label={plans.plansType.platinum}>
+                      {plans.userAmount.platinum}
+                    </td>
+                  </tr>
+                  {/* <tr>
                   <td data-label={plans.plansType.basic}>{plans.companyMapping.title}</td>
                   <td data-label={plans.plansType.basic}>
                     {plans.companyMapping.basic === true ? (
@@ -277,238 +285,238 @@ function PlansPage(): JSX.Element {
                     )}
                   </td>
                 </tr> */}
-                <tr>
-                  <td data-label={plans.plansType.title}>
-                    {plans.dataMapping.title}
-                  </td>
-                  <td data-label={plans.plansType.basic}>
-                    {plans.dataMapping.basic === true ? (
-                      <CheckCircle color="#3CCF8E" />
-                    ) : (
-                      <XCircle color="#CF3E27" />
-                    )}
-                  </td>
-                  <td data-label={plans.plansType.intermediate}>
-                    {plans.dataMapping.intermediate === true ? (
-                      <CheckCircle color="#3CCF8E" />
-                    ) : (
-                      <XCircle color="#CF3E27" />
-                    )}
-                  </td>
-                  <td data-label={plans.plansType.advanced}>
-                    {plans.dataMapping.advanced === true ? (
-                      <CheckCircle color="#3CCF8E" />
-                    ) : (
-                      <XCircle color="#CF3E27" />
-                    )}
-                  </td>
-                  <td data-label={plans.plansType.platinum}>
-                    {plans.dataMapping.platinum === true ? (
-                      <CheckCircle color="#3CCF8E" />
-                    ) : (
-                      <XCircle color="#CF3E27" />
-                    )}
-                  </td>
-                </tr>
-                <tr>
-                  <td data-label={plans.plansType.title}>
-                    {plans.dataManagement.title}
-                  </td>
-                  <td data-label={plans.plansType.basic}>
-                    {plans.dataManagement.basic === true ? (
-                      <CheckCircle color="#3CCF8E" />
-                    ) : (
-                      <XCircle color="#CF3E27" />
-                    )}
-                  </td>
-                  <td data-label={plans.plansType.intermediate}>
-                    {plans.dataManagement.intermediate === true ? (
-                      <CheckCircle color="#3CCF8E" />
-                    ) : (
-                      <XCircle color="#CF3E27" />
-                    )}
-                  </td>
-                  <td data-label={plans.plansType.advanced}>
-                    {plans.dataManagement.advanced === true ? (
-                      <CheckCircle color="#3CCF8E" />
-                    ) : (
-                      <XCircle color="#CF3E27" />
-                    )}
-                  </td>
-                  <td data-label={plans.plansType.platinum}>
-                    {plans.dataManagement.platinum === true ? (
-                      <CheckCircle color="#3CCF8E" />
-                    ) : (
-                      <XCircle color="#CF3E27" />
-                    )}
-                  </td>
-                </tr>
-                <tr>
-                  <td data-label={plans.plansType.title}>
-                    {plans.riskAnalysis.title}
-                  </td>
-                  <td data-label={plans.plansType.basic}>
-                    {plans.riskAnalysis.basic === true ? (
-                      <CheckCircle color="#3CCF8E" />
-                    ) : (
-                      <XCircle color="#CF3E27" />
-                    )}
-                  </td>
-                  <td data-label={plans.plansType.intermediate}>
-                    {plans.riskAnalysis.intermediate === true ? (
-                      <CheckCircle color="#3CCF8E" />
-                    ) : (
-                      <XCircle color="#CF3E27" />
-                    )}
-                  </td>
-                  <td data-label={plans.plansType.advanced}>
-                    {plans.riskAnalysis.advanced === true ? (
-                      <CheckCircle color="#3CCF8E" />
-                    ) : (
-                      <XCircle color="#CF3E27" />
-                    )}
-                  </td>
-                  <td data-label={plans.plansType.platinum}>
-                    {plans.riskAnalysis.platinum === true ? (
-                      <CheckCircle color="#3CCF8E" />
-                    ) : (
-                      <XCircle color="#CF3E27" />
-                    )}
-                  </td>
-                </tr>
-                <tr>
-                  <td data-label={plans.plansType.title}>
-                    {plans.legitimateInterestTest.title}
-                  </td>
-                  <td data-label={plans.plansType.basic}>
-                    {plans.legitimateInterestTest.basic === true ? (
-                      <CheckCircle color="#3CCF8E" />
-                    ) : (
-                      <XCircle color="#CF3E27" />
-                    )}
-                  </td>
-                  <td data-label={plans.plansType.intermediate}>
-                    {plans.legitimateInterestTest.intermediate === true ? (
-                      <CheckCircle color="#3CCF8E" />
-                    ) : (
-                      <XCircle color="#CF3E27" />
-                    )}
-                  </td>
-                  <td data-label={plans.plansType.advanced}>
-                    {plans.legitimateInterestTest.advanced === true ? (
-                      <CheckCircle color="#3CCF8E" />
-                    ) : (
-                      <XCircle color="#CF3E27" />
-                    )}
-                  </td>
-                  <td data-label={plans.plansType.platinum}>
-                    {plans.legitimateInterestTest.platinum === true ? (
-                      <CheckCircle color="#3CCF8E" />
-                    ) : (
-                      <XCircle color="#CF3E27" />
-                    )}
-                  </td>
-                </tr>
-                <tr>
-                  <td data-label={plans.plansType.title}>
-                    {plans.actions.title}
-                  </td>
-                  <td data-label={plans.plansType.basic}>
-                    {plans.actions.basic === true ? (
-                      <CheckCircle color="#3CCF8E" />
-                    ) : (
-                      <XCircle color="#CF3E27" />
-                    )}
-                  </td>
-                  <td data-label={plans.plansType.intermediate}>
-                    {plans.actions.intermediate === true ? (
-                      <CheckCircle color="#3CCF8E" />
-                    ) : (
-                      <XCircle color="#CF3E27" />
-                    )}
-                  </td>
-                  <td data-label={plans.plansType.advanced}>
-                    {plans.actions.advanced === true ? (
-                      <CheckCircle color="#3CCF8E" />
-                    ) : (
-                      <XCircle color="#CF3E27" />
-                    )}
-                  </td>
-                  <td data-label={plans.plansType.platinum}>
-                    {plans.actions.platinum === true ? (
-                      <CheckCircle color="#3CCF8E" />
-                    ) : (
-                      <XCircle color="#CF3E27" />
-                    )}
-                  </td>
-                </tr>
-                <tr>
-                  <td data-label={plans.plansType.title}>
-                    {plans.dataProtection.title}
-                  </td>
-                  <td data-label={plans.plansType.basic}>
-                    {plans.dataProtection.basic === true ? (
-                      <CheckCircle color="#3CCF8E" />
-                    ) : (
-                      <XCircle color="#CF3E27" />
-                    )}
-                  </td>
-                  <td data-label={plans.plansType.intermediate}>
-                    {plans.dataProtection.intermediate === true ? (
-                      <CheckCircle color="#3CCF8E" />
-                    ) : (
-                      <XCircle color="#CF3E27" />
-                    )}
-                  </td>
-                  <td data-label={plans.plansType.advanced}>
-                    {plans.dataProtection.advanced === true ? (
-                      <CheckCircle color="#3CCF8E" />
-                    ) : (
-                      <XCircle color="#CF3E27" />
-                    )}
-                  </td>
-                  <td data-label={plans.plansType.platinum}>
-                    {plans.dataProtection.platinum === true ? (
-                      <CheckCircle color="#3CCF8E" />
-                    ) : (
-                      <XCircle color="#CF3E27" />
-                    )}
-                  </td>
-                </tr>
-                <tr>
-                  <td data-label={plans.plansType.title}>
-                    {plans.dashboard.title}
-                  </td>
-                  <td data-label={plans.plansType.basic}>
-                    {plans.dashboard.basic === true ? (
-                      <CheckCircle color="#3CCF8E" />
-                    ) : (
-                      <XCircle color="#CF3E27" />
-                    )}
-                  </td>
-                  <td data-label={plans.plansType.intermediate}>
-                    {plans.dashboard.intermediate === true ? (
-                      <CheckCircle color="#3CCF8E" />
-                    ) : (
-                      <XCircle color="#CF3E27" />
-                    )}
-                  </td>
-                  <td data-label={plans.plansType.advanced}>
-                    {plans.dashboard.advanced === true ? (
-                      <CheckCircle color="#3CCF8E" />
-                    ) : (
-                      <XCircle color="#CF3E27" />
-                    )}
-                  </td>
-                  <td data-label={plans.plansType.platinum}>
-                    {plans.dashboard.platinum === true ? (
-                      <CheckCircle color="#3CCF8E" />
-                    ) : (
-                      <XCircle color="#CF3E27" />
-                    )}
-                  </td>
-                </tr>
-                {/* <tr>
+                  <tr>
+                    <td data-label={plans.plansType.title}>
+                      {plans.dataMapping.title}
+                    </td>
+                    <td data-label={plans.plansType.basic}>
+                      {plans.dataMapping.basic === true ? (
+                        <CheckCircle color="#3CCF8E" />
+                      ) : (
+                        <XCircle color="#CF3E27" />
+                      )}
+                    </td>
+                    <td data-label={plans.plansType.intermediate}>
+                      {plans.dataMapping.intermediate === true ? (
+                        <CheckCircle color="#3CCF8E" />
+                      ) : (
+                        <XCircle color="#CF3E27" />
+                      )}
+                    </td>
+                    <td data-label={plans.plansType.advanced}>
+                      {plans.dataMapping.advanced === true ? (
+                        <CheckCircle color="#3CCF8E" />
+                      ) : (
+                        <XCircle color="#CF3E27" />
+                      )}
+                    </td>
+                    <td data-label={plans.plansType.platinum}>
+                      {plans.dataMapping.platinum === true ? (
+                        <CheckCircle color="#3CCF8E" />
+                      ) : (
+                        <XCircle color="#CF3E27" />
+                      )}
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-label={plans.plansType.title}>
+                      {plans.dataManagement.title}
+                    </td>
+                    <td data-label={plans.plansType.basic}>
+                      {plans.dataManagement.basic === true ? (
+                        <CheckCircle color="#3CCF8E" />
+                      ) : (
+                        <XCircle color="#CF3E27" />
+                      )}
+                    </td>
+                    <td data-label={plans.plansType.intermediate}>
+                      {plans.dataManagement.intermediate === true ? (
+                        <CheckCircle color="#3CCF8E" />
+                      ) : (
+                        <XCircle color="#CF3E27" />
+                      )}
+                    </td>
+                    <td data-label={plans.plansType.advanced}>
+                      {plans.dataManagement.advanced === true ? (
+                        <CheckCircle color="#3CCF8E" />
+                      ) : (
+                        <XCircle color="#CF3E27" />
+                      )}
+                    </td>
+                    <td data-label={plans.plansType.platinum}>
+                      {plans.dataManagement.platinum === true ? (
+                        <CheckCircle color="#3CCF8E" />
+                      ) : (
+                        <XCircle color="#CF3E27" />
+                      )}
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-label={plans.plansType.title}>
+                      {plans.riskAnalysis.title}
+                    </td>
+                    <td data-label={plans.plansType.basic}>
+                      {plans.riskAnalysis.basic === true ? (
+                        <CheckCircle color="#3CCF8E" />
+                      ) : (
+                        <XCircle color="#CF3E27" />
+                      )}
+                    </td>
+                    <td data-label={plans.plansType.intermediate}>
+                      {plans.riskAnalysis.intermediate === true ? (
+                        <CheckCircle color="#3CCF8E" />
+                      ) : (
+                        <XCircle color="#CF3E27" />
+                      )}
+                    </td>
+                    <td data-label={plans.plansType.advanced}>
+                      {plans.riskAnalysis.advanced === true ? (
+                        <CheckCircle color="#3CCF8E" />
+                      ) : (
+                        <XCircle color="#CF3E27" />
+                      )}
+                    </td>
+                    <td data-label={plans.plansType.platinum}>
+                      {plans.riskAnalysis.platinum === true ? (
+                        <CheckCircle color="#3CCF8E" />
+                      ) : (
+                        <XCircle color="#CF3E27" />
+                      )}
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-label={plans.plansType.title}>
+                      {plans.legitimateInterestTest.title}
+                    </td>
+                    <td data-label={plans.plansType.basic}>
+                      {plans.legitimateInterestTest.basic === true ? (
+                        <CheckCircle color="#3CCF8E" />
+                      ) : (
+                        <XCircle color="#CF3E27" />
+                      )}
+                    </td>
+                    <td data-label={plans.plansType.intermediate}>
+                      {plans.legitimateInterestTest.intermediate === true ? (
+                        <CheckCircle color="#3CCF8E" />
+                      ) : (
+                        <XCircle color="#CF3E27" />
+                      )}
+                    </td>
+                    <td data-label={plans.plansType.advanced}>
+                      {plans.legitimateInterestTest.advanced === true ? (
+                        <CheckCircle color="#3CCF8E" />
+                      ) : (
+                        <XCircle color="#CF3E27" />
+                      )}
+                    </td>
+                    <td data-label={plans.plansType.platinum}>
+                      {plans.legitimateInterestTest.platinum === true ? (
+                        <CheckCircle color="#3CCF8E" />
+                      ) : (
+                        <XCircle color="#CF3E27" />
+                      )}
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-label={plans.plansType.title}>
+                      {plans.actions.title}
+                    </td>
+                    <td data-label={plans.plansType.basic}>
+                      {plans.actions.basic === true ? (
+                        <CheckCircle color="#3CCF8E" />
+                      ) : (
+                        <XCircle color="#CF3E27" />
+                      )}
+                    </td>
+                    <td data-label={plans.plansType.intermediate}>
+                      {plans.actions.intermediate === true ? (
+                        <CheckCircle color="#3CCF8E" />
+                      ) : (
+                        <XCircle color="#CF3E27" />
+                      )}
+                    </td>
+                    <td data-label={plans.plansType.advanced}>
+                      {plans.actions.advanced === true ? (
+                        <CheckCircle color="#3CCF8E" />
+                      ) : (
+                        <XCircle color="#CF3E27" />
+                      )}
+                    </td>
+                    <td data-label={plans.plansType.platinum}>
+                      {plans.actions.platinum === true ? (
+                        <CheckCircle color="#3CCF8E" />
+                      ) : (
+                        <XCircle color="#CF3E27" />
+                      )}
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-label={plans.plansType.title}>
+                      {plans.dataProtection.title}
+                    </td>
+                    <td data-label={plans.plansType.basic}>
+                      {plans.dataProtection.basic === true ? (
+                        <CheckCircle color="#3CCF8E" />
+                      ) : (
+                        <XCircle color="#CF3E27" />
+                      )}
+                    </td>
+                    <td data-label={plans.plansType.intermediate}>
+                      {plans.dataProtection.intermediate === true ? (
+                        <CheckCircle color="#3CCF8E" />
+                      ) : (
+                        <XCircle color="#CF3E27" />
+                      )}
+                    </td>
+                    <td data-label={plans.plansType.advanced}>
+                      {plans.dataProtection.advanced === true ? (
+                        <CheckCircle color="#3CCF8E" />
+                      ) : (
+                        <XCircle color="#CF3E27" />
+                      )}
+                    </td>
+                    <td data-label={plans.plansType.platinum}>
+                      {plans.dataProtection.platinum === true ? (
+                        <CheckCircle color="#3CCF8E" />
+                      ) : (
+                        <XCircle color="#CF3E27" />
+                      )}
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-label={plans.plansType.title}>
+                      {plans.dashboard.title}
+                    </td>
+                    <td data-label={plans.plansType.basic}>
+                      {plans.dashboard.basic === true ? (
+                        <CheckCircle color="#3CCF8E" />
+                      ) : (
+                        <XCircle color="#CF3E27" />
+                      )}
+                    </td>
+                    <td data-label={plans.plansType.intermediate}>
+                      {plans.dashboard.intermediate === true ? (
+                        <CheckCircle color="#3CCF8E" />
+                      ) : (
+                        <XCircle color="#CF3E27" />
+                      )}
+                    </td>
+                    <td data-label={plans.plansType.advanced}>
+                      {plans.dashboard.advanced === true ? (
+                        <CheckCircle color="#3CCF8E" />
+                      ) : (
+                        <XCircle color="#CF3E27" />
+                      )}
+                    </td>
+                    <td data-label={plans.plansType.platinum}>
+                      {plans.dashboard.platinum === true ? (
+                        <CheckCircle color="#3CCF8E" />
+                      ) : (
+                        <XCircle color="#CF3E27" />
+                      )}
+                    </td>
+                  </tr>
+                  {/* <tr>
                   <td data-label={plans.plansType.basic}>{plans.EAD.title}</td>
                   <td data-label={plans.plansType.basic}>
                     {plans.EAD.basic === true ? (
@@ -570,40 +578,40 @@ function PlansPage(): JSX.Element {
                     )}
                   </td>
                 </tr> */}
-                <tr>
-                  <td data-label={plans.plansType.title}>
-                    {plans.customReports.title}
-                  </td>
-                  <td data-label={plans.plansType.basic}>
-                    {plans.customReports.basic === true ? (
-                      <CheckCircle color="#3CCF8E" />
-                    ) : (
-                      <XCircle color="#CF3E27" />
-                    )}
-                  </td>
-                  <td data-label={plans.plansType.intermediate}>
-                    {plans.customReports.intermediate === true ? (
-                      <CheckCircle color="#3CCF8E" />
-                    ) : (
-                      <XCircle color="#CF3E27" />
-                    )}
-                  </td>
-                  <td data-label={plans.plansType.advanced}>
-                    {plans.customReports.advanced === true ? (
-                      <CheckCircle color="#3CCF8E" />
-                    ) : (
-                      <XCircle color="#CF3E27" />
-                    )}
-                  </td>
-                  <td data-label={plans.plansType.platinum}>
-                    {plans.customReports.platinum === true ? (
-                      <CheckCircle color="#3CCF8E" />
-                    ) : (
-                      <XCircle color="#CF3E27" />
-                    )}
-                  </td>
-                </tr>
-                {/* <tr>
+                  <tr>
+                    <td data-label={plans.plansType.title}>
+                      {plans.customReports.title}
+                    </td>
+                    <td data-label={plans.plansType.basic}>
+                      {plans.customReports.basic === true ? (
+                        <CheckCircle color="#3CCF8E" />
+                      ) : (
+                        <XCircle color="#CF3E27" />
+                      )}
+                    </td>
+                    <td data-label={plans.plansType.intermediate}>
+                      {plans.customReports.intermediate === true ? (
+                        <CheckCircle color="#3CCF8E" />
+                      ) : (
+                        <XCircle color="#CF3E27" />
+                      )}
+                    </td>
+                    <td data-label={plans.plansType.advanced}>
+                      {plans.customReports.advanced === true ? (
+                        <CheckCircle color="#3CCF8E" />
+                      ) : (
+                        <XCircle color="#CF3E27" />
+                      )}
+                    </td>
+                    <td data-label={plans.plansType.platinum}>
+                      {plans.customReports.platinum === true ? (
+                        <CheckCircle color="#3CCF8E" />
+                      ) : (
+                        <XCircle color="#CF3E27" />
+                      )}
+                    </td>
+                  </tr>
+                  {/* <tr>
                   <td data-label={plans.plansType.basic}>{plans.IncidentManagement.title}</td>
                   <td data-label={plans.plansType.basic}>
                     {plans.IncidentManagement.basic === true ? (
@@ -727,12 +735,28 @@ function PlansPage(): JSX.Element {
                     )}
                   </td>
                 </tr> */}
-              </tbody>
-            </table>
-          </>
-        )
-      })}
-    </div>
+                  <tr>
+                    <td></td>
+                    <td>
+                      <a href="#basic">Começar já</a>
+                    </td>
+                    <td>
+                      <a href="#basic">Começar já</a>
+                    </td>
+                    <td>
+                      <a href="#basic">Começar já</a>
+                    </td>
+                    <td>
+                      <a href="#basic">Começar já</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </>
+          )
+        })}
+      </div>
+    </>
   )
 }
 
