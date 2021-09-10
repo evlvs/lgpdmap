@@ -604,12 +604,13 @@ a {
     font-size: 36px;
   }
   p {
-    font-size: 11px;
+    font-size: 16px;
   }
 
   a {
     font-size: 14px;
-    height: 38px;
+    height: 48px;
+    max-width: 3;
   }
 
   .vjs_video_3-dimensions {
@@ -654,7 +655,8 @@ html:not(.no-js) [data-aos^='fade'][data-aos^='fade'].aos-animate {
 
   a {
     font-size: 14px;
-    height: 42px;
+    height: 48px;
+    max-width: 284px;
   }
 
   .vjs_video_3-dimensions {
