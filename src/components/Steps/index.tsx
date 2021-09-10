@@ -8,10 +8,8 @@ const Steps: React.FC = () => {
       <div className={styles.steps}>
         <div className={styles.callToAction}>
           <h3>
-            Processos <br />
-            para <strong>adequar</strong>
-            <br /> sua <strong>empresa</strong>
-            <br />
+            Processos para <strong>adequar </strong>
+            sua <strong>empresa </strong>
             <span>a LGPD</span>
           </h3>
           <a href="/steps">Quer saber como funciona?</a>

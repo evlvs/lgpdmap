@@ -3,10 +3,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  position: relative;
   background: #fff;
   max-width: 1280px;
   margin: 0 10%;
+  height: 400px;
 
   h2 {
     margin-top: 20px;
@@ -38,11 +38,15 @@
 }
 
 @media (min-width: 769px) and (max-width: 1680px) {
-  .ourNumbers {margin-top: -40px;}
+  .ourNumbers {
+    margin-top: -40px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .ourNumbers {
+    height: 700px;
+
     h2 {
       margin: 10px;
     }
