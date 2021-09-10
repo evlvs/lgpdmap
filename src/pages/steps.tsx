@@ -18,6 +18,7 @@ const Home: React.FC = () => {
       <Presentation
         title="Conheça os nossos planos"
         paragraph="Possuimos um plano ideal para o tamanho da sua empresa, confira todos planos da LGPDmap"
+        hasButton="false"
       />
       <StepsPage />
       <ContactUs />
