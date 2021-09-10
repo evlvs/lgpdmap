@@ -11,6 +11,8 @@ const StepsPage: React.FC = () => {
   }, [])
   return (
     <>
+      <div className="ballsRC"></div>
+      <div className="ballsRO"></div>
       <div className={styles.steps}>
         <ul className={styles.services}>
           {/* <li>
@@ -179,6 +181,8 @@ const StepsPage: React.FC = () => {
             </div>
           </li>
         </ul>
+        <div className="ballsLC"></div>
+        <div className="ballsLO"></div>
       </div>
     </>
   )

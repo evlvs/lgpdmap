@@ -1,6 +1,6 @@
 .partnersMain {
   width: 100vw;
-  height: 100vh;
+  height: auto;
   background: url('/assets/circleBg.svg') no-repeat;
   background-position-y: center;
   background-position-x: center;
@@ -30,7 +30,7 @@
     align-items: center;
     position: relative;
     margin: 200px 0;
-    margin-bottom: 500px;
+    margin-bottom: 200px;
 
     .boxImg1 {
       background: var(--white);

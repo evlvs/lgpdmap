@@ -15,7 +15,7 @@ const videoJsOptions = {
   autoplay: false,
   controls: true,
   poster: './assets/video-bg.png',
-  width: '720',
+  width: '920',
   sources: [
     {
       src: './assets/LGPD_FINAL.mp4',
@@ -37,6 +37,7 @@ const Home: React.FC = () => {
         paragraph="Diga adeus às planilhas ou ferramentas complexas, com recursos
             desnecessários. Implemente a LGPD de forma simples e centralizada,
             com uma só ferramenta."
+        hasButton="true"
       />
       <KnowMore {...videoJsOptions} />
       <OurNumbers />

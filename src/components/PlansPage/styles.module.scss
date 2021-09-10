@@ -4,6 +4,8 @@
   justify-content: center;
   align-items: center;
   width: 100vw;
+  position: relative;
+  z-index: 99999999;
 
   input[type='radio'] {
     position: absolute;
@@ -19,11 +21,14 @@
     padding: 5px 20px;
     background: #dde1ea;
     border: solid 3px var(--purple-300);
+    border-right: solid 1.5px var(--purple-300);
     border-radius: 10px 0 0 10px;
     padding: 10px 20px;
 
     &:last-child {
       border-radius: 0 10px 10px 0;
+      border-left: 0;
+      border-right: solid 3px var(--purple-300);
     }
   }
 
@@ -152,11 +157,21 @@
     }
   }
 
+  .bglines {
+    background: url('/assets/bglines.png');
+    width: 100%;
+    height: 510px;
+    position: absolute;
+    margin-top: 515px;
+    z-index: -1;
+  }
+
   table {
     max-width: 1320px;
-    margin: 0 10%;
+    width: 80%;
     border: 0;
     border-spacing: 0;
+    background-color: var(--white);
 
     caption {
       width: 100%;
@@ -177,6 +192,10 @@
 
       &:first-child {
         color: var(--gray-300);
+      }
+
+      &:last-child {
+        border-bottom: 0;
       }
     }
 
@@ -203,6 +222,17 @@
         max-width: 300px;
         padding: 0 30px;
         text-align: left;
+      }
+
+      a {
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: 400;
+        background-color: var(--purple-300);
+        height: 47px;
+        margin: 20px auto;
+        width: 80%;
+        max-width: 100%;
       }
     }
   }
@@ -284,9 +314,13 @@
   }
 }
 @media (min-width: 769px) and (max-width: 1680px) {
-  h2 {
-    width: 80%;
-    max-width: 586px;
-    font-size: 36px;
+  .plansPage {
+    table {
+      caption {
+        h2 {
+          max-width: 568px;
+        }
+      }
+    }
   }
 }
