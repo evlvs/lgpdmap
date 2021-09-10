@@ -15,7 +15,6 @@ const videoJsOptions = {
   autoplay: false,
   controls: true,
   poster: './assets/video-bg.png',
-  responsive: true,
   width: '720',
   sources: [
     {

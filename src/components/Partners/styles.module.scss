@@ -13,7 +13,8 @@
   z-index: 1;
 
   h2 {
-    width: 100%;
+    width: 80%;
+    max-width: 1200px;
     line-height: 120%;
     text-align: center;
   }
@@ -381,7 +382,6 @@
     }
   }
 }
-
 
 @media only screen and (max-width: 768px) {
   .partnersMain {
