@@ -1,9 +1,1 @@
-<svg width="1920" height="478" viewBox="0 0 1920 478" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0 87.9998C0 87.9998 55.6659 149.771 104 161C203.823 184.189 209.885 9.65536 312 0.999757C427.172 -8.76262 445.474 164.695 561 161C660.272 157.824 681.626 49.5808 779 29.9998C898.435 5.98236 962.038 114.483 1083 99.9998C1149.71 92.0119 1179.81 47.6499 1247 47.9998C1324.89 48.4053 1355.51 112.086 1433 120C1552.91 132.246 1605.76 14.6646 1726 22.9998C1805.71 28.5252 1920 87.9998 1920 87.9998V478H0V87.9998Z" fill="url(#paint0_linear)"/>
-<defs>
-<linearGradient id="paint0_linear" x1="990.5" y1="1.00006" x2="990.5" y2="583" gradientUnits="userSpaceOnUse">
-<stop stop-color="#3C2CA0"/>
-<stop offset="1" stop-color="#3C2CA0"/>
-</linearGradient>
-</defs>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 477.4"><defs><style>.cls-1{fill:url(#Gradiente_sem_nome);}</style><linearGradient id="Gradiente_sem_nome" x1="960" y1="476.68" x2="960" y2="-105.32" gradientTransform="matrix(1, 0, 0, -1, 0, 476.68)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#3c2ca0"/><stop offset="1" stop-color="#3c2ca0"/></linearGradient></defs><g id="Camada_2" data-name="Camada 2"><g id="Camada_1-2" data-name="Camada 1"><path class="cls-1" d="M0,87.4s20.53,11.86,44.14,27.3a124,124,0,0,0,172.1-36.59C240.3,40.72,266.7,4.24,312,.4c115.17-9.77,133.47,163.69,249,160C660.27,157.22,681.63,49,779,29.4c119.43-24,183,84.48,304,70,66.71-8,96.81-52.35,164-52,77.89.4,108.51,64.08,186,72,119.91,12.24,172.76-105.34,293-97,79.71,5.52,194,65,194,65v390H0Z"/></g></g></svg>
