@@ -83,10 +83,10 @@ function PlansPage(): JSX.Element {
                     </ul>
 
                     <Link href="#basicPlan">
-                      <button>COMEÇAR JÁ</button>
+                      <button>COMECE JÁ</button>
                     </Link>
 
-                    <Link href="#basicPlan">
+                    <Link href="#compare">
                       <a>Faça a comparação</a>
                     </Link>
                   </li>
@@ -121,10 +121,10 @@ function PlansPage(): JSX.Element {
                     </ul>
 
                     <Link href="#intermediatePlan">
-                      <button>COMEÇAR JÁ</button>
+                      <button>COMECE JÁ</button>
                     </Link>
 
-                    <Link href="#intermediatePlan">
+                    <Link href="#compare">
                       <a>Faça a comparação</a>
                     </Link>
                   </li>
@@ -157,10 +157,10 @@ function PlansPage(): JSX.Element {
                     </ul>
 
                     <Link href="#advancedPlan">
-                      <button>COMEÇAR JÁ</button>
+                      <button>COMECE JÁ</button>
                     </Link>
 
-                    <Link href="#advancedPlan">
+                    <Link href="#compare">
                       <a>Faça a comparação</a>
                     </Link>
                   </li>
@@ -193,10 +193,10 @@ function PlansPage(): JSX.Element {
                     </ul>
 
                     <Link href="#platinumPlan">
-                      <button>COMEÇAR JÁ</button>
+                      <button>COMECE JÁ</button>
                     </Link>
 
-                    <Link href="#platinumPlan">
+                    <Link href="#compare">
                       <a>Faça a comparação</a>
                     </Link>
                   </li>
@@ -204,7 +204,7 @@ function PlansPage(): JSX.Element {
               </div>
               <div className={styles.bglines}></div>
 
-              <table key={index} className={styles.tableInfo}>
+              <table key={index} className={styles.tableInfo} id="compare">
                 <caption>
                   <h2>
                     LGPD<span>map tem um </span> plano ideal para você
@@ -629,7 +629,7 @@ function PlansPage(): JSX.Element {
                     </td>
 
                     <td className="plansBtn">
-                      <a href="#platinum">Começce já</a>
+                      <a href="#platinum">Comece já</a>
                     </td>
                   </tr>
                   {/* <tr>

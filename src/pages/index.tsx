@@ -39,11 +39,7 @@ const Home: React.FC = () => {
 
       <Presentation
         title="Nunca foi tão fácil adequar sua empresa à LGPD."
-        paragraph={[
-          'Diga adeus às planilhas ou ferramentas complexas, com recursos desnecessários. Implemente a',
-          <strong> LGPD </strong>,
-          'de forma simples e centralizada, com uma só ferramenta.'
-        ]}
+        paragraph="Diga adeus às planilhas ou ferramentas complexas, com recursos desnecessários. Implemente a <strong> LGPD </strong> de forma simples e centralizada, com uma só ferramenta."
         hasButton="true"
       />
       <KnowMore {...videoJsOptions} />
