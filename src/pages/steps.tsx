@@ -22,11 +22,7 @@ const Home: React.FC = () => {
       </Head>
       <Presentation
         title="Pronto para implantar a LGPD de forma fácil e intuitiva?"
-        paragraph={[
-          'Saiba como funciona o passo a passo para sua empresa se adequar a',
-          <strong> LGPD </strong>,
-          'de modo fácil, rápido e simples.'
-        ]}
+        paragraph="Saiba como funciona o passo a passo para sua empresa se adequar a <strong> LGPD </strong> de modo fácil, rápido e simples."
         hasButton="false"
       />
       <StepsPage />

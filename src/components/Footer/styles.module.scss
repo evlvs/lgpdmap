@@ -2,15 +2,51 @@
   width: 100vw;
   background: #5432af;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   overflow: hidden;
   position: relative;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 5px;
   font-size: 14px;
   line-height: 170%;
   color: #b3b1b7;
+  padding: 10px 15%;
+
+  .credits {
+    display: flex;
+    a {
+      width: auto;
+      padding: 0 10px;
+      height: auto;
+      border-left: 1px solid #b3b1b7;
+      border-radius: 0;
+      background: transparent;
+      color: #b3b1b7;
+      font-weight: 400;
+      transition: all ease-in-out 0.3s;
+
+      &:first-child {
+        margin-left: 10px;
+      }
+
+      &:hover {
+        color: var(--white);
+      }
+    }
+  }
+
+  .social {
+    color: var(--white);
+    display: flex;
+
+    a {
+      margin: 0 10px;
+      border-radius: 50%;
+      width: 42px;
+      height: 40px;
+      padding: 0;
+    }
+  }
 }
 
 .divider2 {
@@ -77,6 +113,19 @@
       }
       100% {
         background-position-x: -1000px;
+      }
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1680px) {
+  .footer {
+    display: flex;
+    .credits {
+      display: flex;
+
+      a {
+        height: auto;
       }
     }
   }

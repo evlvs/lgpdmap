@@ -46,9 +46,13 @@
     }
 
     a {
-      background: #6acf59;
+      background: var(--green-500);
       color: #fff;
       z-index: 9999999;
+    }
+
+    a:hover {
+      background: var(--green-700);
     }
   }
 }

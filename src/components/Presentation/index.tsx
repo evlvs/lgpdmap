@@ -1,10 +1,11 @@
 import React from 'react'
 import styles from './styles.module.scss'
 import Link from 'next/link'
+import parse from 'html-react-parser'
 
 function Presentation(props: {
   title: string
-  paragraph: string | any
+  paragraph: string
   hasButton: string
 }): JSX.Element {
   return (
@@ -17,7 +18,7 @@ function Presentation(props: {
             </a>
           </Link>
           <h1>{props.title}</h1>
-          <p>{props.paragraph}</p>
+          <p>{parse(props.paragraph)}</p>
           {props.hasButton === 'true' ? (
             <Link href="/steps">
               <a>Quer saber como funciona?</a>

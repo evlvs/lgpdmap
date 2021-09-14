@@ -23,10 +23,7 @@ const Home: React.FC = () => {
       </Head>
       <Presentation
         title="Confira todos os planos do Lgpdmap"
-        paragraph={[
-          'Possuimos um plano ideal para o tamanho da sua empresa, confira todos planos do ',
-          <strong>LGPDmap</strong>
-        ]}
+        paragraph="Possuimos um plano ideal para o tamanho da sua empresa, confira todos planos do <strong>LGPDmap</strong>"
         hasButton="false"
       />
       <PlansPage />
