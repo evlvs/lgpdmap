@@ -1,15 +1,16 @@
 .steps {
   width: 100vw;
   position: relative;
-  padding-top: 80px;
+  padding-top: 340px;
   display: flex;
   justify-content: center;
   align-items: center;
   background: url('/assets/grayBG.png') no-repeat;
   background-position: center center;
+  background-size: contain;
 
   .services {
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
