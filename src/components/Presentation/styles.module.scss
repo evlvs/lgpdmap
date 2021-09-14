@@ -45,14 +45,14 @@
 
   .bannerIllustration {
     width: 100%;
-    max-width: 445px;
+    max-width: 50vw;
     display: flex;
     justify-content: center;
     align-items: center;
     animation: illustration 3s linear infinite;
 
     img {
-      width: 150%;
+      width: 80%;
       overflow: hidden;
     }
 
