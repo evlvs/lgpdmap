@@ -52,7 +52,7 @@
     animation: illustration 3s linear infinite;
 
     img {
-      width: 80%;
+      width: 0%;
       overflow: hidden;
     }
 
@@ -72,7 +72,8 @@
 
 .divider1 {
   width: 100vw;
-  height: 20vh;
+  top: 0;
+  height: 0;
   position: relative;
   z-index: 2;
   background: linear-gradient(
@@ -87,7 +88,7 @@
     left: 0;
     width: 100%;
     height: 299px;
-    background: url('/assets/wave1.png') repeat;
+    background: url('/assets/wave1.svg') repeat;
     background-size: cover;
     background-position: center top;
     opacity: 0;
