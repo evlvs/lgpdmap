@@ -19,12 +19,12 @@ function Footer(): JSX.Element {
           <a href="#">Mapa do Site</a>
         </div>
         <div className={styles.social}>
-          <Link href="https://www.facebook.com/sekurtecnologia">
+          <Link href="https://www.facebook.com/lgpdmap">
             <a>
               <Facebook />
             </a>
           </Link>
-          <Link href="https://www.instagram.com/sekurbr/">
+          <Link href="https://www.instagram.com/lgpdmap/">
             <a>
               <Instagram />
             </a>
