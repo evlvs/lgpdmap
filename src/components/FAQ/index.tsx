@@ -9,9 +9,7 @@ function FAQ(): JSX.Element {
       <div className="ballsRO"></div>
       <div className="ballsLC"></div>
       <div className="ballsLO"></div>
-      <h2>
-        Veja as principais dúvidas dos clientes, antes de contratar um plano.
-      </h2>
+      <h2>Perguntas frequentes (FAQ)</h2>
       <Accordion />
     </section>
   )

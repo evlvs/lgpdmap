@@ -2,10 +2,10 @@ export const PlansData = [
   {
     plansType: {
       title: ' ',
-      basic: 'Básico',
-      intermediate: 'Intermediário',
-      advanced: 'Avançado',
-      platinum: 'Avançado Platinum'
+      basic: 'SMB',
+      intermediate: 'PRO',
+      advanced: 'BUSINESS',
+      platinum: 'ENTERPRISE'
     },
     valueMonth: {
       title: ' ',

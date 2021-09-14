@@ -9,7 +9,8 @@ function Testimonials(): JSX.Element {
       <div className={styles.mainSlider}>
         <div className={styles.boxSlider}>
           <h2>
-            Depoimentos que quem já implementou a LGPD utilizando o Lgpdmap
+            Depoimentos de quem já se adequou à <strong>LGPD</strong> utilizando
+            o <strong>Lgpdmap</strong>
           </h2>
           <ImageSlider />
         </div>
