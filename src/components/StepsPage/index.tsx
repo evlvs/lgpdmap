@@ -157,7 +157,7 @@ const StepsPage: React.FC = () => {
             <div className={styles.infoBody} data-aos="zoom-in-up">
               <div className={styles.stepsTitle}>
                 <h3>Monitoramento</h3>
-                Manutenção da LGPD
+                Manutenção da conformidade
               </div>
               <div className={styles.textBox}>
                 <h3>
@@ -165,24 +165,43 @@ const StepsPage: React.FC = () => {
                   colocar.
                 </h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
+                  Esta fase reflete o processo de manutenção da conformidade com
+                  a LGPD. O intuito é acompanhar o processo de implantação das
+                  atividades propostas no plano de ação e ao seu término iniciar
+                  o segundo ciclo da adequação:
                 </p>
-                <p>
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque laudantium, totam rem aperiam, eaque
-                  ipsa quae ab illo inventore veritatis et quasi architecto
-                  beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
-                  quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                  consequuntur magni dolores eos qui ratione voluptatem sequi
-                  nesciunt. Neque porro quisquam est.
-                </p>
+                <ul>
+                  <li>
+                    <p>
+                      Pensar em novos processos e/ou produtos da empresa com
+                      foco na privacidade desde a sua concepção (privacy by
+                      design / by default).
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Monitorar se os processos já mapeados demandam de novos
+                      ajustes e/ou adaptações;
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Acompanhar a execução do plano de ação e lançar novas
+                      demandas para execução de seu segundo ciclo;
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Registrar e a atender as demandas dos titulares de dados;
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Ficar atento às novidades da legislação e novas normativas
+                      da sua área de atuação.
+                    </p>
+                  </li>
+                </ul>
               </div>
             </div>
           </li>

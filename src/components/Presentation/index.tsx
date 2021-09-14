@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 function Presentation(props: {
   title: string
-  paragraph: string
+  paragraph: string | any
   hasButton: string
 }): JSX.Element {
   return (

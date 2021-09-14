@@ -10,7 +10,7 @@ const Steps: React.FC = () => {
           <h3>
             Processos para <strong>adequar </strong>
             sua <strong>empresa </strong>
-            <span>a LGPD</span>
+            <span>à LGPD</span>
           </h3>
           <a href="/steps">Quer saber como funciona?</a>
         </div>
@@ -30,7 +30,7 @@ const Steps: React.FC = () => {
             </div>
             <div className={styles.infoBox}>
               <h3>Mapeamento</h3>
-              Perícia das atividades
+              Conhecendo os processos
             </div>
           </li>
           <li>
@@ -43,7 +43,7 @@ const Steps: React.FC = () => {
             </div>
             <div className={styles.infoBox}>
               <h3>Análise de riscos</h3>
-              Garantir o Sucesso
+              Criação de estratégias para mitigá-los
             </div>
           </li>
           <li>
@@ -69,7 +69,7 @@ const Steps: React.FC = () => {
             </div>
             <div className={styles.infoBox}>
               <h3>Monitoramento</h3>
-              Manutenção da LGPD
+              Manutenção da conformidade
             </div>
           </li>
         </ul>

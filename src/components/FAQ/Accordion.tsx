@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Plus, Minus } from 'react-feather'
+import parse from 'html-react-parser'
 
 import { Data } from './Data'
 import styles from './styles.module.scss'
@@ -13,7 +14,6 @@ const Accordion: React.FC = () => {
     }
     setActive(index)
   }
-
   return (
     <div className={styles.accordion}>
       {Data.map((accordion, index) => {
@@ -34,7 +34,7 @@ const Accordion: React.FC = () => {
                   : styles.accordionBody
               }`}
             >
-              {accordion.answer}
+              {parse(accordion.answer)}
             </div>
           </div>
         )

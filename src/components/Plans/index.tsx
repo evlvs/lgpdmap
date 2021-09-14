@@ -20,8 +20,9 @@ function Plans(): JSX.Element {
           </h2>
           <p>
             Tenha tranquilidade e facilidade para implementação e gerenciamento
-            dos processos exigidos pela legislação com o Lgpdmap. Mantenha-se
-            atualizado para que sua empresa esteja sempre adequada à LGPD.
+            dos processos exigidos pela legislação com o{' '}
+            <strong>Lgpdmap</strong>. Mantenha-se atualizado para que sua
+            empresa esteja sempre adequada à <strong>LGPD</strong>.
           </p>
           <Link href="/plans">
             <a>Conheça os planos</a>

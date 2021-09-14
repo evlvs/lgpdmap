@@ -78,7 +78,7 @@ function PlansPage(): JSX.Element {
                       </li>
                       <li>
                         <CheckCircle color="#3CCF8E" /> Relatório de impacto à
-                        <strong> proteção de dados</strong>
+                        <strong> proteção de dados (RIPD)</strong>
                       </li>
                     </ul>
 
@@ -107,7 +107,7 @@ function PlansPage(): JSX.Element {
                     <ul>
                       <li>
                         <CheckCircle color="#3CCF8E" /> Cadastramento de até{' '}
-                        <strong>{plans.CNPJAmount.intermediate} CNPJ</strong>
+                        <strong>{plans.CNPJAmount.intermediate} CNPJs</strong>
                       </li>
                       <li>
                         <CheckCircle color="#3CCF8E" /> Gerenciamento completo
@@ -116,7 +116,7 @@ function PlansPage(): JSX.Element {
                       </li>
                       <li>
                         <CheckCircle color="#3CCF8E" /> Relatório de impacto à
-                        <strong> proteção de dados</strong>
+                        <strong> proteção de dados (RIPD)</strong>
                       </li>
                     </ul>
 
@@ -144,7 +144,7 @@ function PlansPage(): JSX.Element {
                     <ul>
                       <li>
                         <CheckCircle color="#3CCF8E" /> Cadastramento de até{' '}
-                        <strong>{plans.CNPJAmount.advanced} CNPJ</strong>
+                        <strong>{plans.CNPJAmount.advanced} CNPJs</strong>
                       </li>
                       <li>
                         <CheckCircle color="#3CCF8E" /> Gerenciamento completo
@@ -152,7 +152,7 @@ function PlansPage(): JSX.Element {
                       </li>
                       <li>
                         <CheckCircle color="#3CCF8E" /> Relatório de impacto à
-                        <strong> proteção de dados</strong>
+                        <strong> proteção de dados (RIPD)</strong>
                       </li>
                     </ul>
 
@@ -180,7 +180,7 @@ function PlansPage(): JSX.Element {
                     <ul>
                       <li>
                         <CheckCircle color="#3CCF8E" /> Cadastramento de até{' '}
-                        <strong>{plans.CNPJAmount.platinum} CNPJ</strong>
+                        <strong>{plans.CNPJAmount.platinum} CNPJs</strong>
                       </li>
                       <li>
                         <CheckCircle color="#3CCF8E" /> Gerenciamento completo
@@ -188,7 +188,7 @@ function PlansPage(): JSX.Element {
                       </li>
                       <li>
                         <CheckCircle color="#3CCF8E" /> Relatório de impacto à
-                        <strong> proteção de dados</strong>
+                        <strong> proteção de dados (RIPD)</strong>
                       </li>
                     </ul>
 
@@ -207,7 +207,7 @@ function PlansPage(): JSX.Element {
               <table key={index} className={styles.tableInfo}>
                 <caption>
                   <h2>
-                    A LGPD<span>map tem um </span> plano ideal para você
+                    LGPD<span>map tem um </span> plano ideal para você
                   </h2>
                 </caption>
 
@@ -223,7 +223,7 @@ function PlansPage(): JSX.Element {
                 <tbody>
                   <tr>
                     <td data-label={plans.plansType.title}>
-                      <strong>CNPJ`s</strong>
+                      <strong>CNPJs</strong>
                     </td>
                     <td data-label={plans.plansType.basic}>
                       {plans.CNPJAmount.basic}
@@ -240,7 +240,7 @@ function PlansPage(): JSX.Element {
                   </tr>
                   <tr>
                     <td data-label={plans.plansType.title}>
-                      Multi <strong>usuários</strong>
+                      Multi <strong>Usuários</strong>
                     </td>
                     <td data-label={plans.plansType.basic}>
                       {plans.userAmount.basic}
@@ -288,7 +288,7 @@ function PlansPage(): JSX.Element {
                 </tr> */}
                   <tr>
                     <td data-label={plans.plansType.title}>
-                      <strong>Mapeamento</strong> de dados
+                      <strong>Mapeamento</strong> de Dados
                     </td>
                     <td data-label={plans.plansType.basic}>
                       {plans.dataMapping.basic === true ? (
@@ -321,7 +321,7 @@ function PlansPage(): JSX.Element {
                   </tr>
                   <tr>
                     <td data-label={plans.plansType.title}>
-                      <strong>Mapeamento</strong> dos fluxos de dados
+                      <strong>Mapeamento</strong> dos Fluxos de Dados
                     </td>
                     <td data-label={plans.plansType.basic}>
                       {plans.dataManagement.basic === true ? (
@@ -354,7 +354,7 @@ function PlansPage(): JSX.Element {
                   </tr>
                   <tr>
                     <td data-label={plans.plansType.title}>
-                      <strong>Análise</strong> de riscos
+                      <strong>Análise</strong> de Riscos
                     </td>
                     <td data-label={plans.plansType.basic}>
                       {plans.riskAnalysis.basic === true ? (
@@ -387,7 +387,7 @@ function PlansPage(): JSX.Element {
                   </tr>
                   <tr>
                     <td data-label={plans.plansType.title}>
-                      Teste de <strong>legítimo interesse</strong>
+                      Teste de <strong>legítimo Interesse</strong>
                     </td>
                     <td data-label={plans.plansType.basic}>
                       {plans.legitimateInterestTest.basic === true ? (
@@ -420,7 +420,7 @@ function PlansPage(): JSX.Element {
                   </tr>
                   <tr>
                     <td data-label={plans.plansType.title}>
-                      <strong>Gestão</strong> inividual dos dados
+                      <strong>Gestão</strong> Inividual dos Dados
                     </td>
                     <td data-label={plans.plansType.basic}>
                       {plans.actions.basic === true ? (
@@ -453,7 +453,8 @@ function PlansPage(): JSX.Element {
                   </tr>
                   <tr>
                     <td data-label={plans.plansType.title}>
-                      Relatório de impacto à <strong>proteção de dados</strong>
+                      Relatório de Impacto à{' '}
+                      <strong>Proteção de Dados (RIPD)</strong>
                     </td>
                     <td data-label={plans.plansType.basic}>
                       {plans.dataProtection.basic === true ? (
@@ -616,19 +617,19 @@ function PlansPage(): JSX.Element {
                     <td className="plansBtn"></td>
 
                     <td className="plansBtn">
-                      <a href="#basic">Começar já</a>
+                      <a href="#basic">Comece já</a>
                     </td>
 
                     <td className="plansBtn">
-                      <a href="#intermediate">Começar já</a>
+                      <a href="#intermediate">Comece já</a>
                     </td>
 
                     <td className="plansBtn">
-                      <a href="#advanced">Começar já</a>
+                      <a href="#advanced">Comece já</a>
                     </td>
 
                     <td className="plansBtn">
-                      <a href="#platinum">Começar já</a>
+                      <a href="#platinum">Começce já</a>
                     </td>
                   </tr>
                   {/* <tr>
