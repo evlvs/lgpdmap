@@ -20,18 +20,13 @@ function Footer(): JSX.Element {
         </div>
         <div className={styles.social}>
           <Link href="https://www.facebook.com/lgpdmap">
-            <a>
+            <a target="_blank">
               <Facebook />
             </a>
           </Link>
           <Link href="https://www.instagram.com/lgpdmap/">
-            <a>
+            <a target="_blank">
               <Instagram />
-            </a>
-          </Link>
-          <Link href="#">
-            <a>
-              <Linkedin />
             </a>
           </Link>
         </div>
