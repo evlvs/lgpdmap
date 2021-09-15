@@ -17,12 +17,12 @@ const Home: React.FC = () => {
       </Head>
 
       <Presentation
-        title="Nossa política de privacidade."
+        title="Nossas políticas de privacidade."
         paragraph="Bem-vindo e obrigado pelo seu interesse no LGPDmap (“LGPDmap”, “nós” ou “nos”), nosso site em https://www.lgpdmap.com (o “Site”) e todos os sites relacionados , software para download, aplicativos móveis (incluindo aplicativos para tablets) e outros serviços fornecidos por nós e nos quais um link para esta Política de Privacidade é exibido, e todas as outras comunicações com indivíduos por meio escrito ou oral, como e-mail ou telefone (coletivamente , juntamente com o Site, nosso “Serviço”)."
         hasButton="true"
       />
       <div className="terms">
-        <h1>Política de Privacidade</h1>
+        <h1>Políticas de Privacidade</h1>
         <p>
           Esta Política de Privacidade (“Política”) descreve as informações que
           coletamos no ou por meio do Serviço, como usamos e divulgamos tais
@@ -31,9 +31,17 @@ const Home: React.FC = () => {
           privacidade descritas nesta Política.
         </p>
         <p>
-          This Policy is incorporated into, and is subject to, the LGPDmap Terms
-          of Service. Capitalized terms used but not defined in this Policy have
-          the meaning given to them in the LGPDmap Terms of Service.
+          LEIA ESTES TERMOS COM ATENÇÃO. AO SE REGISTAR, ACESSAR, NAVEGANDO E /
+          OU DE OUTRA FORMA USANDO OS SERVIÇOS PIPEDRIVE, VOCÊ RECONHECE QUE
+          LEU, COMPREENDEU E CONCORDA EM CUMPRIR ESTES TERMOS. SE VOCÊ NÃO
+          CONCORDA COM ESTES TERMOS, NÃO ACESSE, PESQUE OU USE DE OUTRA FORMA A
+          PLATAFORMA OU O PIPEDRIVE SERVIÇOS.
+        </p>
+        <p>
+          Esta Política está incorporada e sujeita aos Termos de Serviço do
+          LGPDmap. Os termos em letras maiúsculas usados, mas não definidos
+          nesta Política, têm o significado que lhes é atribuído nos Termos de
+          Serviço do LGPDmap.
         </p>
       </div>
       <Footer />
