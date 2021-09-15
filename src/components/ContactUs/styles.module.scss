@@ -5,7 +5,7 @@
   justify-content: center;
   overflow: hidden;
   position: relative;
-  padding: 80px 15%;
+  padding: 120px 15%;
 
   .illustration {
     width: 40%;
@@ -42,12 +42,16 @@
     h2 {
       text-align: left;
       margin: 40px 0 40px 10px;
+      max-width: 560px;
+      width: 90%;
     }
 
     a {
       background: var(--green-500);
       color: #fff;
       z-index: 9999999;
+      max-width: 560px;
+      width: 90%;
     }
 
     a:hover {
