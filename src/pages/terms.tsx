@@ -54,8 +54,7 @@ const Home: React.FC = () => {
         </p>
         <p>
           Se você se registrar para uma avaliação gratuita dos Serviços LGPDmap,
-          as disposições aplicáveis ​​destes Termos regerão essa avaliação
-          gratuita.
+          as disposições aplicáveis.
         </p>
         <p>
           O idioma original destes Termos é o inglês. O fornecedor pode
