@@ -54,7 +54,7 @@ const Home: React.FC = () => {
         </p>
         <p>
           Se você se registrar para uma avaliação gratuita dos Serviços LGPDmap,
-          as disposições aplicáveis ​​destes Termos regerão essa avaliação
+          as disposições aplicáveis destes Termos regerão essa avaliação
           gratuita.
         </p>
         <p>
