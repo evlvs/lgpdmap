@@ -12,7 +12,7 @@
   width: 100vw;
   position: relative;
   top: -3px;
-  padding: 80px 15%;
+  padding: 80px 10%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -133,7 +133,7 @@
     width: 100vw;
     position: relative;
     top: -3px;
-    padding: 80px 15%;
+    padding: 80px 10%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -150,16 +150,17 @@
         color: var(--white);
         margin: 20px 0;
         text-align: left;
-        font-size: 46px;
+        font-size: 36px;
+        width: 324px;
 
         span {
-          font-size: 56px;
+          font-size: 46px;
           font-weight: 800;
         }
 
         strong {
           font-weight: 800;
-          font-size: 56px;
+          font-size: 46px;
         }
       }
     }
