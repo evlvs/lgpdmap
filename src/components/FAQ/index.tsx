@@ -7,8 +7,7 @@ function FAQ(): JSX.Element {
     <section className={styles.FAQ}>
       <div className="ballsRC"></div>
       <div className="ballsRO"></div>
-      <div className="ballsLC"></div>
-      <div className="ballsLO"></div>
+
       <h2>Perguntas frequentes (FAQ)</h2>
       <Accordion />
     </section>

@@ -23,6 +23,7 @@
       background: transparent;
       color: #b3b1b7;
       font-weight: 400;
+      font-size: 14px;
       transition: all ease-in-out 0.3s;
 
       &:first-child {
@@ -59,7 +60,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 101%;
     height: 348px;
     background: url('/assets/waves/Footer2.svg');
     background-size: cover;

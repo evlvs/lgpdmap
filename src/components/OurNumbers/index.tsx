@@ -7,8 +7,6 @@ import styles from './styles.module.scss'
 function OurNumbers(): JSX.Element {
   return (
     <>
-      <div className="ballsRC"></div>
-      <div className="ballsRO"></div>
       <div className="ballsLC"></div>
       <div className="ballsLO"></div>
       <section className={styles.ourNumbers}>
