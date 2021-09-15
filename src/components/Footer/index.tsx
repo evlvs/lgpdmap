@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-import { Facebook, Instagram, Linkedin } from 'react-feather'
+import { Facebook, Instagram } from 'react-feather'
 import styles from './styles.module.scss'
 
 function Footer(): JSX.Element {
