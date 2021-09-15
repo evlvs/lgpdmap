@@ -271,7 +271,8 @@
 
     .services {
       li {
-        width: 270px;
+        max-width: 240px;
+        box-shadow: 7px 7px 1px #ae9dff;
 
         h3 {
           font-size: 16px;

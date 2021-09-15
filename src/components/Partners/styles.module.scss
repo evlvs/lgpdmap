@@ -30,7 +30,6 @@
     align-items: center;
     position: relative;
     margin: 200px 0;
-    margin-bottom: 200px;
 
     .boxImg1 {
       background: var(--white);
@@ -386,9 +385,14 @@
 @media only screen and (max-width: 768px) {
   .partnersMain {
     height: auto;
+    padding-bottom: 45px;
+
+    h2 {
+      margin-top: 40px;
+    }
     .partners {
       margin: 0;
-      margin-bottom: 200px;
+      margin-bottom: 0;
       height: auto;
       display: flex;
       flex-direction: row;
