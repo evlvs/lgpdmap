@@ -651,6 +651,10 @@ td.plansBtn {
 }
 
 @media (min-width: 769px) and (max-width: 1680px) {
+  body {
+    overflow-x: hidden;
+  }
+
   h1 {
     font-size: 36px;
   }

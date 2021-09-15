@@ -73,7 +73,6 @@ export default class KnowMore extends React.Component {
             </div>
           </div>
         </div>
-        <div className={styles.grayWave}></div>
       </>
     )
   }
