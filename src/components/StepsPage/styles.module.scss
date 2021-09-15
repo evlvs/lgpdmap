@@ -10,7 +10,7 @@
   background-size: contain;
 
   .services {
-    width: 100%;
+    width: 70%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -35,7 +35,7 @@
       position: relative;
       margin-right: 0;
       margin-left: auto;
-      padding-bottom: 40px;
+      padding-bottom: 80px;
 
       &:nth-child(odd) {
         margin-right: auto;
@@ -52,11 +52,27 @@
       }
 
       ul {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 10px;
         li {
           margin: 0;
           width: 100%;
           justify-content: flex-start;
           list-style: square;
+          padding: 0;
+
+          &::before {
+            content: '⬤';
+            padding-top: 13px;
+            left: -5px;
+            position: relative;
+            color: var(--white);
+            font-size: 8px;
+          }
         }
       }
 

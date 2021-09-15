@@ -14,9 +14,8 @@ function Footer(): JSX.Element {
       <footer className={styles.footer}>
         <div className={styles.credits}>
           © All rights reserved. Upland 2020
-          <a href="#">Termos de Serviço</a>
-          <a href="#">Política de Privacidade</a>
-          <a href="#">Mapa do Site</a>
+          <a href="/terms">Termos de Serviço</a>
+          <a href="/privacy">Política de Privacidade</a>
         </div>
         <div className={styles.social}>
           <Link href="https://www.facebook.com/lgpdmap">

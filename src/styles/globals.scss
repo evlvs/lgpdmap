@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;;500;700&display=swap');
 
 * {
   margin: 0;
@@ -65,14 +65,14 @@ h6 {
 
 h1 {
   font-size: 50px;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 h2 {
   font-weight: 700;
   font-size: 50px;
   line-height: 120%;
-  color: #6359cf;
+  color: var(--purple-300);
   width: 425px;
   text-align: center;
   margin-top: 170px;
@@ -89,27 +89,29 @@ h2 {
 h3 {
   font-size: 26px;
   color: var(--purple-300);
+  font-weight: 700;
 }
 
 h4 {
-  font-size: 20px;
-  font-weight: 500;
-  color: #51505e;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
+  color: var(--gray-300);
 }
 
 h5 {
-  font-size: 45px;
-  color: #6359cf;
-  font-weight: 700;
+  font-size: 50px;
+  color: var(--purple-300);
+  font-weight: 800;
 
   span {
-    font-size: 90px;
+    font-size: 100px;
   }
 }
 
 h6 {
-  font-weight: normal;
-  font-size: 14px;
+  font-weight: 500;
+  font-size: 20px;
   color: var(--gray-300);
 }
 
@@ -121,6 +123,7 @@ p {
   font-size: 26px;
   font-family: 'Lato', sans-serif;
   color: #51505e;
+  font-weight: 500;
 
   strong {
     font-weight: 700;
@@ -154,6 +157,16 @@ a:hover {
 
 td.plansBtn {
   border-bottom: 0 !important;
+}
+
+.terms {
+  padding: 350px 15%;
+
+  p {
+    padding: 20px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+  }
 }
 
 .c-player__screen {
