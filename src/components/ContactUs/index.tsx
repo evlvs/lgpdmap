@@ -16,7 +16,7 @@ function ContactUs(): JSX.Element {
         <h2>
           Fale com um <strong>Especialista</strong> e veja como é fácil{' '}
           <strong>adequar</strong> a sua empresa à <strong>LGPD</strong> com o
-          <strong> Lgpdmap</strong>
+          <strong> Lgpd</strong>map
         </h2>
         <Link href="https://whats.link/lgpdmap">
           <a>Fale com um Especialista</a>
