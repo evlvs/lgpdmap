@@ -179,11 +179,12 @@
       li {
         background: #ecf2ff;
         text-align: center;
-        margin: 2%;
+        margin: 1%;
         border-radius: 30px;
         border: 10px solid var(--white);
         padding: 10px;
         width: 45%;
+        min-width: 225px;
         color: var(--gray-200);
         display: flex;
         align-items: center;
@@ -194,7 +195,7 @@
         box-shadow: 17px 17px 1px #ae9dff;
 
         h3 {
-          font-size: 18px;
+          font-size: 16px;
         }
 
         &:hover {
