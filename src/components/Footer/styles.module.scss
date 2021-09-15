@@ -60,7 +60,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 101%;
+    width: 100%;
     height: 348px;
     background: url('/assets/waves/Footer2.svg');
     background-size: cover;
@@ -122,11 +122,32 @@
 @media (min-width: 769px) and (max-width: 1680px) {
   .footer {
     display: flex;
+
     .credits {
       display: flex;
 
       a {
         height: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: column-reverse;
+    .credits {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0;
+      text-align: center;
+
+      a {
+        height: auto;
+        border: 0;
       }
     }
   }
