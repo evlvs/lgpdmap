@@ -181,6 +181,8 @@
 @media (min-width: 769px) and (max-width: 1680px) {
   .steps {
     .services {
+      width: 70%;
+      min-width: 940px;
       li {
         &:nth-child(odd) {
           margin-right: auto;
@@ -192,6 +194,10 @@
               flex-direction: column;
               margin-right: 20px;
               padding-right: 20px;
+
+              h3 {
+                font-size: 36px;
+              }
             }
           }
         }
@@ -213,7 +219,7 @@
             text-align: left;
 
             h3 {
-              font-size: 42px;
+              font-size: 36px;
             }
           }
         }

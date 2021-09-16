@@ -4,7 +4,7 @@ import Accordion from './Accordion'
 
 function FAQ(): JSX.Element {
   return (
-    <section className={styles.FAQ}>
+    <section className={styles.FAQ} id="FAQ">
       <div className="ballsRC"></div>
       <div className="ballsRO"></div>
 

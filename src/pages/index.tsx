@@ -10,6 +10,7 @@ import Partners from '../components/Partners'
 import Plans from '../components/Plans'
 import Footer from '../components/Footer'
 import FAQ from '../components/FAQ'
+import Navbar from '../components/Navbar'
 
 const videoJsOptions = {
   autoplay: false,
@@ -36,7 +37,7 @@ const Home: React.FC = () => {
           type="image/x-icon"
         />
       </Head>
-
+      <Navbar />
       <Presentation
         title="Nunca foi tão fácil adequar sua empresa à LGPD."
         paragraph="Diga adeus às planilhas ou ferramentas complexas, com recursos desnecessários. Implemente a <strong> LGPD </strong> de forma simples e centralizada, com uma só ferramenta."

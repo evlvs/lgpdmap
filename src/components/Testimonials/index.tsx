@@ -5,7 +5,7 @@ import styles from './styles.module.scss'
 
 function Testimonials(): JSX.Element {
   return (
-    <section className={styles.testimonials}>
+    <section className={styles.testimonials} id="testimonials">
       <div className={styles.mainSlider}>
         <div className={styles.boxSlider}>
           <h2>

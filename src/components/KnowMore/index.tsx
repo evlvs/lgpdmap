@@ -31,7 +31,7 @@ export default class KnowMore extends React.Component {
   render(): JSX.Element {
     return (
       <>
-        <div className={styles.cplayer}>
+        <div className={styles.cplayer} id="knowMore">
           <div className={styles.knowMore}>
             <div className="ballsRC"></div>
             <div className="ballsRO"></div>

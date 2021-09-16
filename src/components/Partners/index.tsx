@@ -3,7 +3,7 @@ import styles from './styles.module.scss'
 
 function Partners(): JSX.Element {
   return (
-    <section className={styles.partnersMain} id="contactUs">
+    <section className={styles.partnersMain} id="partners">
       <div className="ballsRC"></div>
       <div className="ballsRO"></div>
 

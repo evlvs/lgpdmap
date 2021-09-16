@@ -354,6 +354,19 @@
 }
 @media (min-width: 769px) and (max-width: 1680px) {
   .plansPage {
+    ul.plans {
+      li {
+        ul {
+          li {
+            font-family: 'Lato', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            color: #51505e;
+          }
+        }
+      }
+    }
+
     table {
       caption {
         h2 {

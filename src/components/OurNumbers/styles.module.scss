@@ -44,6 +44,19 @@
 @media (min-width: 769px) and (max-width: 1680px) {
   .ourNumbers {
     margin-top: -40px;
+
+    ul {
+      li {
+        h5 {
+          span {
+            font-size: 72px;
+          }
+        }
+        h4 {
+          font-size: 22px;
+        }
+      }
+    }
   }
 }
 

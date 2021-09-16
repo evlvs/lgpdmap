@@ -8,7 +8,7 @@
   overflow: hidden;
   position: relative;
   padding-bottom: 80px;
-  margin: 200px 0;
+  margin-top: 120px;
 
   h2 {
     line-height: 120%;
@@ -24,11 +24,13 @@
     flex-direction: column;
     flex-wrap: wrap;
     margin: auto;
+    background: var(--white);
     border: 2px solid #f1f1f1;
     box-sizing: border-box;
     box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.07);
     border-radius: 40px;
     z-index: 9999999;
+    position: relative;
     padding: 15px 40px;
     transition: all ease-in-out 0.2s;
 
@@ -78,6 +80,7 @@
         transition: all ease-in-out 0.2s;
         font-family: 'Lato', sans-serif;
         font-size: 18px;
+        color: var(--gray-300);
 
         &.active {
           padding: 45px;
@@ -93,7 +96,7 @@
 
 @media (min-width: 769px) and (max-width: 1680px) {
   .FAQ {
-    margin-top: 250px;
+    margin-top: 160px;
 
     h2 {
       margin: 100px 0;

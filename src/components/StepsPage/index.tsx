@@ -48,7 +48,7 @@ const StepsPage: React.FC = () => {
             </div>
           </li> */}
           <li>
-            <div className={styles.infoBody} data-aos="zoom-in-up">
+            <div className={styles.infoBody} data-aos="zoom-in-up" id="map">
               <div className={styles.stepsTitle}>
                 <h3>Mapeamento</h3>
                 Conhecendo os processos
@@ -85,7 +85,7 @@ const StepsPage: React.FC = () => {
               </div>
             </div>
 
-            <div className={styles.infoBody} data-aos="zoom-in-up">
+            <div className={styles.infoBody} data-aos="zoom-in-up" id="risk">
               <div className={styles.stepsTitle}>
                 <h3>Análise de riscos</h3>
                 Criação de estratégias para mitigá-los
@@ -110,7 +110,7 @@ const StepsPage: React.FC = () => {
             </div>
           </li>
           <li>
-            <div className={styles.infoBody} data-aos="zoom-in-up">
+            <div className={styles.infoBody} data-aos="zoom-in-up" id="act">
               <div className={styles.stepsTitle}>
                 <h3>Ações</h3>
                 Mão na massa
@@ -154,7 +154,7 @@ const StepsPage: React.FC = () => {
               </div>
             </div>
 
-            <div className={styles.infoBody} data-aos="zoom-in-up">
+            <div className={styles.infoBody} data-aos="zoom-in-up" id="listen">
               <div className={styles.stepsTitle}>
                 <h3>Monitoramento</h3>
                 Manutenção da conformidade

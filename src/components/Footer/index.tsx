@@ -12,22 +12,117 @@ function Footer(): JSX.Element {
         <div className={`${styles.wave} ${styles.wave3}`}></div>
       </section>
       <footer className={styles.footer}>
-        <div className={styles.credits}>
-          © All rights reserved. Upland 2020
-          <a href="/terms">Termos de Serviço</a>
-          <a href="/privacy">Política de Privacidade</a>
+        <div className={styles.siteMap}>
+          <ul>
+            <li>LGPDmap</li>
+            <li>
+              <Link href="./#knowMore">
+                <a>Conheça o Lgpdmap</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="./#ourNumbers">
+                <a>Impacto em números</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="./#contactUs">
+                <a>Falar com Especialista</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="./#testimonials">
+                <a>Depoimentos</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="./#partners">
+                <a>Empresas</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="./#FAQ">
+                <a>FAQ</a>
+              </Link>
+            </li>
+          </ul>
+          <ul>
+            <li>Como funciona?</li>
+            <li>
+              <Link href="/steps">
+                <a>Adeque-se</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/steps#map">
+                <a>Mapeamento</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/steps#risk">
+                <a>Análise de Riscos</a>
+              </Link>
+            </li>
+
+            <li>
+              <Link href="/steps#act">
+                <a>Ações</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/steps#listen">
+                <a>Monitoramento</a>
+              </Link>
+            </li>
+          </ul>
+
+          <ul>
+            <li>Conheça nossos planos</li>
+            <li>
+              <Link href="/plans">
+                <a>Planos</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/plans#compare">
+                <a>SMB</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/plans#compare">
+                <a>PRO</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/plans#compare">
+                <a>BUSINESS</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/plans#compare">
+                <a>ENTERPRISE</a>
+              </Link>
+            </li>
+          </ul>
         </div>
-        <div className={styles.social}>
-          <Link href="https://www.facebook.com/lgpdmap">
-            <a target="_blank">
-              <Facebook />
-            </a>
-          </Link>
-          <Link href="https://www.instagram.com/lgpdmap/">
-            <a target="_blank">
-              <Instagram />
-            </a>
-          </Link>
+        <div className={styles.foot}>
+          <div className={styles.credits}>
+            © All rights reserved. Upland 2020
+            <a href="/terms">Termos de Serviço</a>
+            <a href="/privacy">Política de Privacidade</a>
+          </div>
+          <div className={styles.social}>
+            <Link href="https://www.facebook.com/lgpdmap">
+              <a target="_blank">
+                <Facebook />
+              </a>
+            </Link>
+            <Link href="https://www.instagram.com/lgpdmap/">
+              <a target="_blank">
+                <Instagram />
+              </a>
+            </Link>
+          </div>
         </div>
       </footer>
     </>

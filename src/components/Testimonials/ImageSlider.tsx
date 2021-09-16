@@ -1,11 +1,11 @@
 import React from 'react'
 import { Star } from 'react-feather'
 import { SliderData } from './SliderData'
-import SwiperCore, { Navigation, Pagination, A11y } from 'swiper'
+import SwiperCore, { Navigation, Pagination, Autoplay } from 'swiper'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
 
-SwiperCore.use([Navigation, Pagination, A11y])
+SwiperCore.use([Navigation, Pagination, Autoplay])
 
 const ImageSlider: React.FC = () => {
   return (
@@ -13,6 +13,10 @@ const ImageSlider: React.FC = () => {
       <Swiper
         spaceBetween={100}
         slidesPerView={1}
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: false
+        }}
         navigation
         pagination={{ clickable: true }}
         onSlideChange={() => console.log('slide change')}

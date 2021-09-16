@@ -376,7 +376,7 @@ td.plansBtn {
 .ballsRC {
   position: absolute;
   width: 100%;
-  height: 500px;
+  height: 400px;
   background: url('/assets/ballsColored.png');
   background-repeat: no-repeat;
   background-position: right top;
@@ -384,6 +384,7 @@ td.plansBtn {
   opacity: 0.3;
   animation: ballsRC 20s linear infinite;
   animation-delay: 0s;
+  z-index: 1;
 }
 
 @keyframes ballsRC {
@@ -401,7 +402,7 @@ td.plansBtn {
 .ballsRO {
   position: absolute;
   width: 100%;
-  height: 500px;
+  height: 400px;
   background: url('/assets/ballsOutlined.png');
   background-repeat: no-repeat;
   background-position: right top;
