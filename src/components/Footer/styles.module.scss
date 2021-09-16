@@ -176,18 +176,28 @@
 @media (max-width: 768px) {
   .footer {
     display: flex;
-    flex-direction: column-reverse;
-    .credits {
+    flex-direction: column;
+
+    .siteMap {
+      width: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin: 20px 0;
-      text-align: center;
+    }
 
-      a {
-        height: auto;
-        border: 0;
+    .foot {
+      flex-direction: column;
+      .credits {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0;
+        text-align: center;
+
+        a {
+          height: auto;
+          border: 0;
+        }
       }
     }
   }
@@ -197,6 +207,7 @@
     height: 149px;
     position: relative;
     z-index: 2;
+    margin-bottom: -1px;
 
     .wave {
       position: absolute;

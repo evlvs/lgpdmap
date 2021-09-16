@@ -263,6 +263,8 @@
     height: 150px;
     position: relative;
     z-index: 2;
+    margin-top: -1px;
+
     background: linear-gradient(
       178.24deg,
       #753bc5 47.57%,
@@ -337,6 +339,7 @@
     height: 249px;
     position: relative;
     z-index: 2;
+    margin-bottom: -2px;
 
     .wave {
       position: absolute;

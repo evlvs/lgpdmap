@@ -1,15 +1,25 @@
 import React, { useState } from 'react'
 import styles from './styles.module.scss'
 import Link from 'next/link'
+import { Menu } from 'react-feather'
 
 function Navbar(): JSX.Element {
   const [navbar, setNavbar] = useState(false)
+  const [btnMenu, setBtnMenu] = useState(false)
 
   const changeBackground = () => {
     if (window.scrollY >= 500) {
       setNavbar(true)
     } else {
       setNavbar(false)
+    }
+  }
+
+  const handleBtnMenu = () => {
+    if (btnMenu === false) {
+      setBtnMenu(true)
+    } else {
+      setBtnMenu(false)
     }
   }
 
@@ -28,7 +38,10 @@ function Navbar(): JSX.Element {
           <img src="/assets/Logo.png" alt="LGPDmap" />
         </a>
       </Link>
-      <ul>
+      <button onClick={() => handleBtnMenu()}>
+        <Menu stroke="#6359cf" />
+      </button>
+      <ul className={btnMenu ? `burger ${styles.active}` : 'burger'}>
         <li>
           <Link href="/">Home</Link>
         </li>
