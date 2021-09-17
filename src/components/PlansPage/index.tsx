@@ -43,7 +43,7 @@ function PlansPage(): JSX.Element {
         </form>
 
         <p>
-          Diga adeus às planilhas ou ferramentas complexas, recursos
+          Diga adeus às planilhas ou ferramentas complexas, com recursos
           desnecessários. Adeque sua empresa à <strong>LGPD</strong> de forma
           simples e centralizada, com uma só ferramenta.
         </p>
@@ -53,7 +53,7 @@ function PlansPage(): JSX.Element {
             <>
               <div>
                 <ul className={styles.plans}>
-                  <li className={styles.basicPlan}>
+                  <li className={styles.basicPlan} id="SMB">
                     <h6>{plans.plansType.basic}</h6>
                     <p>
                       R$
@@ -78,6 +78,10 @@ function PlansPage(): JSX.Element {
                         <CheckCircle color="#3CCF8E" /> Relatório de Impacto à
                         <strong> Proteção de Dados (RIPD)</strong>
                       </li>
+                      <li>
+                        <CheckCircle color="#3CCF8E" /> Até{' '}
+                        <strong>50 Processos</strong>
+                      </li>
                     </ul>
 
                     <Link href="#basicPlan">
@@ -89,7 +93,7 @@ function PlansPage(): JSX.Element {
                     </Link>
                   </li>
 
-                  <li className={styles.intermediatePlan}>
+                  <li className={styles.intermediatePlan} id="PRO">
                     <div className={styles.recommended}>RECOMENDADO</div>
                     <h6>{plans.plansType.intermediate}</h6>
                     <p>
@@ -118,6 +122,10 @@ function PlansPage(): JSX.Element {
                         <CheckCircle color="#3CCF8E" /> Relatório de Impacto à
                         <strong> Proteção de Dados (RIPD)</strong>
                       </li>
+                      <li>
+                        <CheckCircle color="#3CCF8E" /> Até{' '}
+                        <strong>100 Processos</strong>
+                      </li>
                     </ul>
 
                     <Link href="#intermediatePlan">
@@ -129,7 +137,7 @@ function PlansPage(): JSX.Element {
                     </Link>
                   </li>
 
-                  <li className={styles.advancedPlan}>
+                  <li className={styles.advancedPlan} id="BUSINESS">
                     <h6>{plans.plansType.advanced}</h6>
                     <p>
                       R$
@@ -155,6 +163,10 @@ function PlansPage(): JSX.Element {
                         <CheckCircle color="#3CCF8E" /> Relatório de Impacto à
                         <strong> Proteção de Dados (RIPD)</strong>
                       </li>
+                      <li>
+                        <CheckCircle color="#3CCF8E" /> Até{' '}
+                        <strong>300 Processos</strong>
+                      </li>
                     </ul>
 
                     <Link href="#advancedPlan">
@@ -166,7 +178,7 @@ function PlansPage(): JSX.Element {
                     </Link>
                   </li>
 
-                  <li className={styles.platinumPlan}>
+                  <li className={styles.platinumPlan} id="ENTERPRISE">
                     <h6>{plans.plansType.platinum}</h6>
                     <p>
                       R$
@@ -192,6 +204,10 @@ function PlansPage(): JSX.Element {
                         <CheckCircle color="#3CCF8E" /> Relatório de Impacto à
                         <strong> Proteção de Dados (RIPD)</strong>
                       </li>
+                      <li>
+                        <CheckCircle color="#3CCF8E" />{' '}
+                        <strong>Processos Ilimitados</strong>
+                      </li>
                     </ul>
 
                     <Link href="#platinumPlan">
@@ -209,7 +225,7 @@ function PlansPage(): JSX.Element {
               <table key={index} className={styles.tableInfo} id="compare">
                 <caption>
                   <h2>
-                    LGPD<span>map tem um </span> plano ideal para você
+                    Lgpd<span>map tem um </span> plano ideal para você
                   </h2>
                 </caption>
 

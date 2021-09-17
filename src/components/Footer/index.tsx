@@ -14,7 +14,7 @@ function Footer(): JSX.Element {
       <footer className={styles.footer}>
         <div className={styles.siteMap}>
           <ul>
-            <li>LGPDmap</li>
+            <li>Lgpdmap</li>
             <li>
               <Link href="./#knowMore">
                 <a>Conheça o Lgpdmap</a>
@@ -84,22 +84,22 @@ function Footer(): JSX.Element {
               </Link>
             </li>
             <li>
-              <Link href="/plans#compare">
+              <Link href="/plans#SMB">
                 <a>SMB</a>
               </Link>
             </li>
             <li>
-              <Link href="/plans#compare">
+              <Link href="/plans#PRO">
                 <a>PRO</a>
               </Link>
             </li>
             <li>
-              <Link href="/plans#compare">
+              <Link href="/plans#BUSINESS">
                 <a>BUSINESS</a>
               </Link>
             </li>
             <li>
-              <Link href="/plans#compare">
+              <Link href="/plans#ENTERPRISE">
                 <a>ENTERPRISE</a>
               </Link>
             </li>

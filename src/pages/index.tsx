@@ -19,7 +19,7 @@ const videoJsOptions = {
   width: '920',
   sources: [
     {
-      src: './assets/LGPD_FINAL.mp4',
+      src: 'http://evolvesrio.com/LGPD_FINAL2.mp4',
       type: 'video/mp4'
     }
   ]

@@ -21,7 +21,7 @@ const Home: React.FC = () => {
       <Navbar />
       <Presentation
         title="Confira os planos disponíveis do Lgpdmap"
-        paragraph="Possuímos um plano ideal para sua organização ou grupo de empresas. Confira os planos do <strong>Lgpdmap</strong>"
+        paragraph="Possuímos um plano ideal para sua organização ou grupo de empresas. Confira os planos do <strong>Lgpdmap</strong>."
         hasButton="false"
       />
       <PlansPage />

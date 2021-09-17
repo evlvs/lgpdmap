@@ -18,7 +18,7 @@ function ContactUs(): JSX.Element {
           <strong>adequar</strong> a sua empresa à <strong>LGPD</strong> com o
           <strong> Lgpdmap</strong>
         </h2>
-        <Link href="https://whats.link/lgpdmap">
+        <Link href="https://api.whatsapp.com/send?phone=554130579598">
           <a>Fale com um Especialista</a>
         </Link>
       </div>

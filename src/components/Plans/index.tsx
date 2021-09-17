@@ -16,7 +16,7 @@ function Plans(): JSX.Element {
         </div>
         <div className={styles.callToAction}>
           <h2>
-            Possuimos um <strong>plano ideal</strong> para seu negócio!
+            Possuímos um <strong>plano ideal</strong> para seu negócio!
           </h2>
           <p>
             Tenha tranquilidade e facilidade para implementação e gerenciamento
