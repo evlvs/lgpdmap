@@ -7,8 +7,8 @@
   flex-direction: column;
   overflow: hidden;
   position: relative;
-  padding-bottom: 80px;
-  margin-top: 120px;
+  padding-bottom: 30px;
+  padding-top: 40px;
 
   h2 {
     line-height: 120%;
@@ -96,10 +96,10 @@
 
 @media (min-width: 769px) and (max-width: 1680px) {
   .FAQ {
-    margin-top: 160px;
+    margin-top: 120px;
 
     h2 {
-      margin: 100px 0;
+      margin: 50px 0;
     }
     .accordionHead {
       h3 {
@@ -111,7 +111,7 @@
 
 @media only screen and (max-width: 768px) {
   .FAQ {
-    padding-top: 0;
+    padding-top: 80px;
     h2 {
       margin: 0;
     }

@@ -64,9 +64,10 @@
 
 .divider1 {
   width: 100%;
-  height: 160px;
+  height: 100px;
   position: relative;
   z-index: 2;
+  top: -1px;
   background: linear-gradient(
     178.24deg,
     #753bc5 47.57%,
@@ -141,6 +142,7 @@
   height: 150px;
   position: relative;
   z-index: 2;
+  bottom: -1px;
 
   .wave {
     position: absolute;
@@ -276,7 +278,7 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: 150px;
+      height: 220px;
       background: url('/assets/wave1.svg') repeat-x;
       background-size: cover;
       background-position: center top;

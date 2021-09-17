@@ -11,6 +11,7 @@ nav.navbar {
   right: 0;
   z-index: 999999999999999;
   opacity: 0;
+  box-shadow: 0 0 19px var(--purple-300);
   transition: all ease-in-out 0.3s;
 
   &.active {
@@ -45,6 +46,11 @@ nav.navbar {
 
     li {
       margin: 0 20px;
+      a {
+        &:hover {
+          color: var(--green-500);
+        }
+      }
     }
   }
 }

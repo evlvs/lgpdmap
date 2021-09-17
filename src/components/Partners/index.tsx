@@ -9,7 +9,7 @@ function Partners(): JSX.Element {
 
       <h2>
         Empresas que confiam no <strong>Lgpdmap</strong> para o processo de
-        implementação e manutenção da conformidade com a LPGD.
+        implementação e manutenção da conformidade com a <strong>LGPD</strong>.
       </h2>
 
       <div className={styles.partners}>

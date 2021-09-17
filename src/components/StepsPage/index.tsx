@@ -87,24 +87,24 @@ const StepsPage: React.FC = () => {
 
             <div className={styles.infoBody} data-aos="zoom-in-up" id="risk">
               <div className={styles.stepsTitle}>
-                <h3>Análise de riscos</h3>
+                <h3>Análise de Riscos</h3>
                 Criação de estratégias para mitigá-los
               </div>
               <div className={styles.textBox}>
                 <h3>
-                  Neste ponto, já ultrapassamos metade da nossa caminhada,
-                  portanto é fazer a lição de casa e garantir o sucesso.
+                  Neste ponto, já percorremos boa parte do caminho, portanto é
+                  fazer a lição de casa e garantir o sucesso.
                 </h3>
                 <p>
-                  A análise de riscos nada mais é do que mapear tudo aquilo que
+                  A análise de Riscos nada mais é do que mapear tudo aquilo que
                   pode gerar algum possível problema futuro para a empresa. Ou
                   seja, tirado o raio-X nas etapas anteriores, basta entender o
                   que se tornará um risco, qual sua gravidade, como e se é
                   viável mitigá-lo.
                 </p>
                 <p>
-                  Com a lição feita, agora é hora de criar as ações necessárias
-                  para entrar de fato na reta final do processo!
+                  Com a lição feita, agora é hora de planejar as ações
+                  necessárias para entrar de fato na reta final do processo!
                 </p>
               </div>
             </div>
@@ -128,8 +128,9 @@ const StepsPage: React.FC = () => {
                 </p>
                 <p>
                   Um dos resultados desta fase é a consolidação das informações
-                  para a geração do Relatório de Impacto à Proteção de Dados,
-                  requisito obrigatório para o processo de adequação da LGPD.
+                  para a geração, com poucos cliques, do Relatório de Impacto à
+                  Proteção de Dados (RIPD), requisito obrigatório para o
+                  processo de adequação da LGPD.
                 </p>
                 <p>
                   Concluindo a implantação das atividades de ajuste propostas no
@@ -161,8 +162,8 @@ const StepsPage: React.FC = () => {
               </div>
               <div className={styles.textBox}>
                 <h3>
-                  Texto para monitorameto que ainda não enviado, mas podemos
-                  colocar.
+                  Após adequar e colocar sua empresa nos trilhos da LGPD, é
+                  fundamental o monitoramento para manutenção da conformidade.
                 </h3>
                 <p>
                   Esta fase reflete o processo de manutenção da conformidade com

@@ -20,9 +20,7 @@ function PlansPage(): JSX.Element {
       <div className="ballsLO"></div>
 
       <div className={styles.plansPage}>
-        <h2>
-          Planos Lgpd<span>map</span>
-        </h2>
+        <h2>Planos Lgpdmap</h2>
         <form>
           <div className="radio-group">
             <input
@@ -45,9 +43,9 @@ function PlansPage(): JSX.Element {
         </form>
 
         <p>
-          Diga adeus às planilhas ou ferramentas complexas, com recursos
-          desnecessários. Implemente a LGPD de forma simples e centralizada, com
-          uma só ferramenta.
+          Diga adeus às planilhas ou ferramentas complexas, recursos
+          desnecessários. Adeque sua empresa à <strong>LGPD</strong> de forma
+          simples e centralizada, com uma só ferramenta.
         </p>
 
         {PlansData.map((plans, index) => {
@@ -64,7 +62,7 @@ function PlansPage(): JSX.Element {
                           ? plans.valueMonth.basic
                           : plans.valueAnual.basic}
                       </strong>
-                      <span>{radioBtn === 'month' ? '/mês' : '/ano'}</span>
+                      <span>/mês</span>
                     </p>
 
                     <ul>
@@ -74,11 +72,11 @@ function PlansPage(): JSX.Element {
                       </li>
                       <li>
                         <CheckCircle color="#3CCF8E" /> Gerenciamento completo
-                        com <strong>{plans.userAmount.basic} usuário</strong>
+                        com <strong>{plans.userAmount.basic} usuários</strong>
                       </li>
                       <li>
-                        <CheckCircle color="#3CCF8E" /> Relatório de impacto à
-                        <strong> proteção de dados (RIPD)</strong>
+                        <CheckCircle color="#3CCF8E" /> Relatório de Impacto à
+                        <strong> Proteção de Dados (RIPD)</strong>
                       </li>
                     </ul>
 
@@ -101,7 +99,7 @@ function PlansPage(): JSX.Element {
                           ? plans.valueMonth.intermediate
                           : plans.valueAnual.intermediate}
                       </strong>
-                      <span>{radioBtn === 'month' ? '/mês' : '/ano'}</span>
+                      <span>/mês</span>
                     </p>
 
                     <ul>
@@ -112,11 +110,13 @@ function PlansPage(): JSX.Element {
                       <li>
                         <CheckCircle color="#3CCF8E" /> Gerenciamento completo
                         com{' '}
-                        <strong>{plans.userAmount.intermediate} usuário</strong>
+                        <strong>
+                          {plans.userAmount.intermediate} usuários
+                        </strong>
                       </li>
                       <li>
-                        <CheckCircle color="#3CCF8E" /> Relatório de impacto à
-                        <strong> proteção de dados (RIPD)</strong>
+                        <CheckCircle color="#3CCF8E" /> Relatório de Impacto à
+                        <strong> Proteção de Dados (RIPD)</strong>
                       </li>
                     </ul>
 
@@ -138,21 +138,22 @@ function PlansPage(): JSX.Element {
                           ? plans.valueMonth.advanced
                           : plans.valueAnual.advanced}
                       </strong>
-                      <span>{radioBtn === 'month' ? '/mês' : '/ano'}</span>
+                      <span>/mês</span>
                     </p>
 
                     <ul>
                       <li>
-                        <CheckCircle color="#3CCF8E" /> Cadastramento de até{' '}
+                        <CheckCircle color="#3CCF8E" /> Cadastramento de até
                         <strong>{plans.CNPJAmount.advanced} CNPJs</strong>
                       </li>
                       <li>
                         <CheckCircle color="#3CCF8E" /> Gerenciamento completo
-                        com <strong>{plans.userAmount.advanced} usuário</strong>
+                        com{' '}
+                        <strong>{plans.userAmount.advanced} usuários</strong>
                       </li>
                       <li>
-                        <CheckCircle color="#3CCF8E" /> Relatório de impacto à
-                        <strong> proteção de dados (RIPD)</strong>
+                        <CheckCircle color="#3CCF8E" /> Relatório de Impacto à
+                        <strong> Proteção de Dados (RIPD)</strong>
                       </li>
                     </ul>
 
@@ -174,7 +175,7 @@ function PlansPage(): JSX.Element {
                           ? plans.valueMonth.platinum
                           : plans.valueAnual.platinum}
                       </strong>
-                      <span>{radioBtn === 'month' ? '/mês' : '/ano'}</span>
+                      <span>/mês</span>
                     </p>
 
                     <ul>
@@ -184,11 +185,12 @@ function PlansPage(): JSX.Element {
                       </li>
                       <li>
                         <CheckCircle color="#3CCF8E" /> Gerenciamento completo
-                        com <strong>{plans.userAmount.platinum} usuário</strong>
+                        com{' '}
+                        <strong>{plans.userAmount.platinum} usuários</strong>
                       </li>
                       <li>
-                        <CheckCircle color="#3CCF8E" /> Relatório de impacto à
-                        <strong> proteção de dados (RIPD)</strong>
+                        <CheckCircle color="#3CCF8E" /> Relatório de Impacto à
+                        <strong> Proteção de Dados (RIPD)</strong>
                       </li>
                     </ul>
 
@@ -487,7 +489,7 @@ function PlansPage(): JSX.Element {
                   </tr>
                   <tr>
                     <td data-label={plans.plansType.title}>
-                      <strong>Dashoboard</strong>
+                      <strong>Dashboard</strong>
                     </td>
                     <td data-label={plans.plansType.basic}>
                       {plans.dashboard.basic === true ? (
@@ -582,7 +584,7 @@ function PlansPage(): JSX.Element {
                 </tr> */}
                   <tr>
                     <td data-label={plans.plansType.title}>
-                      Relatório de <strong>plano de ações</strong>
+                      Relatório de <strong>Plano de Ações</strong>
                     </td>
                     <td data-label={plans.plansType.basic}>
                       {plans.customReports.basic === true ? (

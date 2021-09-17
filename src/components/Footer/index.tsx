@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 import { Facebook, Instagram } from 'react-feather'
+import ContactUs from '../ContactUs'
 import styles from './styles.module.scss'
 
 function Footer(): JSX.Element {
@@ -104,11 +105,26 @@ function Footer(): JSX.Element {
               </Link>
             </li>
           </ul>
+
+          <div className={styles.illustration}>
+            <img src="./assets/contactus.svg" alt="Whatsapp" />
+          </div>
+
+          <div className={styles.callToAction}>
+            <h2>
+              Fale com um <strong>Especialista</strong> e veja como é fácil
+              <strong> adequar</strong> a sua empresa à <strong>LGPD</strong>{' '}
+              com o<strong> Lgpd</strong>map
+            </h2>
+            <Link href="https://whats.link/lgpdmap">
+              <a>Fale com um Especialista</a>
+            </Link>
+          </div>
         </div>
         <div className={styles.foot}>
           <div className={styles.credits}>
             © All rights reserved. Upland 2020
-            <a href="/terms">Termos de Serviço</a>
+            <a href="/terms">Termos de Uso</a>
             <a href="/privacy">Política de Privacidade</a>
           </div>
           <div className={styles.social}>

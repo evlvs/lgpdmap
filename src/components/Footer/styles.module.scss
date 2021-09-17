@@ -10,11 +10,12 @@
   font-size: 14px;
   line-height: 170%;
   color: #b3b1b7;
-  padding: 10px 15%;
+  padding: 10px 10%;
 
   .siteMap {
     width: 100%;
     display: flex;
+    align-items: center;
 
     ul {
       list-style: none;
@@ -23,26 +24,62 @@
       justify-content: flex-start;
       align-items: flex-start;
       margin: 0 20px;
+      width: 30%;
 
       li {
         margin: 0;
-        width: auto;
+        width: 100%;
         color: #fff;
         font-weight: 900;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         a {
           background-color: transparent;
           color: #b3b1b7;
-          text-align: left;
-          padding: 0;
-          margin: 0;
+          text-align: center;
+          padding: 5px 0;
+          margin: 0 auto;
           font-weight: 500;
-          height: 32px;
+          font-size: 14px;
+          line-height: 130%;
+          height: auto;
         }
 
         a:hover {
           color: #fff;
         }
+      }
+    }
+    .illustration {
+      width: 50%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .callToAction {
+      width: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+      h2 {
+        font-size: 26px;
+        margin: 15px 0;
+        color: var(--white);
+      }
+
+      a {
+        width: auto;
+        height: auto;
+        padding: 5px;
+        font-size: 12px;
+        width: 100%;
+        margin-top: 10px;
       }
     }
   }
@@ -163,11 +200,41 @@
   .footer {
     display: flex;
 
+    .siteMap {
+      .illustration {
+        width: 50%;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .callToAction {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        h2 {
+          font-size: 18px;
+          margin: 0;
+        }
+
+        a {
+          width: auto;
+          height: auto;
+          padding: 5px;
+          font-size: 12px;
+        }
+      }
+    }
+
     .credits {
       display: flex;
 
       a {
         height: auto;
+        text-align: center;
       }
     }
   }
@@ -182,6 +249,22 @@
       width: 100%;
       display: flex;
       flex-direction: column;
+      ul {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      .illustration {
+        width: 100%;
+      }
+
+      .callToAction {
+        width: 100%;
+        h2 {
+          max-width: 100%;
+          font-size: 18px;
+        }
+      }
     }
 
     .foot {

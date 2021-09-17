@@ -35,9 +35,7 @@ export default class KnowMore extends React.Component {
           <div className={styles.knowMore}>
             <div className="ballsRC"></div>
             <div className="ballsRO"></div>
-            <h2>
-              Conheça o Lgpd<span>map</span>
-            </h2>
+            <h2>Conheça o Lgpdmap</h2>
             <div className="c-player__screen" data-vjs-player="true">
               <video
                 ref={(node: HTMLVideoElement) => (this.videoNode = node)}
