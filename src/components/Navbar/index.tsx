@@ -35,7 +35,7 @@ function Navbar(): JSX.Element {
     >
       <Link href="/">
         <a>
-          <img src="/assets/Logo.svg" alt="LGPDmap" />
+          <img src="./assets/Logo.svg" alt="LGPDmap" />
         </a>
       </Link>
       <button onClick={() => handleBtnMenu()}>

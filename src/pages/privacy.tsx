@@ -2,6 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import Presentation from '../components/Presentation'
 import Footer from '../components/Footer'
+import Navbar from '../components/Navbar'
 
 const Home: React.FC = () => {
   return (
@@ -12,6 +13,7 @@ const Home: React.FC = () => {
         <link rel="shortcut icon" href="assets/favicon.ico" />
       </Head>
 
+      <Navbar />
       <Presentation
         title="Nossa política de privacidade."
         paragraph="Bem-vindo e obrigado pelo seu interesse no LGPDmap (“LGPDmap”, “nós” ou “nos”), nosso site em https://www.lgpdmap.com (o “Site”) e todos os sites relacionados , software para download, aplicativos móveis (incluindo aplicativos para tablets) e outros serviços fornecidos por nós e nos quais um link para esta Política de Privacidade é exibido, e todas as outras comunicações com indivíduos por meio escrito ou oral, como e-mail ou telefone (coletivamente , juntamente com o Site, nosso “Serviço”)."

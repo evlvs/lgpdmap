@@ -389,7 +389,7 @@ function PlansPage(): JSX.Element {
                   </tr>
                   <tr>
                     <td data-label={plans.plansType.title}>
-                      Teste de <strong>legítimo Interesse</strong>
+                      Teste de <strong>Legítimo Interesse</strong>
                     </td>
                     <td data-label={plans.plansType.basic}>
                       {plans.legitimateInterestTest.basic === true ? (

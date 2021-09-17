@@ -2,6 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import Presentation from '../components/Presentation'
 import Footer from '../components/Footer'
+import Navbar from '../components/Navbar'
 
 const Home: React.FC = () => {
   return (
@@ -12,6 +13,7 @@ const Home: React.FC = () => {
         <link rel="shortcut icon" href="assets/favicon.ico" />
       </Head>
 
+      <Navbar />
       <Presentation
         title="Nossos termos e condições."
         paragraph="Estes Termos de Serviço contêm os termos e condições que regem todo o uso de nossa Plataforma (conforme definido abaixo) e Serviços (conforme definido abaixo) e todo conteúdo, serviços e / ou produtos disponíveis na ou por meio da Plataforma (coletivamente, os “Serviços LGPDmap ”)."
