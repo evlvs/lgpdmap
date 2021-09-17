@@ -501,9 +501,7 @@ td.plansBtn {
 }
 
 .swiper-slide-active {
-  display: block;
   z-index: 99999;
-
   width: 600px !important;
 
   .testimonialBox {
@@ -665,7 +663,7 @@ td.plansBtn {
     font-size: 36px;
   }
   p {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   a {
@@ -698,7 +696,7 @@ html:not(.no-js) [data-aos^='fade'][data-aos^='fade'].aos-animate {
     font-size: 32px;
   }
   p {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   a {
@@ -733,11 +731,18 @@ html:not(.no-js) [data-aos^='fade'][data-aos^='fade'].aos-animate {
     overflow: visible !important;
   }
 
-  .swiper-slide {
-    margin-bottom: 80px;
-    .testimonialBox {
-      &:after {
-        display: none;
+  .swiper-wrapper {
+    width: 90% !important;
+    padding: 0 auto;
+
+    .swiper-slide {
+      margin-bottom: 80px;
+      width: 80%;
+
+      .testimonialBox {
+        &:after {
+          display: none;
+        }
       }
     }
   }

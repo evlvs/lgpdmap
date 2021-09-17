@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
 import { Facebook, Instagram } from 'react-feather'
-import ContactUs from '../ContactUs'
 import styles from './styles.module.scss'
 
 function Footer(): JSX.Element {

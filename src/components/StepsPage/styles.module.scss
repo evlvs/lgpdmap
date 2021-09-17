@@ -233,9 +233,12 @@
     flex-direction: column;
     padding: 10px;
     overflow: hidden;
+    padding-top: 240px;
 
     .services {
       margin-top: 60px;
+      min-width: auto;
+      width: 90%;
 
       li {
         width: 100%;
@@ -243,6 +246,14 @@
 
         &:nth-child(odd) {
           margin: 20px 0;
+
+          .infoBody {
+            .stepsTitle {
+              align-items: flex-start;
+              margin: 0;
+              padding-left: 20px;
+            }
+          }
         }
 
         h3 {
@@ -255,6 +266,17 @@
 
         .infoBody {
           margin-left: 0;
+          width: 90%;
+
+          .stepsTitle {
+            margin: 0;
+            padding: 0;
+            padding-left: 20px;
+            font-size: 18px;
+            h3 {
+              font-size: 36px;
+            }
+          }
 
           .textBox {
             box-shadow: 11px 11px 1px #ae9dff;

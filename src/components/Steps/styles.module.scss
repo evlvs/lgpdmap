@@ -121,8 +121,8 @@
         }
 
         .plus {
-          width: 105%;
-          height: 105%;
+          width: 72px;
+          height: 72px;
         }
       }
     }
@@ -235,13 +235,13 @@
           margin-bottom: 20px;
 
           img {
-            width: 100%;
-            height: 100%;
+            width: 52px;
+            height: 52px;
           }
 
           .plus {
-            width: 105%;
-            height: 105%;
+            width: 52px;
+            height: 52px;
           }
         }
       }
@@ -257,6 +257,14 @@
   }
 }
 @media (max-width: 768px) {
+  .startWave {
+    background-size: cover;
+  }
+
+  .endWave {
+    background-size: cover;
+  }
+
   .steps {
     flex-direction: column;
     padding: 10px;

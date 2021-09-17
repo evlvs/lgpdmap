@@ -8,7 +8,7 @@ function Navbar(): JSX.Element {
   const [btnMenu, setBtnMenu] = useState(false)
 
   const changeBackground = () => {
-    if (window.scrollY >= 500) {
+    if (window.scrollY > 60) {
       setNavbar(true)
     } else {
       setNavbar(false)

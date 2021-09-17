@@ -11,7 +11,6 @@ function OurNumbers(): JSX.Element {
       <div className="ballsLO"></div>
       <section className={styles.ourNumbers} id="ourNumbers">
         <h2>Impacto em números:</h2>
-
         <ul>
           <li>
             <h6>mais de</h6>
