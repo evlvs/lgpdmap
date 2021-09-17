@@ -61,12 +61,8 @@ const Home: React.FC = () => {
           versão original em inglês e qualquer tradução, a versão em inglês
           prevalecerá.
         </p>
-        <Link href="mailto:dpo@lgpdmap.com.br?subject=Tenho%20uma%20duvida">
-          <a>
-            É necessário informar o encarregado de dados (DPO) – (Nome: João
-            Angelo Zem
-          </a>
-        </Link>
+        É necessário informar o encarregado de dados (DPO) – (Nome: João Angelo
+        Zem | Email: dpo@lgpdmap.com.br).
       </div>
       <Footer />
     </div>
