@@ -3,7 +3,6 @@ import Head from 'next/head'
 import Presentation from '../components/Presentation'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
-import Link from 'next/link'
 
 const Home: React.FC = () => {
   return (
