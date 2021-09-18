@@ -160,6 +160,7 @@ td.plansBtn {
 
 .terms {
   padding: 350px 15%;
+  padding-bottom: 80px;
 
   p {
     padding: 20px 0;
@@ -694,6 +695,7 @@ html:not(.no-js) [data-aos^='fade'][data-aos^='fade'].aos-animate {
     width: 100%;
     max-width: 300px;
     font-size: 32px;
+    margin-top: 20px;
   }
   p {
     font-size: 16px;
@@ -748,17 +750,17 @@ html:not(.no-js) [data-aos^='fade'][data-aos^='fade'].aos-animate {
   }
 
   .swiper-slide-active {
-    width: 420px !important;
+    width: 110% !important;
 
     .testimonialBox {
-      max-width: 250px;
+      max-width: auto;
       width: 100% !important;
 
       .testimonialBody {
         margin-top: 0;
         font-size: 12px;
         line-height: 100%;
-        width: 210px;
+        width: 100%;
       }
     }
   }
