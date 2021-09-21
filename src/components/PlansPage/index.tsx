@@ -151,7 +151,7 @@ function PlansPage(): JSX.Element {
 
                     <ul>
                       <li>
-                        <CheckCircle color="#3CCF8E" /> Cadastramento de até
+                        <CheckCircle color="#3CCF8E" /> Cadastramento de até{' '}
                         <strong>{plans.CNPJAmount.advanced} CNPJs</strong>
                       </li>
                       <li>
@@ -206,7 +206,7 @@ function PlansPage(): JSX.Element {
                       </li>
                       <li>
                         <CheckCircle color="#3CCF8E" />{' '}
-                        <strong>Processos Ilimitados</strong>
+                        <strong>Processos ilimitados</strong>
                       </li>
                     </ul>
 
