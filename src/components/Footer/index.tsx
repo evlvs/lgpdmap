@@ -122,14 +122,12 @@ function Footer(): JSX.Element {
         </div>
         <div className={styles.foot}>
           <div className={styles.credits}>
-            <p>
-              <Link href="mailto:dpo@lgpdmap.com.br">
-                <a>
-                  Encarregado de Dados (DPO) João Angelo Zem - E-mail:
-                  dpo@lgpdmap.com.br
-                </a>
-              </Link>
-            </p>
+            <Link href="mailto:dpo@lgpdmap.com.br">
+              <a>
+                Encarregado de Dados (DPO) João Angelo Zem - E-mail:
+                dpo@lgpdmap.com.br
+              </a>
+            </Link>
             <a href="/terms">Termos de Uso</a>
             <a href="/privacy">Política de Privacidade</a>
           </div>

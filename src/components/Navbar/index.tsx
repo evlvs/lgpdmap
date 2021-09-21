@@ -51,6 +51,11 @@ function Navbar(): JSX.Element {
         <li>
           <Link href="/plans">Planos</Link>
         </li>
+        <li>
+          <Link href="https://api.whatsapp.com/send?phone=554130579598">
+            <a className={styles.callBtn}>Fale com um Especialista</a>
+          </Link>
+        </li>
       </ul>
     </nav>
   )

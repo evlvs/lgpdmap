@@ -91,6 +91,7 @@
 
     .credits {
       display: flex;
+      width: 80%;
 
       p {
         font-size: 12px;
@@ -111,6 +112,7 @@
         &:first-child {
           margin-left: 10px;
           border-left: 0;
+          max-width: initial;
         }
 
         &:hover {
@@ -282,10 +284,17 @@
         align-items: center;
         margin: 20px 0;
         text-align: center;
+        width: 100%;
 
         a {
           height: auto;
           border: 0;
+          margin-left: 0;
+          margin: 10px 0;
+
+          &:first-child {
+            margin-left: 0;
+          }
         }
       }
     }
@@ -296,7 +305,7 @@
     height: 149px;
     position: relative;
     z-index: 2;
-    margin-bottom: -1px;
+    margin-bottom: -2px;
 
     .wave {
       position: absolute;

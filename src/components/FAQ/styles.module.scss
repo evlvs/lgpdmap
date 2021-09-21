@@ -112,7 +112,9 @@
 
 @media only screen and (max-width: 768px) {
   .FAQ {
-    padding: 150px 0;
+    padding-top: 150px;
+    padding-bottom: 0px;
+
     h2 {
       margin: 0;
     }
