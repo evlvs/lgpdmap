@@ -15,40 +15,8 @@ const StepsPage: React.FC = () => {
       <div className="ballsRO"></div>
       <div className={styles.steps}>
         <ul className={styles.services}>
-          {/* <li>
-            <div className={styles.infoHead} data-aos="fade">
-              <div className={styles.stepsIcon}>
-                <img src="/assets/diagnostics.png" alt="Diagnósticos" />
-              </div>
-            </div>
+          <li id="map">
             <div className={styles.infoBody} data-aos="zoom-in-up">
-              <div className={styles.stepsTitle}>
-                <h3>Diagnóstico</h3>
-                Inicio de jornada
-              </div>
-              <div className={styles.textBox}>
-                <h3>Este é o início da caminhada rumo à adequação da LGDP.</h3>
-                <p>
-                  Esta fase é fundamental para que sejam colhidos os melhores
-                  resultados no final do projeto. É neste momento em que a
-                  empresa faz uma análise de 360º tanto do seu ambiente quanto
-                  dos seus recursos.
-                </p>
-                <p>
-                  Neste momento os sócios, seus colaboradores e todos aqueles
-                  que de alguma forma estão envolvidos com o cotidiano da
-                  empresa tomam consciência da importância da LGPD para o
-                  negócio.
-                </p>
-                <p>
-                  O resultado desta fase servirá de base para todas as outras
-                  desta incrível caminhada.
-                </p>
-              </div>
-            </div>
-          </li> */}
-          <li>
-            <div className={styles.infoBody} data-aos="zoom-in-up" id="map">
               <div className={styles.stepsTitle}>
                 <h3>Mapeamento</h3>
                 Conhecendo os processos
@@ -78,14 +46,14 @@ const StepsPage: React.FC = () => {
               </div>
             </div>
           </li>
-          <li>
+          <li id="risk">
             <div className={styles.infoHead} data-aos="fade">
               <div className={styles.stepsIcon}>
                 <img src="/assets/risks.png" alt="Análise de riscos" />
               </div>
             </div>
 
-            <div className={styles.infoBody} data-aos="zoom-in-up" id="risk">
+            <div className={styles.infoBody} data-aos="zoom-in-up">
               <div className={styles.stepsTitle}>
                 <h3>Análise de Riscos</h3>
                 Criação de estratégias para mitigá-los
@@ -109,8 +77,8 @@ const StepsPage: React.FC = () => {
               </div>
             </div>
           </li>
-          <li>
-            <div className={styles.infoBody} data-aos="zoom-in-up" id="act">
+          <li id="act">
+            <div className={styles.infoBody} data-aos="zoom-in-up">
               <div className={styles.stepsTitle}>
                 <h3>Ações</h3>
                 Mão na massa
@@ -148,14 +116,14 @@ const StepsPage: React.FC = () => {
               </div>
             </div>
           </li>
-          <li>
+          <li id="listen">
             <div className={styles.infoHead} data-aos="fade">
               <div className={styles.stepsIcon}>
-                <img src="/assets/action.png" alt="Monitoramento" />
+                <img src="/assets/diagnostics.png" alt="Monitoramento" />
               </div>
             </div>
 
-            <div className={styles.infoBody} data-aos="zoom-in-up" id="listen">
+            <div className={styles.infoBody} data-aos="zoom-in-up">
               <div className={styles.stepsTitle}>
                 <h3>Monitoramento</h3>
                 Manutenção da conformidade

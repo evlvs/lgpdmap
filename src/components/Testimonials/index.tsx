@@ -18,7 +18,7 @@ function Testimonials(): JSX.Element {
       <img
         src="./assets/peoplestar.png"
         alt="Depoimentos"
-        className="peopleStar"
+        className={styles.peopleStar}
       />
     </section>
   )

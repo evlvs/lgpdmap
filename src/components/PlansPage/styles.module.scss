@@ -80,6 +80,7 @@
       justify-content: center;
       align-items: center;
       transition: all ease-in-out 0.3s;
+      padding-top: 40px;
 
       &:hover {
         transform: scale(1.1);
@@ -191,9 +192,14 @@
     border: 0;
     border-spacing: 0;
     background-color: var(--white);
+    margin-top: 50px;
 
     caption {
       width: 100%;
+
+      h2 {
+        margin: 50px;
+      }
     }
 
     thead {
@@ -272,6 +278,12 @@
 
 @media only screen and (max-width: 768px) {
   .plansPage {
+    padding-top: 300px;
+
+    p {
+      width: 90%;
+    }
+
     ul.plans {
       display: flex;
       flex-direction: column;
@@ -282,6 +294,7 @@
       li {
         width: 90%;
         margin: 20px 5%;
+        padding-top: 60px;
 
         &.intermediatePlan {
           transform: scale(1);
@@ -335,10 +348,6 @@
         }
 
         &::before {
-          /*
-          * aria-label has no advantage, it won't be read inside a table
-          content: attr(aria-label);
-          */
           content: attr(data-label);
           float: left;
           font-weight: bold;
@@ -356,6 +365,7 @@
   .plansPage {
     ul.plans {
       li {
+        padding-top: 40px;
         ul {
           li {
             font-family: 'Lato', sans-serif;
@@ -370,8 +380,8 @@
     table {
       caption {
         h2 {
-          max-width: 568px;
-          margin-top: 20px;
+          max-width: 568px !important;
+          margin-top: 20px !important;
         }
       }
 

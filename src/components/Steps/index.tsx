@@ -79,7 +79,7 @@ const Steps: React.FC = () => {
                 <div className={styles.stepsIcon}>
                   <img
                     className={styles.plus}
-                    src="/assets/action.png"
+                    src="/assets/diagnostics.png"
                     alt="Ações"
                   />
                 </div>

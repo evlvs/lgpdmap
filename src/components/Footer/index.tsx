@@ -16,32 +16,32 @@ function Footer(): JSX.Element {
           <ul>
             <li>Lgpdmap</li>
             <li>
-              <Link href="./#knowMore">
+              <Link href="/#knowMore">
                 <a>Conheça o Lgpdmap</a>
               </Link>
             </li>
             <li>
-              <Link href="./#ourNumbers">
+              <Link href="/#ourNumbers">
                 <a>Impacto em números</a>
               </Link>
             </li>
             <li>
-              <Link href="./#contactUs">
+              <Link href="/#contactUs">
                 <a>Falar com Especialista</a>
               </Link>
             </li>
             <li>
-              <Link href="./#testimonials">
+              <Link href="/#testimonials">
                 <a>Depoimentos</a>
               </Link>
             </li>
             <li>
-              <Link href="./#partners">
+              <Link href="/#partners">
                 <a>Empresas</a>
               </Link>
             </li>
             <li>
-              <Link href="./#FAQ">
+              <Link href="/#FAQ">
                 <a>FAQ</a>
               </Link>
             </li>
@@ -115,14 +115,17 @@ function Footer(): JSX.Element {
               <strong> adequar</strong> a sua empresa à <strong>LGPD</strong>{' '}
               com o<strong> Lgpd</strong>map
             </h2>
-            <Link href="https://whats.link/lgpdmap">
+            <Link href="https://api.whatsapp.com/send?phone=554130579598">
               <a>Fale com um Especialista</a>
             </Link>
           </div>
         </div>
         <div className={styles.foot}>
           <div className={styles.credits}>
-            © All rights reserved. Upland 2020
+            <p>© All rights reserved. Upland 2020</p>
+            <Link href="mailto:dpo@lgpdmap.com.br">
+              <a>Encarregado de Dados (DPO) João Angelo Zem</a>
+            </Link>
             <a href="/terms">Termos de Uso</a>
             <a href="/privacy">Política de Privacidade</a>
           </div>
