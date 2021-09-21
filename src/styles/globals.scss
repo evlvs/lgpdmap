@@ -649,6 +649,12 @@ td.plansBtn {
   display: none;
 }
 
+.faqPlans {
+  position: relative;
+  top: -100px;
+  z-index: -1;
+}
+
 @media (min-width: 769px) and (max-width: 1680px) {
   body {
     overflow-x: hidden;

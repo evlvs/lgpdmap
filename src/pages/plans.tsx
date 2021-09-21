@@ -29,7 +29,9 @@ const Home: React.FC = () => {
       <Testimonials />
       <Partners />
       <Steps />
-      <FAQ />
+      <div className="faqPlans">
+        <FAQ />
+      </div>
       <Footer />
     </div>
   )
