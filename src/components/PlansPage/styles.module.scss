@@ -305,6 +305,12 @@
     table {
       border: 0;
 
+      caption {
+        h2 {
+          margin: 0;
+        }
+      }
+
       thead {
         border: none;
         clip: rect(0 0 0 0);
