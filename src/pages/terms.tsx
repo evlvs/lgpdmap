@@ -1,8 +1,9 @@
 import React from 'react'
 import Head from 'next/head'
-import Presentation from '../components/Presentation'
+import PresentationTP from '../components/TermsAndPrivacy'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
+import styles from '../styles/styles.module.scss'
 
 const Home: React.FC = () => {
   return (
@@ -14,54 +15,535 @@ const Home: React.FC = () => {
       </Head>
 
       <Navbar />
-      <Presentation
-        title="Nossos termos e condições."
-        paragraph="Estes Termos de Serviço contêm os termos e condições que regem todo o uso de nossa Plataforma (conforme definido abaixo) e Serviços (conforme definido abaixo) e todo conteúdo, serviços e / ou produtos disponíveis na ou por meio da Plataforma (coletivamente, os “Serviços LGPDmap ”)."
-        hasButton="true"
-      />
-      <div className="terms">
-        <h1>Termos e condições</h1>
+      <PresentationTP title="Nossos termos e condições." />
+      <div className={styles.terms}>
+        <h1>1. Termos de Uso</h1>
         <p>
-          Os Serviços LGPDmap são oferecidos a você sujeitos à sua aceitação,
-          sem modificação (exceto os Termos Especiais (conforme definido abaixo)
-          acordado pelas partes de acordo com estes Termos de Serviço), de todos
-          os termos e condições aqui contidos e todas as outras regras
-          operacionais , políticas (incluindo, sem limitação, nossa Política de
-          Privacidade em www.lgpdmap.com/privacy), as Diretrizes (conforme
-          definido abaixo) e quaisquer modificações futuras das mesmas, e
-          procedimentos que podem ser publicados de tempos em tempos na
-          Plataforma ou disponibilizados para você nos ou por meio dos Serviços
-          LGPDmap (coletivamente, os “Termos”). Quando aceitos por você
-          (conforme definido abaixo), estes Termos formam um contrato legalmente
-          vinculativo entre você e o Fornecedor (conforme definido abaixo). Se
-          você estiver celebrando estes Termos em nome de uma entidade, como seu
-          empregador ou a empresa para a qual trabalha, você declara que tem
-          autoridade legal para vincular essa entidade.
+          Este documento regula o uso da plataforma <strong>Lgpdmap</strong> ,
+          doravante denominada <strong>“SOFTWARE”</strong> .
         </p>
         <p>
-          LEIA ESTES TERMOS COM ATENÇÃO. AO SE REGISTAR, ACESSAR, NAVEGANDO E /
-          OU DE OUTRA FORMA USANDO OS SERVIÇOS PIPEDRIVE, VOCÊ RECONHECE QUE
-          LEU, COMPREENDEU E CONCORDA EM CUMPRIR ESTES TERMOS. SE VOCÊ NÃO
-          CONCORDA COM ESTES TERMOS, NÃO ACESSE, PESQUE OU USE DE OUTRA FORMA A
-          PLATAFORMA OU O PIPEDRIVE SERVIÇOS.
+          Ao proceder a assinatura do <strong>SOFTWARE</strong> você, doravante
+          denominado “ <strong>LICENCIADO</strong>” , contrata e concorda com os
+          termos abaixo.
         </p>
         <p>
-          O Fornecedor pode, a seu exclusivo critério, decidir suspender ou
-          encerrar o acesso ou uso dos Serviços LGPDmap para qualquer pessoa que
-          violar estes Termos.
+          SEKUR TECNOLOGIA LTDA , pessoa jurídica de direito privado, inscrita
+          no CNPJ sob o nº 08.628.071/0001-45, com sede à Rua Frederico Maurer,
+          nº 800 – Sala 09, Hauer, Curitiba/PR, CEP 81.630-020, doravante
+          denominada “ <strong>LICENCIANTE</strong>” , através de seu
+          responsável legal e técnico, JOÃO ANGELO ZEM , brasileiro, portador do
+          RG nº 7.827.916-8 e do CPF nº 044.428.179-79, estabelece o presente
+          instrumento, denominado TERMOS DE USO , cujas condições e cláusulas o{' '}
+          <strong>LICENCIADO</strong> declara, no ato da contratação/assinatura,
+          que leu anteriormente e aceita em se submeter.
         </p>
         <p>
-          Se você se registrar para uma avaliação gratuita dos Serviços LGPDmap,
-          as disposições aplicáveis.
+          A aceitação destes TERMOS DE USO é absolutamente indispensável à
+          utilização dos serviços prestados pela Licenciante.
         </p>
         <p>
-          O idioma original destes Termos é o inglês. O fornecedor pode
-          disponibilizar traduções por conveniência. Em caso de conflito entre a
-          versão original em inglês e qualquer tradução, a versão em inglês
-          prevalecerá.
+          Este documento é regido pela Lei nº 12.965/2014 (Marco Civil da
+          Internet), Lei nº 13.709/2018 (Lei de Proteção de Dados) e pelo
+          Regulamento Europeu de Proteção de Dados ou GDPR (General Data
+          Protection Regulation).
         </p>
-        É necessário informar o encarregado de dados (DPO) – (Nome: João Angelo
-        Zem | Email: dpo@lgpdmap.com.br).
+
+        <ul>
+          <li>
+            <span>1.1.</span> SEGURANÇA
+            <ul>
+              <li>
+                <span>1.1.1.</span> Todos os dados inseridos no{' '}
+                <strong>SOFTWARE</strong> , inclusive os dados de terceiros
+                captados pelo <strong>LICENCIADO</strong> , são sigilosos e
+                protegidos através de controles rígidos de acesso e
+                criptografia. A nossa equipe de desenvolvedores faz o possível
+                para manter o <strong>SOFTWARE</strong> seguro, mas não podemos
+                garantir uma segurança 100% e como todo empreendimento online,
+                estamos sujeitos a riscos.
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <span>1.2.</span> CONEXÃO DO <strong>LICENCIADO</strong>
+            <ul>
+              <li>
+                <span>1.2.1.</span> A fim de desfrutar dos serviços oferecidos
+                pela <strong>LICENCIANTE</strong> , o{' '}
+                <strong>LICENCIADO</strong> deve garantir uma conexão contínua e
+                rápida com a Internet. O <strong>LICENCIANTE</strong> é o único
+                responsável por obter e pagar por sua conexão com a Internet,
+                permitindo que desfrute do <strong>SOFTWARE</strong> .
+              </li>
+              <li>
+                <span>1.2.2.</span> O <strong>LICENCIADO</strong> reconhece que
+                a qualidade da conexão da Internet depende, entre outros, do
+                provedor de acesso à Internet e do provedor de infraestrutura de
+                Internet, do volume de outros usos que o cliente faz na banda
+                disponível em cada momento e também da qualidade do equipamento
+                conector em sua posse.
+              </li>
+              <li>
+                <span>1.2.3.</span> A <strong>LICENCIANTE</strong> não é
+                responsável, seja por danos materiais, lucros cessantes ou perda
+                de chances, em virtude de quaisquer falhas e/ou problemas na
+                visualização atribuídos a uma conexão de Internet defeituosa,
+                interrompida ou lenta ou com problemas atribuídos ao hardware
+                (PC, notebook, tablet, celular, etc.) do{' '}
+                <strong>LICENCIADO</strong>.
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <span>1.3.</span> PAGAMENTO
+            <ul>
+              <li>
+                <span>1.3.1.</span> No ato da assinatura/contratação do
+                <strong>SOFTWARE</strong>, o <strong>LICENCIADO</strong> poderá
+                optar pelos planos de pagamento MENSAL ou ANUAL, conforme
+                ofertado no site..
+              </li>
+              <li>
+                <span>1.3.2.</span> Os meios de pagamento disponíveis são boleto
+                bancário e cartão de crédito, na modalidade online.
+              </li>
+              <li>
+                <span>1.3.3.</span> O não acesso à plataforma e/ou não
+                utilização dos serviços postos no <strong>SOFTWARE</strong> não
+                isentará o<strong>LICENCIADO</strong> do pagamento da
+                mensalidade, pois o pagamento é devido pela simples
+                disponibilização do serviço.
+              </li>
+              <li>
+                <span>1.3.4.</span> A compra via cartão de crédito acarretará em
+                pagamento automático da assinatura, seja ela mensal ou anual e
+                será constado na fatura do cartão.
+              </li>
+              <li>
+                <span>1.3.5.</span> A compra via boleto bancário resultará no
+                envio mensal ou anual, a depender do plano contratado, do boleto
+                para o endereço de e-mail cadastrado no ato da compra.
+              </li>
+              <li>
+                <span>1.3.6.</span> O plano Anual segue o mesmo procedimento do
+                plano Mensal, no entanto, a sua assinatura seguirá de acordo com
+                o período a ele imposto, ou seja, 12 meses. Da mesma forma que
+                no plano mensal, haverá a renovação automática com a cobrança no
+                cartão de crédito ou envio de boleto bancário no próximo período
+                de pagamento.
+              </li>
+              <li>
+                <span>1.3.7.</span> A Nota Fiscal referente será gerada no prazo
+                de 30 (trinta) dias após a confirmação do pagamento e enviada
+                por e-mail ao <strong>LICENCIADO</strong>.
+              </li>
+              <li>
+                <span>1.3.8.</span> Ressaltamos que caso o{' '}
+                <strong>LICENCIADO</strong> opte pelo parcelamento, este será
+                feito pela operadora do cartão de crédito e não pela{' '}
+                <strong>LICENCIANTE</strong>, o que torna a contratação
+                parcelada não reembolsável, nos termos da cláusula 1.5.3. Não é
+                possível o parcelamento por boleto bancário.
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <span>1.4.</span> INADIMPLÊNCIA
+            <ul>
+              <li>
+                <span>1.4.1.</span> A falta do pagamento da mensalidade por mais
+                de 15 dias (recorrência na inadimplência) resultará no bloqueio
+                da conta. O <strong>LICENCIADO</strong> será avisado dos atrasos
+                da mensalidade via e-mail, antes da <strong>LICENCIANTE</strong>{' '}
+                realizar o bloqueio da conta.
+              </li>
+              <li>
+                <span>1.4.2.</span> A liberação só acontecerá mediante o
+                pagamento de todas mensalidades em atraso, incluídas correção
+                monetária e juros moratórios legais.
+              </li>
+              <li>
+                <span>1.4.3.</span> Caso verificado que o{' '}
+                <strong>SOFTWARE</strong> foi utilizado/disponibilizado sem o
+                devido pagamento e não havendo pedido de cancelamento de
+                assinatura, o valor referente ao período utilizado poderá ser
+                cobrado por telefone, e-mail, correspondência e/ou ação
+                judicial, com acréscimo de correção monetária, juros legais a
+                partir do vencimento e honorários advocatícios de 20%.
+              </li>
+              <li>
+                <span>1.4.4.</span> Caso a <strong>LICENCIANTE</strong> entenda
+                por não cobrar alguma mensalidade, correção monetária ou juros,
+                este ato configura mera liberalidade, jamais renúncia ao
+                direito.
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <ul>
+              <span>2.5.</span> REEMBOLSO
+              <li>
+                <span>1.5.1.</span> O <strong>LICENCIADO</strong> tem direito de
+                solicitar o cancelamento dos planos base vendidos no site em até
+                30 dias após a primeira compra e receberá reembolso integral do
+                valor pago.
+              </li>
+              <li>
+                <span>1.5.2.</span> Não serão reembolsados quaisquer outros
+                adicionais contratados posteriormente, como, por exemplo,
+                usuários adicionais, CNPJs adicionais, ...
+              </li>
+              <li>
+                <span>1.5.3.</span> Não serão reembolsadas as compras parceladas
+                via cartão de crédito, tendo em vista que o pagamento é feito à
+                vista pela operadora do cartão e esta é quem cobrará as parcelas
+                do <strong>LICENCIADO</strong>.
+              </li>
+              <li>
+                <span>1.5.4.</span> Em caso de compra à vista via cartão de
+                crédito, o valor da compra será estornado na próxima fatura do
+                seu cartão de crédito ou na fatura do mês subsequente, ou seja,
+                de 30 a 60 dias, dependendo da data de fechamento de sua fatura
+                e também da empresa de cartão de crédito.
+              </li>
+              <li>
+                <span>1.5.5.</span> O estorno do valor pago via boleto bancário
+                será via conta corrente. Assim solicitado, o{' '}
+                <strong>LICENCIADO</strong> receberá um e-mail para cadastrar a
+                conta bancária onde será efetuado o reembolso.
+              </li>
+              <li>
+                <span>1.5.6.</span> Não serão reembolsados valores de planos
+                pertencentes a contas banidas por infringirem os termos de uso,
+                sejam elas planos base ou adicionais. A garantia do período de
+                teste de 30 dias da plataforma não é válida para casos de
+                banimento.
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <ul>
+              <span>1.6.</span> CANCELAMENTO DA ASSINATURA
+              <li>
+                <span>1.6.1.</span> A cobrança será interrompida mediante a
+                solicitação de cancelamento da assinatura pelo{' '}
+                <strong>LICENCIADO</strong> junto à equipe da{' '}
+                <strong>LICENCIANTE</strong>. Caso não haja uma solicitação de
+                cancelamento, a cobrança ocorrerá automaticamente a cada período
+                contratado.
+              </li>
+              <li>
+                <span>1.6.2.</span> Com o pedido de cancelamento da assinatura,
+                será imediatamente bloqueado o acesso do{' '}
+                <strong>LICENCIADO</strong> ao <strong>SOFTWARE</strong>e
+                cessada a cobrança automática por período pela{' '}
+                <strong>LICENCIANTE</strong> no período subsequente, não havendo
+                qualquer reembolso das parcelas já pagas.
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <ul>
+              <span>1.7.</span> PLANOS ADICIONAIS (UPGRADE)
+              <li>
+                <span>1.7.1.</span> Os pacotes adicionais (upgrade) só poderão
+                ser adquiridos caso o plano principal (Mensal, Anual) esteja
+                pago em dia. Caso contrário, o <strong>LICENCIADO</strong> terá
+                7 (sete) dias após o vencimento para regularizar a sua condição
+                antes de adquirir um plano adicional.
+              </li>
+              <li>
+                <span>1.7.2.</span> Plano adicionais seguem a mesma modalidade
+                de assinatura dos planos bases, devendo ao licenciado optar pela
+                modalidade de recorrência do plano no ato da compra: MENSAL,
+                ANUAL.
+              </li>
+              <li>
+                <span>1.7.3.</span> Os planos adicionais não possuem reembolso,
+                pois se tratam de planos extras não essenciais à utilização do
+                software.
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <ul>
+              <span>2.8.</span> CUPOM DE DESCONTO
+              <li>
+                <span>1.8.1.</span> O cupom de desconto entregue pela
+                <strong>LICENCIANTE</strong> e seus parceiros, poderá ser
+                utilizado apenas 1 (uma) vez e limitado para um único CPF/CNPJ,
+                ou seja, é intransferível e não é cumulativo. O cupom de
+                desconto só pode ser ativado por novas assinaturas e a validade
+                máxima é de 2 (dois) meses.
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <ul>
+              <span>1.9.</span> ACESSO
+              <li>
+                <span>1.9.1.</span> O acesso será concedido após o pagamento ser
+                identificado, os dados de acesso serão enviados via e-mail, se o
+                mesmo não chegar imediatamente haverá 5 tentativas de envio
+                seguindo o seguinte padrão:
+                <ol type="a">
+                  <li>Envio imediato após a assinatura;</li>
+                  <li>30 minutos depois da assinatura;</li>
+                  <li>2 horas depois da primeira tentativa de envio;</li>
+                  <li>4 horas depois da segunda tentativa de envio;</li>
+                  <li>24 horas depois da assinatura.</li>
+                </ol>
+              </li>
+              <li>
+                <span>1.9.2.</span> O <strong>LICENCIADO</strong> tem acesso 24
+                horas por dia, 7 (sete) dias por semana à plataforma enquanto
+                estiver com o pagamento de seu plano em dia, salvo nos casos
+                especiais de manutenção programada do sistema.
+              </li>
+              <li>
+                <span>1.9.3.</span> A <strong>LICENCIANTE</strong> reserva-se o
+                direito de interromper temporariamente os serviços, caso haja
+                algum problema inesperado com o sistema, quando notificará o
+                <strong>LICENCIADO</strong>, informando sobre o problema e
+                prazos para a normalização.
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <ul>
+              <span>1.10.</span> USO ILEGAL, ANTIÉTICO OU PROIBIDO DO{' '}
+              <strong>SOFTWARE</strong>
+              PELO <strong>LICENCIADO</strong>
+              <li>
+                <span>1.10.1.</span> É proibida a utilização do{' '}
+                <strong>SOFTWARE</strong>
+                para a publicação, criação, armazenamento e/ou divulgação de
+                conteúdo ilegal ou abusivo, bem como textos, fotos e/ou vídeos
+                que tenham caráter difamatório, xenófobo, discriminatório,
+                obsceno, ofensivo, ameaçador ou incentivador de condutas
+                impróprias, abusivo, fraude, que prejudique, interrompa ou
+                interfira nos serviços, vexatório, prejudicial, que contenha
+                expressões de ódio contra pessoas ou grupos, ou que contenha
+                pornografia infantil, pornografia explícita ou violenta,
+                conteúdo que possa ser danoso a menores, que contenha insultos
+                ou ameaças religiosas ou raciais, ou que incentive danos morais
+                (incluindo os corporais) e patrimoniais, ou que possa violar
+                qualquer direito de terceiro incluindo a sua privacidade e
+                direitos de propriedade intelectual, para atos relacionados à
+                criação, à divulgação e à disseminação de informações falsas
+                (Fake News). Portanto, é considerado falta grave passível de
+                encerramento imediato dos serviços prestados pela Licenciante a
+                utilização do Software para quaisquer atividades aqui
+                mencionadas.
+              </li>
+              <li>
+                <span>1.10.2.</span> Além disso, o <strong>LICENCIADO</strong>{' '}
+                concorda que, ao usar o <strong>SOFTWARE</strong>, não irá:
+                <ol type="a">
+                  <li>
+                    Violar qualquer regra contida neste documento de TERMOS DE
+                    USO e POLÍTICA DA PRIVACIDADE;
+                  </li>
+                  <li>
+                    Praticar ou propagar falsidades / fake news, assim
+                    entendidas a falsidade de informações (i.e: divulgação
+                    proposital e voluntária de informações que o{' '}
+                    <strong>LICENCIADO</strong> saiba ser falsa ou que sejam
+                    notoriamente falsas) e a falsidade ideológica;
+                  </li>
+                  <li>
+                    Publicar ou transmitir qualquer conteúdo abusivo ou ofensivo
+                    nos comentários;
+                  </li>
+                  <li>Cometer fraude;</li>
+                  <li>
+                    Violar ou infringir direitos de propriedade intelectual,
+                    direitos fiduciários ou contratuais, direitos de privacidade
+                    ou publicidade de outros;
+                  </li>
+                  <li>
+                    Propagar, distribuir ou transmitir códigos destrutivos, quer
+                    tenham ou não causado danos reais;
+                  </li>
+                  <li>
+                    Reunir dados pessoais ou comerciais, incluindo (mas não se
+                    limitando a) endereços de e-mail e/ou nomes de qualquer
+                    recurso da Internet, seja gerenciado pela Licenciante ou por
+                    terceiros, para fins comerciais, políticos, de benemerência
+                    ou outros, sem o consentimento dos proprietários desses
+                    dados;
+                  </li>
+                  <li>
+                    Reproduzir, replicar, copiar, alterar, modificar, criar
+                    obras derivativas a partir de vender ou revender qualquer um
+                    dos serviços da <strong>LICENCIANTE</strong> ou qualquer
+                    parte deles, incluindo websites e páginas web, ou as
+                    informações ou dados contidos nos serviços do{' '}
+                    <strong>SOFTWARE</strong>;
+                  </li>
+                  <li>
+                    Transmitir conteúdo que não pertence ao{' '}
+                    <strong>LICENCIADO</strong> ou que não tenha direito de
+                    publicar ou distribuir, seja sob lei ou contrato;
+                  </li>
+                  <li>
+                    Acessar o <strong>SOFTWARE</strong> sem autorização, por
+                    meio de práticas de “hacking”, “password mining” ou qualquer
+                    outro meio fraudulento ou que represente violação a direito
+                    de terceiros;
+                  </li>
+                  <li>Realizar ou incentivar quaisquer atividades ilegais;</li>
+                  <li>
+                    Deixar de cumprir com quaisquer leis, normas, regras,
+                    princípios e regulamentações aplicáveis.
+                  </li>
+                </ol>
+              </li>
+              <li>
+                <span>1.10.3.</span> A violação de qualquer uma das regras aqui
+                postas resultará no bloqueio do acesso ao{' '}
+                <strong>SOFTWARE</strong>, sem prejuízo de eventuais cobranças
+                de perdas e danos.
+              </li>
+              <li>
+                <span>1.10.4.</span> A <strong>LICENCIANTE</strong> não se
+                responsabiliza pelo conteúdo publicado através do sistema,
+                podendo remover o conteúdo da Internet caso verificada a
+                violação deste termo ou de direito de terceiros.
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <ul>
+              <span>2.11.</span> SUPORTE
+              <li>
+                <span>1.11.1.</span> O Suporte Técnico da{' '}
+                <strong>LICENCIANTE</strong> se dará preferencialmente através
+                de chat online em horário comercial, das 9h às 17h de
+                segunda-feira a sexta-feira, acessível através de seu website ou
+                por e-mail.
+              </li>
+              <li>
+                <span>1.11.2.</span> Tendo em vista a natureza do serviço
+                prestado pela <strong>LICENCIANTE</strong> e a fim de sempre
+                prestar o melhor atendimento ao <strong>LICENCIADO</strong>, é,
+                em certa situações, necessário que o atendimento ao{' '}
+                <strong>LICENCIADO</strong> se dê através de (1) chat na área
+                logada em janelas de dias e horários que tem variação (em
+                teste); (2) tickets na área logada quando chat está fechado; (3)
+                tickets nas páginas de vendas; (4) gravação de telas navegando a
+                conta do Licenciado em vídeo, instruindo-o como executar
+                determinada ação e compartilhando o vídeo; (5) vídeo e áudio
+                conferências utilizando uma ferramenta disponível para ambos
+                (google meet; zoom; skype; whatsapp; messenger); (6) outras
+                formas de atendimento que se mostrarem necessárias. Nestes
+                casos, em virtude de sua natureza excepcional, a Licenciante não
+                possui meios de garantir que todo o atendimento tenha sido
+                registrado e gravado em seu sistema.
+              </li>
+              <li>
+                <span>1.11.3.</span> A <strong>LICENCIANTE</strong> e seus
+                colaboradores terão livre acesso à conta do{' '}
+                <strong>LICENCIADO</strong> e os dados que nela constam para
+                fins de atendimento, análise e suporte técnico.
+              </li>
+              <li>
+                <span>1.11.4.</span> Todo atendimento e suporte técnico será
+                requerido e prestado em relação mútua de respeito e boa-fé.
+                Verificada a ocorrência de desrespeito, ameaças e/ou ofensas à
+                Licenciante ou seus colaboradores, esta resguarda-se o direito
+                de cancelar o contrato e efetuar o bloqueio da conta do cliente.
+                Eventuais direitos a reembolso serão analisados pela equipe
+                jurídica da Licenciante, caso a caso.
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <ul>
+              <span>2.12.</span> ACESSO COMPARTILHADO
+              <li>
+                <span>1.12.1.</span> O compartilhamento dos dados de acesso não
+                é permitido sob hipótese alguma, o assinante poderá ter seu
+                acesso bloqueado se o sistema identificar acesso por diferentes
+                IPs. Para acessos bloqueados, o assinante terá que esperar até
+                72 horas para que seu acesso seja liberado novamente, após
+                análise de nossa equipe TI.
+              </li>
+              <li>
+                <span>1.12.2.</span> O compartilhamento de dados de acesso,
+                assim como cópia e/ou distribuição de conteúdo sem autorização
+                escrita do autor é considerado pirataria. Pirataria é crime e,
+                caso identificado e comprovado, o infrator será acionado
+                judicialmente, respondendo assim aos termos previstos em Lei.
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <span>1.13.</span> TERMOS E CONDIÇÕES FINAIS
+            <ul>
+              <li>
+                <span>1.13.1.</span> Contratando a <strong>LICENCIANTE</strong>,
+                o <strong>LICENCIADO</strong> tem pleno conhecimento de que o
+                sistema sofre alterações diariamente, não sendo obrigatório
+                comunicados prévios perante cada alteração, a menos que
+                julguemos necessário.
+              </li>
+              <li>
+                <span>1.13.2.</span> O <strong>LICENCIADO</strong> também tem
+                pleno conhecimento de que há possibilidade de se deparar com
+                “bugs do sistema”, ou seja, falhas nos processos, bem como
+                enfrentar lentidão e a impossibilidade de uso do sistema por
+                algumas horas.
+              </li>
+              <li>
+                <span>1.13.3.</span> O <strong>LICENCIANTE</strong> não se
+                responsabiliza por eventuais danos materiais ou lucros cessantes
+                ocorridos em virtude de bugs imprevistos e/ou ocorrências
+                externas temporárias que toda empresa está sujeita.
+              </li>
+              <li>
+                <span>1.13.4.</span> Além de todas as regras impostas neste
+                documento, o Licenciado compromete-se em elaborar e fornecer a
+                seus “clientes” ou “visitantes” as Políticas de Privacidade
+                aplicadas em seu próprio ambiente, as quais deverão estar em
+                consonância com este documento, com a Lei nº 12.965/2014 (Marco
+                Civil da Internet), Lei nº 13.709/2018 (Lei de Proteção de Dados
+                ou LGPD) e com o Regulamento Europeu de Proteção de Dados ou
+                GDPR (General Data Protection Regulation).
+              </li>
+              <li>
+                <span>1.13.5.</span> Sempre que houver alteração destes TERMOS
+                DE USO e POLÍTICA DA PRIVACIDADE o <strong>LICENCIADO</strong>{' '}
+                será comunicado pela plataforma da <strong>LICENCIANTE</strong>.
+              </li>
+              <li>
+                <span>1.13.6.</span> Fica eleito o foro de Curitiba/PR para
+                dirimir quaisquer controvérsias acerca da utilização de{' '}
+                <strong>SOFTWARE</strong>
+                ou TERMOS DE USO e POLÍTICA DA PRIVACIDADE, renunciando as
+                partes quaisquer outros, por mais privilegiado que seja.
+              </li>
+              <li>
+                <span>1.13.7.</span> Caso o cliente não aceite os termos de uso
+                impostos acima, o cancelamento da assinatura pode ser solicitado
+                em nossa Central de Atendimento com o setor de Cancelamento.
+              </li>
+            </ul>
+          </li>
+        </ul>
       </div>
       <Footer />
     </div>

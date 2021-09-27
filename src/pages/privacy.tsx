@@ -3,6 +3,8 @@ import Head from 'next/head'
 import Presentation from '../components/Presentation'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
+import styles from '../styles/styles.module.scss'
+import Link from 'next/link'
 
 const Home: React.FC = () => {
   return (
@@ -19,20 +21,262 @@ const Home: React.FC = () => {
         paragraph="Bem-vindo e obrigado pelo seu interesse no LGPDmap (“LGPDmap”, “nós” ou “nos”), nosso site em https://www.lgpdmap.com (o “Site”) e todos os sites relacionados , software para download, aplicativos móveis (incluindo aplicativos para tablets) e outros serviços fornecidos por nós e nos quais um link para esta Política de Privacidade é exibido, e todas as outras comunicações com indivíduos por meio escrito ou oral, como e-mail ou telefone (coletivamente , juntamente com o Site, nosso “Serviço”)."
         hasButton="true"
       />
-      <div className="terms">
+      <div className={styles.terms}>
         <h1>Política de Privacidade</h1>
         <p>
-          Esta Política de Privacidade (“Política”) descreve as informações que
-          coletamos no ou por meio do Serviço, como usamos e divulgamos tais
-          informações e as medidas que tomamos para protegê-las. Ao visitar o
-          Site, comprar ou usar o Serviço, você aceita as práticas de
-          privacidade descritas nesta Política.
+          Este documento regula o uso da plataforma <strong>Lgpdmap</strong>,
+          doravante denominada “SOFTWARE”.
         </p>
         <p>
-          This Policy is incorporated into, and is subject to, the LGPDmap Terms
-          of Service. Capitalized terms used but not defined in this Policy have
-          the meaning given to them in the LGPDmap Terms of Service.
+          Ao proceder a assinatura do <strong>SOFTWARE </strong>você, doravante
+          denominado “<strong>LICENCIADO</strong>”, contrata e concorda com os
+          termos abaixo.
         </p>
+        <p>
+          <strong>SEKUR TECNOLOGIA LTDA.</strong>, pessoa jurídica de direito
+          privado, inscrita no CNPJ sob o nº 08.628.071/0001-45, com sede à Rua
+          do Frederico Maurer, nº 800 – Sala 09, Hauer, Curitiba/PR, CEP
+          81.630-020, doravante denominada “<strong>LICENCIANTE</strong>”,
+          através de seu responsável legal e técnico,{' '}
+          <strong>JOÃO ANGELO ZEM</strong>, brasileiro, portador do RG nº
+          7.827.916-8 e do CPF nº 044.428.179-79, estabelece o presente
+          instrumento, denominado <strong>POLÍTICA DA PRIVACIDADE</strong>,
+          cujas condições e cláusulas o<strong>LICENCIADO</strong> declara, no
+          ato da contratação/assinatura, que leu anteriormente e aceita em se
+          submeter.
+        </p>
+        <p>
+          A aceitação desta <strong>POLÍTICA DA PRIVACIDADE</strong> é
+          absolutamente indispensável à utilização dos serviços prestados pela
+          Licenciante.
+        </p>
+        <p>
+          Este documento é regido pela Lei nº 12.965/2014 (Marco Civil da
+          Internet), Lei nº 13.709/2018 (Lei de Proteção de Dados) e pelo
+          Regulamento Europeu de Proteção de Dados ou GDPR (General Data
+          Protection Regulation).
+        </p>
+
+        <ul>
+          <li>
+            <span>1.1.</span> REGRAS GERAIS DE ARMAZENAMENTO DE DADOS DO
+            <strong>LICENCIADO</strong> E DE TERCEIRO
+            <ul>
+              <li>
+                <span>1.1.1.</span> Qualquer pessoa que tenha dados armazenados
+                pela Licenciante, após comprovação da identidade através de
+                confirmação dos respectivos dados, tem o direito de requerer por
+                telefone (41) 3057-9598 ou por e-mail (dpo@lgpdmap.com.br),
+                informações como (a) quais dados de sua titularidade estão
+                armazenados, (b) a finalidade do armazenamento destes dados, (c)
+                para quem estes dados foram divulgados e (d) o prazo de
+                armazenamento.
+              </li>
+              <li>
+                <span>1.1.2.</span> Além disso, também tem direito a requisitar
+                que estes dados sejam (a) retificados, (b) apagados ou (c)
+                limitados.
+              </li>
+              <li>
+                <span>1.1.3.</span> Em caso dos requerimentos acima, a
+                <strong>LICENCIANTE</strong> se reserva o prazo de 30 (trinta)
+                dias para o cumprimento do pedido, sendo o requisitante
+                informado através de e-mail.
+              </li>
+              <li>
+                <span>1.1.4.</span> Em caso de eventual violação de dados
+                pessoais capaz de resultar em risco de direitos e liberdades do
+                titular dos dados, a <strong>LICENCIANTE</strong> compromete-se
+                a notificar o<strong>LICENCIADO</strong> responsável em até 72
+                horas.
+              </li>
+              <li>
+                <span>1.1.5.</span> Se o <strong>LICENCIADO</strong> ou o
+                titular dos dados estiver geograficamente localizado em qualquer
+                país da União Europeia, deverá o <strong>LICENCIADO</strong>{' '}
+                notificar em até 72 horas o respectivo titular, bem como a
+                autoridade de controle do respectivo país.
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <span>1.2.</span> DADOS PESSOAIS DO <strong>LICENCIADO</strong>
+            <ul>
+              <li>
+                <span>1.2.1.</span> O <strong>SOFTWARE </strong>coleta, após a
+                efetiva contratação, as seguintes informações de identificação
+                pessoal do <strong>LICENCIADO</strong> fornecidas no ato da
+                compra: nome completo, CPF, endereço completo, telefone e
+                e-mail.
+              </li>
+              <li>
+                <span>1.2.2.</span> Caso o <strong>LICENCIADO</strong> seja
+                pessoa jurídica, além dos dados da empresa (razão social, nome
+                de fantasia, CNPJ, Inscrição Estadual, endereço completo,
+                telefone e e-mail), deverá constar nome completo, CPF e e-mail
+                do representante legal da empresa.
+              </li>
+              <li>
+                <span>1.2.3.</span> As informações são fornecidas via
+                preenchimento de formulário pelo <strong>LICENCIADO</strong> no
+                ato da contratação/assinatura do serviço, ficando este
+                responsável pela sua correção e atualização.
+                <ul>
+                  <li>
+                    As informações fornecidas serão usadas para comunicação,
+                    notificação, acesso ao sistema e cobrança do{' '}
+                    <strong>LICENCIADO</strong>, estando a{' '}
+                    <strong>LICENCIANTE</strong>
+                    autorizada a utilizá-las também para a operação de envio de
+                    e-mails, como o envio de Newsletter, comunicado de
+                    lançamentos e novidades relacionadas ao SOFTWARE. O{' '}
+                    <strong>LICENCIADO</strong> poderá cancelar a assinatura de
+                    recebimento de e-mails a qualquer momento.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <span>1.2.4.</span> A <strong>LICENCIANTE</strong> manterá os
+                registros de acesso, sob sigilo, em ambiente controlado e de
+                segurança, por pelo menos 6 (seis) meses, nos termos do Art. 15
+                da Lei nº 12.965/2014 (Marco Civil da Internet).
+              </li>
+              <li>
+                <span>1.2.5.</span> Apenas funcionários da{' '}
+                <strong>LICENCIANTE</strong> poderão acessar as informações
+                pessoais do <strong>LICENCIADO</strong>, cuja divulgação para
+                terceiros não será realizada sem autorização.
+              </li>
+              <li>
+                <span>1.2.6.</span> O <strong>SOFTWARE </strong>utiliza outros
+                softwares de remarketing e cookies primários do Google Analytics
+                para aumentar a experiência do <strong>LICENCIADO</strong> com
+                nosso conteúdo. A Google, por sua vez, tem seus próprios termos
+                de uso e políticas de privacidade as quais podem ser acessadas
+                através deste{' '}
+                <Link href="https://policies.google.com/privacy">
+                  <a>link</a>
+                </Link>
+                .
+              </li>
+              <li>
+                <span>1.2.7.</span> O <strong>LICENCIADO</strong> pode desativar
+                este recurso acessando este{' '}
+                <Link href="https://tools.google.com/dlpage/gaoptout">
+                  <a>link</a>
+                </Link>
+                .
+              </li>
+              <li>
+                <span>1.2.8.</span> Além dos dados pessoais acima informados, o
+                <strong>SOFTWARE </strong>coleta informações contidas em
+                anúncios como o endereço IP (Internet Protocol), ISP (Internet
+                Service Provider, como Sapo, Clix e outros), o browser que
+                utilizou ao visitar o website da <strong>LICENCIANTE</strong>, o
+                tempo de sua visita e as páginas que visitou em nosso website.
+              </li>
+              <li>
+                <span>1.2.9.</span> Estas informações (listadas no item 1.2.1)
+                são coletadas com o único fim de otimizar a navegação e
+                experiência do próprio <strong>LICENCIADO</strong> pelo website
+                da <strong>LICENCIANTE</strong>.
+              </li>
+              <li>
+                <span>1.2.10.</span> Ainda, outras informações como preferências
+                pessoais são armazenadas através de Cookies e Web Beacons.
+              </li>
+              <li>
+                <span>1.2.11.</span> Todos os Licenciados, ou qualquer pessoa
+                que navega na internet, detêm o poder e independência para
+                desligar estas funções ao bloqueando os “Cookies” nas opções do
+                browser ou antivírus. Entretanto, alertamos que ao bloquear os
+                “Cookies” é possível que venha ter problemas de navegação em
+                nosso website ou em outros websites.
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <span>1.3.</span> CAPTAÇÃO DE DADOS DE TERCEIROS PELO{' '}
+            <strong>LICENCIADO</strong>
+            <ul>
+              <li>
+                <span>1.3.1.</span> Tendo em vista que o{' '}
+                <strong>SOFTWARE </strong>permite ao
+                <strong>LICENCIADO</strong> a captação de dados de terceiros, o{' '}
+                <strong>LICENCIADO</strong>, ao contratar a{' '}
+                <strong>LICENCIANTE</strong>, declara-se responsável pela
+                tratamento e legalidade destes dados nos termos da Lei nº
+                12.965/2014 (Marco Civil da Internet), Lei nº 13.709/2018 (Lei
+                de Proteção de Dados) e pelo Regulamento Europeu de Proteção de
+                Dados ou GDPR (General Data Protection Regulation).
+              </li>
+              <li>
+                <span>1.3.2.</span> O <strong>LICENCIADO</strong> compromete-se
+                a publicar em seu website seus próprios termos de uso e
+                políticas de privacidade capazes de garantir todos os direitos e
+                deveres previstos na Lei nº 12.965/2014 (Marco Civil da
+                Internet), Lei nº 13.709/2018 (Lei de Proteção de Dados) e pelo
+                Regulamento Europeu de Proteção de Dados ou GDPR (General Data
+                Protection Regulation). Verificada a inexistência, insuficiência
+                ou ilegalidade dos termos de uso e políticas de privacidade do{' '}
+                <strong>LICENCIADO</strong>, este será notificado para que supra
+                estes defeitos. Não sendo cumprida a notificação, a Licenciante
+                poderá suspender ou cancelar os serviços contratados.
+              </li>
+              <li>
+                <span>1.3.3.</span> No caso de um terceiro solicitar informações
+                à <strong>LICENCIANTE</strong> sobre eventuais dados seus que
+                tenham sido captados pelo <strong>LICENCIADO</strong>, este
+                autoriza, desde já, que a <strong>LICENCIANTE</strong> informe
+                por quem seus dados foram captados e os meios de contato, onde
+                estão armazenados, bem como quaisquer outros dados necessários
+                para que exerça seus direitos previstos na LGPD - Lei nº
+                13.709/2018 (Lei Geral de Proteção de Dados).
+              </li>
+              <li>
+                <span>1.3.4.</span> Caso o <strong>LICENCIADO</strong> esteja
+                geograficamente localizado em qualquer país da União Europeia
+                ou, ainda, capte dados de qualquer pessoa que esteja
+                geograficamente localizada em qualquer país da União Europeia,
+                este se compromete a informar em seus próprios Termos de Uso e
+                Políticas de Privacidade um representante para ser contatado
+                pelas autoridades de controle e por titulares de dados daquela
+                região, nos termos exigidos pela GDPR (General Data Protection
+                Regulation).
+              </li>
+              <li>
+                <span>1.3.5.</span> A <strong>LICENCIANTE</strong> não realizará
+                o tratamento destes dados, exceto se requisitado e autorizado
+                pelo
+                <strong>LICENCIADO</strong>.
+              </li>
+              <li>
+                <span>1.3.6.</span> Caso a <strong>LICENCIANTE</strong>{' '}
+                identifique qualquer captação ilegal de dados pelo{' '}
+                <strong>LICENCIADO</strong>, irá imediatamente bloquear a
+                respectiva captação e o acesso do <strong>LICENCIADO</strong> ao
+                SOFTWARE.
+              </li>
+              <li>
+                <span>1.3.7.</span> Não é permitida a captação de dados
+                genéticos, biométricos ou relativos à saúde de terceiros pelo
+                <strong>LICENCIADO</strong>, salvo se por autorização expressa e
+                inequívoca de seus titulares. Caso venha o{' '}
+                <strong>LICENCIADO</strong> a obter a respectiva autorização,
+                deverá comprovar imediatamente à <strong>LICENCIANTE</strong>,
+                sob pena de ter seu acesso bloqueado nos termos do item 1.3.4.
+              </li>
+              <li>
+                <span>1.3.8.</span> Da mesma forma do item anterior, não é
+                permitida a captação de dados de menores de 16 (dezesseis) anos
+                pelo <strong>LICENCIADO</strong>, sem a autorização expressa de
+                seus responsáveis.
+              </li>
+            </ul>
+          </li>
+        </ul>
       </div>
       <Footer />
     </div>

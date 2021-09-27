@@ -1,0 +1,47 @@
+.terms {
+  padding: 350px 15%;
+  padding-bottom: 80px;
+
+  p {
+    padding: 20px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 50;
+    color: var(--gray-300);
+  }
+
+  ul {
+    list-style: none;
+    color: var(--gray-300);
+    li {
+      margin: 20px;
+      font-size: 26px;
+
+      span {
+        font-weight: 700;
+      }
+
+      ul {
+        list-style: none;
+        margin-bottom: 40px;
+        font-weight: 700;
+
+        li {
+          margin-left: 125px;
+          position: relative;
+          text-align: justify;
+          font-weight: 500;
+
+          span {
+            position: absolute;
+            left: -75px;
+          }
+
+          ol {
+            margin-left: -75px;
+            margin-bottom: 40px;
+          }
+        }
+      }
+    }
+  }
+}
