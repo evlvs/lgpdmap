@@ -273,6 +273,23 @@ function PlansPage(): JSX.Element {
                       {plans.userAmount.platinum}
                     </td>
                   </tr>
+                  <tr>
+                    <td data-label={plans.plansType.title}>
+                      <strong>Processos</strong>
+                    </td>
+                    <td data-label={plans.plansType.basic}>
+                      {plans.proccess.basic}
+                    </td>
+                    <td data-label={plans.plansType.intermediate}>
+                      {plans.proccess.intermediate}
+                    </td>
+                    <td data-label={plans.plansType.advanced}>
+                      {plans.proccess.advanced}
+                    </td>
+                    <td data-label={plans.plansType.platinum}>
+                      {plans.proccess.platinum}
+                    </td>
+                  </tr>
                   {/* <tr>
                   <td data-label={plans.plansType.basic}>{plans.companyMapping.title}</td>
                   <td data-label={plans.plansType.basic}>

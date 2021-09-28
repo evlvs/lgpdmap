@@ -1,6 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
-import Presentation from '../components/Presentation'
+import PresentationTP from '../components/TermsAndPrivacy'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import styles from '../styles/styles.module.scss'
@@ -16,10 +16,9 @@ const Home: React.FC = () => {
       </Head>
 
       <Navbar />
-      <Presentation
+      <PresentationTP
         title="Nossa política de privacidade."
-        paragraph="Bem-vindo e obrigado pelo seu interesse no LGPDmap (“LGPDmap”, “nós” ou “nos”), nosso site em https://www.lgpdmap.com (o “Site”) e todos os sites relacionados , software para download, aplicativos móveis (incluindo aplicativos para tablets) e outros serviços fornecidos por nós e nos quais um link para esta Política de Privacidade é exibido, e todas as outras comunicações com indivíduos por meio escrito ou oral, como e-mail ou telefone (coletivamente , juntamente com o Site, nosso “Serviço”)."
-        hasButton="true"
+        paragraph="Bem-vindo e obrigado pelo interesse no Lgpdmap. Respeitamos a sua privacidade e prezamos pela transparência. Confira nossa Política da Privacidade."
       />
       <div className={styles.terms}>
         <h1>Política de Privacidade</h1>
@@ -127,7 +126,7 @@ const Home: React.FC = () => {
                     As informações fornecidas serão usadas para comunicação,
                     notificação, acesso ao sistema e cobrança do{' '}
                     <strong>LICENCIADO</strong>, estando a{' '}
-                    <strong>LICENCIANTE</strong>
+                    <strong>LICENCIANTE </strong>
                     autorizada a utilizá-las também para a operação de envio de
                     e-mails, como o envio de Newsletter, comunicado de
                     lançamentos e novidades relacionadas ao SOFTWARE. O{' '}

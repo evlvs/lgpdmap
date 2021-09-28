@@ -35,6 +35,13 @@ export const PlansData = [
       advanced: '10',
       platinum: '20'
     },
+    proccess: {
+      title: 'Processos',
+      basic: '50',
+      intermediate: '100',
+      advanced: '300',
+      platinum: 'Ilimitados'
+    },
     companyMapping: {
       title: 'Mapeamento da empresa',
       basic: true,

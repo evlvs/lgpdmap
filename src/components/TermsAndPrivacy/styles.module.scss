@@ -37,7 +37,7 @@
     }
 
     p {
-      max-width: 577px;
+      max-width: 60%;
       color: #fff;
       margin-bottom: 20px;
       text-align: center;
@@ -172,6 +172,10 @@
     .presentation {
       width: 80%;
       margin: 0 auto;
+
+      p {
+        max-width: 90%;
+      }
     }
 
     .bannerIllustration {
@@ -180,6 +184,81 @@
 
       img {
         width: 100%;
+      }
+    }
+  }
+  .divider1 {
+    width: 100%;
+    top: 0;
+    height: 0;
+    position: relative;
+    z-index: 2;
+    background: linear-gradient(
+      178.24deg,
+      #753bc5 47.57%,
+      rgba(117, 59, 197, 0) 47.58%
+    );
+
+    .wave {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 299px;
+      background: url('/assets/wave1.svg') repeat;
+      background-size: cover;
+      background-position: center top;
+      opacity: 0;
+      margin-top: -1px;
+
+      &.wave1 {
+        animation: animate 30s linear infinite;
+        z-index: 1000;
+        opacity: 1;
+        animation-delay: 0s;
+        bottom: 0;
+      }
+
+      &.wave2 {
+        animation: animate2 15s linear infinite;
+        z-index: 999;
+        opacity: 0.5;
+        animation-delay: -5s;
+        bottom: 0;
+      }
+
+      &.wave3 {
+        animation: animate3 10s linear infinite;
+        z-index: 998;
+        opacity: 0.2;
+        animation-delay: -2s;
+        bottom: 15;
+      }
+
+      @keyframes animate {
+        0% {
+          background-position-x: 0;
+        }
+        100% {
+          background-position-x: -1000px;
+        }
+      }
+
+      @keyframes animate2 {
+        0% {
+          background-position-x: 0;
+        }
+        100% {
+          background-position-x: 1000px;
+        }
+      }
+      @keyframes animate3 {
+        0% {
+          background-position-x: 0;
+        }
+        100% {
+          background-position-x: -1000px;
+        }
       }
     }
   }

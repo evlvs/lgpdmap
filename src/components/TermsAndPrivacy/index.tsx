@@ -2,7 +2,10 @@ import React from 'react'
 import styles from './styles.module.scss'
 import Link from 'next/link'
 
-function PresentationTP(props: { title: string }): JSX.Element {
+function PresentationTP(props: {
+  title: string
+  paragraph: string
+}): JSX.Element {
   return (
     <>
       <section className={styles.banner}>
@@ -13,6 +16,7 @@ function PresentationTP(props: { title: string }): JSX.Element {
             </a>
           </Link>
           <h1>{props.title}</h1>
+          <p>{props.paragraph}</p>
         </div>
       </section>
       <section className={styles.divider1}>

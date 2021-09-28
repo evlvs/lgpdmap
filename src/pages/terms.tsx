@@ -15,7 +15,10 @@ const Home: React.FC = () => {
       </Head>
 
       <Navbar />
-      <PresentationTP title="Nossos termos e condições." />
+      <PresentationTP
+        title="Nossos termos e condições."
+        paragraph="Bem-vindo ao Lgpdmap! Estes Termos de Uso contém os termos e condições que regem o uso da nossa plataforma, seu conteúdo, serviços e produtos associados disponíveis."
+      />
       <div className={styles.terms}>
         <h1>1. Termos de Uso</h1>
         <p>
@@ -532,7 +535,7 @@ const Home: React.FC = () => {
               <li>
                 <span>1.13.6.</span> Fica eleito o foro de Curitiba/PR para
                 dirimir quaisquer controvérsias acerca da utilização de{' '}
-                <strong>SOFTWARE</strong>
+                <strong>SOFTWARE </strong>
                 ou TERMOS DE USO e POLÍTICA DA PRIVACIDADE, renunciando as
                 partes quaisquer outros, por mais privilegiado que seja.
               </li>
