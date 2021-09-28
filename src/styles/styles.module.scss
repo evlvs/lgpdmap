@@ -22,6 +22,18 @@
         font-weight: 700;
       }
 
+      a {
+        height: auto;
+        max-width: auto;
+        display: inline;
+        padding: 0;
+        background-color: transparent;
+      }
+
+      a:hover {
+        color: var(--green-500);
+      }
+
       ul {
         list-style: none;
         margin-bottom: 40px;
@@ -43,6 +55,10 @@
             margin-bottom: 40px;
           }
         }
+      }
+
+      ul.disc {
+        list-style: disc;
       }
     }
   }

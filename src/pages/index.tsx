@@ -2,10 +2,10 @@ import React from 'react'
 import Head from 'next/head'
 import Presentation from '../components/Presentation'
 import KnowMore from '../components/KnowMore'
-import OurNumbers from '../components/OurNumbers'
+// import OurNumbers from '../components/OurNumbers'
 import Steps from '../components/Steps'
 import ContactUs from '../components/ContactUs'
-import Testimonials from '../components/Testimonials'
+// import Testimonials from '../components/Testimonials'
 import Partners from '../components/Partners'
 import Plans from '../components/Plans'
 import Footer from '../components/Footer'
@@ -40,10 +40,10 @@ const Home: React.FC = () => {
         hasButton="true"
       />
       <KnowMore {...videoJsOptions} />
-      <OurNumbers />
+      {/* <OurNumbers /> */}
       <Steps />
       <ContactUs />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Partners />
       <Plans />
       <FAQ />

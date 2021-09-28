@@ -40,7 +40,7 @@ const Home: React.FC = () => {
           <strong>JOÃO ANGELO ZEM</strong>, brasileiro, portador do RG nº
           7.827.916-8 e do CPF nº 044.428.179-79, estabelece o presente
           instrumento, denominado <strong>POLÍTICA DA PRIVACIDADE</strong>,
-          cujas condições e cláusulas o<strong>LICENCIADO</strong> declara, no
+          cujas condições e cláusulas o <strong>LICENCIADO</strong> declara, no
           ato da contratação/assinatura, que leu anteriormente e aceita em se
           submeter.
         </p>
@@ -59,7 +59,7 @@ const Home: React.FC = () => {
         <ul>
           <li>
             <span>1.1.</span> REGRAS GERAIS DE ARMAZENAMENTO DE DADOS DO
-            <strong>LICENCIADO</strong> E DE TERCEIRO
+            <strong> LICENCIADO</strong> E DE TERCEIRO
             <ul>
               <li>
                 <span>1.1.1.</span> Qualquer pessoa que tenha dados armazenados
@@ -78,7 +78,7 @@ const Home: React.FC = () => {
               </li>
               <li>
                 <span>1.1.3.</span> Em caso dos requerimentos acima, a
-                <strong>LICENCIANTE</strong> se reserva o prazo de 30 (trinta)
+                <strong> LICENCIANTE</strong> se reserva o prazo de 30 (trinta)
                 dias para o cumprimento do pedido, sendo o requisitante
                 informado através de e-mail.
               </li>
@@ -86,7 +86,7 @@ const Home: React.FC = () => {
                 <span>1.1.4.</span> Em caso de eventual violação de dados
                 pessoais capaz de resultar em risco de direitos e liberdades do
                 titular dos dados, a <strong>LICENCIANTE</strong> compromete-se
-                a notificar o<strong>LICENCIADO</strong> responsável em até 72
+                a notificar o <strong>LICENCIADO</strong> responsável em até 72
                 horas.
               </li>
               <li>
@@ -121,7 +121,7 @@ const Home: React.FC = () => {
                 preenchimento de formulário pelo <strong>LICENCIADO</strong> no
                 ato da contratação/assinatura do serviço, ficando este
                 responsável pela sua correção e atualização.
-                <ul>
+                <ul className={styles.disc}>
                   <li>
                     As informações fornecidas serão usadas para comunicação,
                     notificação, acesso ao sistema e cobrança do{' '}
@@ -169,7 +169,7 @@ const Home: React.FC = () => {
               </li>
               <li>
                 <span>1.2.8.</span> Além dos dados pessoais acima informados, o
-                <strong>SOFTWARE </strong>coleta informações contidas em
+                <strong> SOFTWARE </strong>coleta informações contidas em
                 anúncios como o endereço IP (Internet Protocol), ISP (Internet
                 Service Provider, como Sapo, Clix e outros), o browser que
                 utilizou ao visitar o website da <strong>LICENCIANTE</strong>, o
@@ -203,7 +203,7 @@ const Home: React.FC = () => {
               <li>
                 <span>1.3.1.</span> Tendo em vista que o{' '}
                 <strong>SOFTWARE </strong>permite ao
-                <strong>LICENCIADO</strong> a captação de dados de terceiros, o{' '}
+                <strong> LICENCIADO</strong> a captação de dados de terceiros, o{' '}
                 <strong>LICENCIADO</strong>, ao contratar a{' '}
                 <strong>LICENCIANTE</strong>, declara-se responsável pela
                 tratamento e legalidade destes dados nos termos da Lei nº
@@ -249,7 +249,7 @@ const Home: React.FC = () => {
                 <span>1.3.5.</span> A <strong>LICENCIANTE</strong> não realizará
                 o tratamento destes dados, exceto se requisitado e autorizado
                 pelo
-                <strong>LICENCIADO</strong>.
+                <strong> LICENCIADO</strong>.
               </li>
               <li>
                 <span>1.3.6.</span> Caso a <strong>LICENCIANTE</strong>{' '}
@@ -261,8 +261,8 @@ const Home: React.FC = () => {
               <li>
                 <span>1.3.7.</span> Não é permitida a captação de dados
                 genéticos, biométricos ou relativos à saúde de terceiros pelo
-                <strong>LICENCIADO</strong>, salvo se por autorização expressa e
-                inequívoca de seus titulares. Caso venha o{' '}
+                <strong> LICENCIADO</strong>, salvo se por autorização expressa
+                e inequívoca de seus titulares. Caso venha o{' '}
                 <strong>LICENCIADO</strong> a obter a respectiva autorização,
                 deverá comprovar imediatamente à <strong>LICENCIANTE</strong>,
                 sob pena de ter seu acesso bloqueado nos termos do item 1.3.4.

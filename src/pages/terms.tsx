@@ -105,7 +105,7 @@ const Home: React.FC = () => {
             <ul>
               <li>
                 <span>1.3.1.</span> No ato da assinatura/contratação do
-                <strong>SOFTWARE</strong>, o <strong>LICENCIADO</strong> poderá
+                <strong> SOFTWARE</strong>, o <strong>LICENCIADO</strong> poderá
                 optar pelos planos de pagamento MENSAL ou ANUAL, conforme
                 ofertado no site..
               </li>
@@ -116,7 +116,7 @@ const Home: React.FC = () => {
               <li>
                 <span>1.3.3.</span> O não acesso à plataforma e/ou não
                 utilização dos serviços postos no <strong>SOFTWARE</strong> não
-                isentará o<strong>LICENCIADO</strong> do pagamento da
+                isentará o<strong> LICENCIADO</strong> do pagamento da
                 mensalidade, pois o pagamento é devido pela simples
                 disponibilização do serviço.
               </li>
@@ -244,7 +244,7 @@ const Home: React.FC = () => {
               <li>
                 <span>1.6.2.</span> Com o pedido de cancelamento da assinatura,
                 será imediatamente bloqueado o acesso do{' '}
-                <strong>LICENCIADO</strong> ao <strong>SOFTWARE</strong>e
+                <strong>LICENCIADO</strong> ao <strong>SOFTWARE </strong>e
                 cessada a cobrança automática por período pela{' '}
                 <strong>LICENCIANTE</strong> no período subsequente, não havendo
                 qualquer reembolso das parcelas já pagas.
@@ -278,10 +278,10 @@ const Home: React.FC = () => {
 
           <li>
             <ul>
-              <span>2.8.</span> CUPOM DE DESCONTO
+              <span>1.8.</span> CUPOM DE DESCONTO
               <li>
                 <span>1.8.1.</span> O cupom de desconto entregue pela
-                <strong>LICENCIANTE</strong> e seus parceiros, poderá ser
+                <strong> LICENCIANTE</strong> e seus parceiros, poderá ser
                 utilizado apenas 1 (uma) vez e limitado para um único CPF/CNPJ,
                 ou seja, é intransferível e não é cumulativo. O cupom de
                 desconto só pode ser ativado por novas assinaturas e a validade
@@ -316,7 +316,7 @@ const Home: React.FC = () => {
                 <span>1.9.3.</span> A <strong>LICENCIANTE</strong> reserva-se o
                 direito de interromper temporariamente os serviços, caso haja
                 algum problema inesperado com o sistema, quando notificará o
-                <strong>LICENCIADO</strong>, informando sobre o problema e
+                <strong> LICENCIADO</strong>, informando sobre o problema e
                 prazos para a normalização.
               </li>
             </ul>
@@ -329,7 +329,7 @@ const Home: React.FC = () => {
               PELO <strong>LICENCIADO</strong>
               <li>
                 <span>1.10.1.</span> É proibida a utilização do{' '}
-                <strong>SOFTWARE</strong>
+                <strong>SOFTWARE </strong>
                 para a publicação, criação, armazenamento e/ou divulgação de
                 conteúdo ilegal ou abusivo, bem como textos, fotos e/ou vídeos
                 que tenham caráter difamatório, xenófobo, discriminatório,
