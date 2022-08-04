@@ -19,7 +19,7 @@ function ContactUs(): JSX.Element {
           <strong> Lgpdmap</strong>
         </h2>
         <Link
-          href="https://tawk.to/chat/62eb494837898912e961226f/1g9jhcgph"
+          href="https://tawk.to/chat/6155e3aa25797d7a8901a454/1fgro2kqi"
           target="_blank"
         >
           <a>Fale com um Especialista</a>

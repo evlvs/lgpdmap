@@ -13,8 +13,8 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
     <>
       <Component {...pageProps} />
       <TawkMessengerReact
-        propertyId="62eb494837898912e961226f"
-        widgetId="1g9jhcgph"
+        propertyId="6155e3aa25797d7a8901a454"
+        widgetId="1fgro2kqi"
       />
     </>
   )
