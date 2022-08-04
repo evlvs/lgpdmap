@@ -13,7 +13,7 @@ function Partners(): JSX.Element {
       </h2>
 
       <div className={styles.partners}>
-        <div className={styles.boxImg1}>
+        {/* <div className={styles.boxImg1}>
           <img
             src="./assets/partners/Poco.svg"
             alt="Poco"
@@ -61,7 +61,43 @@ function Partners(): JSX.Element {
             alt="Poco"
             className={styles.partner7}
           />
-        </div>
+        </div> */}
+
+        <img
+          src="./assets/partners/Poco.svg"
+          alt="Poco"
+          className={styles.partner}
+        />
+        <img
+          src="./assets/partners/partner2.svg"
+          alt="Poco"
+          className={styles.partner}
+        />
+        <img
+          src="./assets/partners/partner3.svg"
+          alt="Poco"
+          className={styles.partner}
+        />
+        <img
+          src="./assets/partners/partner4.svg"
+          alt="Poco"
+          className={styles.partner}
+        />
+        <img
+          src="./assets/partners/partner5.svg"
+          alt="Poco"
+          className={styles.partner}
+        />
+        <img
+          src="./assets/partners/partner6.svg"
+          alt="Poco"
+          className={styles.partner}
+        />
+        <img
+          src="./assets/partners/partner7.svg"
+          alt="Poco"
+          className={styles.partner}
+        />
       </div>
     </section>
   )

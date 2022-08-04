@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import Head from 'next/head'
 import Presentation from '../components/Presentation'
 import KnowMore from '../components/KnowMore'
@@ -11,6 +11,7 @@ import Plans from '../components/Plans'
 import Footer from '../components/Footer'
 import FAQ from '../components/FAQ'
 import Navbar from '../components/Navbar'
+import TawkMessengerReact from '@tawk.to/tawk-messenger-react'
 
 const videoJsOptions = {
   autoplay: false,
@@ -26,6 +27,8 @@ const videoJsOptions = {
 }
 
 const Home: React.FC = () => {
+  const tawkMessengerRef = useRef()
+
   return (
     <div>
       <Head>
@@ -45,8 +48,14 @@ const Home: React.FC = () => {
       <ContactUs />
       {/* <Testimonials /> */}
       <Partners />
+
       <Plans />
       <FAQ />
+      <TawkMessengerReact
+        propertyId="property_id"
+        widgetId="default"
+        ref={tawkMessengerRef}
+      />
       <Footer />
     </div>
   )

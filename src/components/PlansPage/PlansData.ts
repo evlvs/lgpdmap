@@ -2,42 +2,42 @@ export const PlansData = [
   {
     plansType: {
       title: ' ',
-      basic: 'SMB',
-      intermediate: 'PRO',
-      advanced: 'BUSINESS',
-      platinum: 'ENTERPRISE'
+      basic: 'FREE',
+      intermediate: 'SMB',
+      advanced: 'PRO',
+      platinum: 'BUSINESS'
     },
     valueMonth: {
       title: ' ',
-      basic: 290,
-      intermediate: 690,
-      advanced: 1090,
-      platinum: 2290
+      basic: 'Gratuito',
+      intermediate: 149,
+      advanced: 377,
+      platinum: 'Sob consulta'
     },
     valueAnual: {
       title: ' ',
-      basic: 240,
+      basic: 'Gratuito',
       intermediate: 570,
       advanced: 910,
-      platinum: 1940
+      platinum: 'Sob consulta'
     },
     CNPJAmount: {
       title: 'CNPJ`s',
       basic: '01',
       intermediate: '03',
       advanced: '05',
-      platinum: '10'
+      platinum: '06'
     },
     userAmount: {
       title: 'Multi usuários',
-      basic: '02',
+      basic: '01',
       intermediate: '06',
       advanced: '10',
-      platinum: '20'
+      platinum: 'Personalizado'
     },
     proccess: {
       title: 'Processos',
-      basic: '50',
+      basic: '30',
       intermediate: '100',
       advanced: '300',
       platinum: 'Ilimitados'

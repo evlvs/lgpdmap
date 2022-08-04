@@ -52,7 +52,10 @@ function Navbar(): JSX.Element {
           <Link href="/plans">Planos</Link>
         </li>
         <li>
-          <Link href="https://api.whatsapp.com/send?phone=554130579598">
+          <Link
+            href="https://tawk.to/chat/62eb494837898912e961226f/1g9jhcgph"
+            target="_blank"
+          >
             <a className={styles.callBtn}>Fale com um Especialista</a>
           </Link>
         </li>

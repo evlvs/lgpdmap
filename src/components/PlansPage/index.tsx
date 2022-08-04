@@ -56,13 +56,11 @@ function PlansPage(): JSX.Element {
                   <li className={styles.basicPlan} id="SMB">
                     <h6>{plans.plansType.basic}</h6>
                     <p>
-                      R$
                       <strong>
                         {radioBtn === 'month'
                           ? plans.valueMonth.basic
                           : plans.valueAnual.basic}
                       </strong>
-                      <span>/mês</span>
                     </p>
 
                     <ul>
@@ -80,7 +78,7 @@ function PlansPage(): JSX.Element {
                       </li>
                       <li>
                         <CheckCircle color="#3CCF8E" /> Até{' '}
-                        <strong>50 Processos</strong>
+                        <strong>30 Processos</strong>
                       </li>
                     </ul>
 
@@ -181,24 +179,23 @@ function PlansPage(): JSX.Element {
                   <li className={styles.platinumPlan} id="ENTERPRISE">
                     <h6>{plans.plansType.platinum}</h6>
                     <p>
-                      R$
                       <strong>
                         {radioBtn === 'month'
                           ? plans.valueMonth.platinum
                           : plans.valueAnual.platinum}
                       </strong>
-                      <span>/mês</span>
                     </p>
 
                     <ul>
                       <li>
                         <CheckCircle color="#3CCF8E" /> Cadastramento de até{' '}
-                        <strong>{plans.CNPJAmount.platinum} CNPJs</strong>
+                        <strong>
+                          {plans.CNPJAmount.platinum} CNPJs ou mais
+                        </strong>
                       </li>
                       <li>
-                        <CheckCircle color="#3CCF8E" /> Gerenciamento completo
-                        com{' '}
-                        <strong>{plans.userAmount.platinum} usuários</strong>
+                        <CheckCircle color="#3CCF8E" /> Quantidade de usuários
+                        <strong> personalizada</strong>
                       </li>
                       <li>
                         <CheckCircle color="#3CCF8E" /> Relatório de Impacto à
@@ -206,7 +203,7 @@ function PlansPage(): JSX.Element {
                       </li>
                       <li>
                         <CheckCircle color="#3CCF8E" />{' '}
-                        <strong>Processos ilimitados</strong>
+                        <strong>Quantidade de processos personalizada</strong>
                       </li>
                     </ul>
 

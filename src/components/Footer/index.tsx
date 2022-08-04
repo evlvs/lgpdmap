@@ -85,22 +85,22 @@ function Footer(): JSX.Element {
             </li>
             <li>
               <Link href="/plans#SMB">
-                <a>SMB</a>
+                <a>FREE</a>
               </Link>
             </li>
             <li>
               <Link href="/plans#PRO">
-                <a>PRO</a>
+                <a>SMB</a>
               </Link>
             </li>
             <li>
               <Link href="/plans#BUSINESS">
-                <a>BUSINESS</a>
+                <a>PRO</a>
               </Link>
             </li>
             <li>
               <Link href="/plans#ENTERPRISE">
-                <a>ENTERPRISE</a>
+                <a>BUSINESS</a>
               </Link>
             </li>
           </ul>
@@ -115,7 +115,10 @@ function Footer(): JSX.Element {
               <strong> adequar</strong> a sua empresa à <strong>LGPD</strong>{' '}
               com o<strong> Lgpd</strong>map
             </h2>
-            <Link href="https://api.whatsapp.com/send?phone=554130579598">
+            <Link
+              href="https://tawk.to/chat/62eb494837898912e961226f/1g9jhcgph"
+              target="_blank"
+            >
               <a>Fale com um Especialista</a>
             </Link>
           </div>
