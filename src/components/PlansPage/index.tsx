@@ -82,7 +82,10 @@ function PlansPage(): JSX.Element {
                       </li>
                     </ul>
 
-                    <Link href="#basicPlan">
+                    <Link
+                      href="https://tawk.to/chat/6155e3aa25797d7a8901a454/1fgro2kqi"
+                      target="_blank"
+                    >
                       <button>COMECE JÁ</button>
                     </Link>
 
@@ -92,7 +95,6 @@ function PlansPage(): JSX.Element {
                   </li>
 
                   <li className={styles.intermediatePlan} id="PRO">
-                    <div className={styles.recommended}>RECOMENDADO</div>
                     <h6>{plans.plansType.intermediate}</h6>
                     <p>
                       R$
@@ -126,7 +128,10 @@ function PlansPage(): JSX.Element {
                       </li>
                     </ul>
 
-                    <Link href="#intermediatePlan">
+                    <Link
+                      href="https://tawk.to/chat/6155e3aa25797d7a8901a454/1fgro2kqi"
+                      target="_blank"
+                    >
                       <button>COMECE JÁ</button>
                     </Link>
 
@@ -167,7 +172,10 @@ function PlansPage(): JSX.Element {
                       </li>
                     </ul>
 
-                    <Link href="#advancedPlan">
+                    <Link
+                      href="https://tawk.to/chat/6155e3aa25797d7a8901a454/1fgro2kqi"
+                      target="_blank"
+                    >
                       <button>COMECE JÁ</button>
                     </Link>
 
@@ -208,7 +216,7 @@ function PlansPage(): JSX.Element {
                     </ul>
 
                     <Link href="#platinumPlan">
-                      <button>COMECE JÁ</button>
+                      <button>CONSULTE</button>
                     </Link>
 
                     <Link href="#compare">
@@ -285,6 +293,39 @@ function PlansPage(): JSX.Element {
                     </td>
                     <td data-label={plans.plansType.platinum}>
                       {plans.proccess.platinum}
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-label={plans.plansType.title}>
+                      <strong>Dashboard</strong>
+                    </td>
+                    <td data-label={plans.plansType.basic}>
+                      {plans.dashboard.basic === true ? (
+                        <CheckCircle color="#3CCF8E" />
+                      ) : (
+                        <XCircle color="#CF3E27" />
+                      )}
+                    </td>
+                    <td data-label={plans.plansType.intermediate}>
+                      {plans.dashboard.intermediate === true ? (
+                        <CheckCircle color="#3CCF8E" />
+                      ) : (
+                        <XCircle color="#CF3E27" />
+                      )}
+                    </td>
+                    <td data-label={plans.plansType.advanced}>
+                      {plans.dashboard.advanced === true ? (
+                        <CheckCircle color="#3CCF8E" />
+                      ) : (
+                        <XCircle color="#CF3E27" />
+                      )}
+                    </td>
+                    <td data-label={plans.plansType.platinum}>
+                      {plans.dashboard.platinum === true ? (
+                        <CheckCircle color="#3CCF8E" />
+                      ) : (
+                        <XCircle color="#CF3E27" />
+                      )}
                     </td>
                   </tr>
                   {/* <tr>
@@ -517,39 +558,7 @@ function PlansPage(): JSX.Element {
                       )}
                     </td>
                   </tr>
-                  <tr>
-                    <td data-label={plans.plansType.title}>
-                      <strong>Dashboard</strong>
-                    </td>
-                    <td data-label={plans.plansType.basic}>
-                      {plans.dashboard.basic === true ? (
-                        <CheckCircle color="#3CCF8E" />
-                      ) : (
-                        <XCircle color="#CF3E27" />
-                      )}
-                    </td>
-                    <td data-label={plans.plansType.intermediate}>
-                      {plans.dashboard.intermediate === true ? (
-                        <CheckCircle color="#3CCF8E" />
-                      ) : (
-                        <XCircle color="#CF3E27" />
-                      )}
-                    </td>
-                    <td data-label={plans.plansType.advanced}>
-                      {plans.dashboard.advanced === true ? (
-                        <CheckCircle color="#3CCF8E" />
-                      ) : (
-                        <XCircle color="#CF3E27" />
-                      )}
-                    </td>
-                    <td data-label={plans.plansType.platinum}>
-                      {plans.dashboard.platinum === true ? (
-                        <CheckCircle color="#3CCF8E" />
-                      ) : (
-                        <XCircle color="#CF3E27" />
-                      )}
-                    </td>
-                  </tr>
+
                   {/* <tr>
                   <td data-label={plans.plansType.basic}>{plans.EAD.title}</td>
                   <td data-label={plans.plansType.basic}>
@@ -649,7 +658,13 @@ function PlansPage(): JSX.Element {
                     <td className="plansBtn"></td>
 
                     <td className="plansBtn">
-                      <a href="#basic">Comece já</a>
+                      <a
+                        href="https://tawk.to/chat/6155e3aa25797d7a8901a454/1fgro2kqi"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Comece já
+                      </a>
                     </td>
 
                     <td className="plansBtn">
@@ -657,11 +672,23 @@ function PlansPage(): JSX.Element {
                     </td>
 
                     <td className="plansBtn">
-                      <a href="#advanced">Comece já</a>
+                      <a
+                        href="https://tawk.to/chat/6155e3aa25797d7a8901a454/1fgro2kqi"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Comece já
+                      </a>
                     </td>
 
                     <td className="plansBtn">
-                      <a href="#platinum">Comece já</a>
+                      <a
+                        href="https://tawk.to/chat/6155e3aa25797d7a8901a454/1fgro2kqi"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Consulte
+                      </a>
                     </td>
                   </tr>
                   {/* <tr>

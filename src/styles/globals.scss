@@ -838,3 +838,23 @@ html:not(.no-js) [data-aos^='fade'][data-aos^='fade'].aos-animate {
     display: none;
   }
 }
+
+.whats-float{
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 90px;
+  right: 20px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 2000000000 !important;
+}
+
+.whatsapp-icon {
+  fill: var(--gray-50);
+  transform: scale(2.5);
+}

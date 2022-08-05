@@ -11,15 +11,15 @@ export const PlansData = [
       title: ' ',
       basic: 'Gratuito',
       intermediate: 149,
-      advanced: 377,
-      platinum: 'Sob consulta'
+      advanced: 399,
+      platinum: 'Consulte'
     },
     valueAnual: {
       title: ' ',
       basic: 'Gratuito',
       intermediate: 570,
       advanced: 910,
-      platinum: 'Sob consulta'
+      platinum: 'Consulte'
     },
     CNPJAmount: {
       title: 'CNPJ`s',

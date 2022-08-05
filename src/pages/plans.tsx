@@ -26,7 +26,7 @@ const Home: React.FC = () => {
       />
       <PlansPage />
       <ContactUs />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Partners />
       <Steps />
       <div className="faqPlans">

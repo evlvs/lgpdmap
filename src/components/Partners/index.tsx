@@ -64,38 +64,23 @@ function Partners(): JSX.Element {
         </div> */}
 
         <img
-          src="./assets/partners/Poco.svg"
-          alt="Poco"
+          src="./assets/partners/vinilsul.png"
+          alt="Vinilsul"
           className={styles.partner}
         />
         <img
-          src="./assets/partners/partner2.svg"
-          alt="Poco"
+          src="./assets/partners/unina.png"
+          alt="Unina"
           className={styles.partner}
         />
         <img
-          src="./assets/partners/partner3.svg"
-          alt="Poco"
+          src="./assets/partners/sekur.png"
+          alt="Sekur"
           className={styles.partner}
         />
         <img
-          src="./assets/partners/partner4.svg"
-          alt="Poco"
-          className={styles.partner}
-        />
-        <img
-          src="./assets/partners/partner5.svg"
-          alt="Poco"
-          className={styles.partner}
-        />
-        <img
-          src="./assets/partners/partner6.svg"
-          alt="Poco"
-          className={styles.partner}
-        />
-        <img
-          src="./assets/partners/partner7.svg"
-          alt="Poco"
+          src="./assets/partners/vapza.png"
+          alt="Vapza"
           className={styles.partner}
         />
       </div>

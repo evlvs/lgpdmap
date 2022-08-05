@@ -12,6 +12,7 @@ import Footer from '../components/Footer'
 import FAQ from '../components/FAQ'
 import Navbar from '../components/Navbar'
 import TawkMessengerReact from '@tawk.to/tawk-messenger-react'
+import Whatsapp from '../components/Whatsapp'
 
 const videoJsOptions = {
   autoplay: false,
@@ -57,6 +58,7 @@ const Home: React.FC = () => {
         ref={tawkMessengerRef}
       />
       <Footer />
+      <Whatsapp />
     </div>
   )
 }
