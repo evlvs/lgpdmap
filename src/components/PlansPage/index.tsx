@@ -185,6 +185,8 @@ function PlansPage(): JSX.Element {
                   </li>
 
                   <li className={styles.platinumPlan} id="ENTERPRISE">
+                    <div className={styles.recommended}>RECOMENDADO</div>
+
                     <h6>{plans.plansType.platinum}</h6>
                     <p>
                       <strong>
@@ -215,7 +217,7 @@ function PlansPage(): JSX.Element {
                       </li>
                     </ul>
 
-                    <Link href="#platinumPlan">
+                    <Link href="https://api.whatsapp.com/send?phone=554130579598">
                       <button>CONSULTE</button>
                     </Link>
 
