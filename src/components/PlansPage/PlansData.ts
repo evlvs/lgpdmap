@@ -11,28 +11,28 @@ export const PlansData = [
       title: ' ',
       basic: 'Gratuito',
       intermediate: 149,
-      advanced: 399,
+      advanced: 134,
       platinum: 'Consulte'
     },
     valueAnual: {
       title: ' ',
       basic: 'Gratuito',
-      intermediate: 570,
-      advanced: 910,
+      intermediate: 399,
+      advanced: 364,
       platinum: 'Consulte'
     },
     CNPJAmount: {
       title: 'CNPJ`s',
       basic: '01',
-      intermediate: '03',
-      advanced: '05',
-      platinum: '06'
+      intermediate: '01',
+      advanced: '03',
+      platinum: '04'
     },
     userAmount: {
       title: 'Multi usuários',
       basic: '01',
-      intermediate: '06',
-      advanced: '10',
+      intermediate: '03',
+      advanced: '06',
       platinum: 'Personalizado'
     },
     proccess: {
@@ -40,7 +40,7 @@ export const PlansData = [
       basic: '30',
       intermediate: '100',
       advanced: '300',
-      platinum: 'Ilimitados'
+      platinum: 'Personalizado'
     },
     companyMapping: {
       title: 'Mapeamento da empresa',

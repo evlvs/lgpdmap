@@ -18,10 +18,7 @@ function ContactUs(): JSX.Element {
           <strong>adequar</strong> a sua empresa à <strong>LGPD</strong> com o
           <strong> Lgpdmap</strong>
         </h2>
-        <Link
-          href="https://tawk.to/chat/6155e3aa25797d7a8901a454/1fgro2kqi"
-          target="_blank"
-        >
+        <Link href="javascript:void(Tawk_API.toggle())">
           <a>Fale com um Especialista</a>
         </Link>
       </div>

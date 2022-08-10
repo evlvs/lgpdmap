@@ -32,7 +32,15 @@
     margin: 2rem 0;
 
     .partner {
-      width: 5rem;
+      height: 5rem;
+      width: auto;
+      transition: all ease-in-out .2s;
+      margin: 1rem;
+      filter: grayscale(100%);
+    }
+    .partnerH {
+      height: 10rem;
+      width: auto;
       transition: all ease-in-out .2s;
       margin: 1rem;
       filter: grayscale(100%);

@@ -65,12 +65,12 @@ function PlansPage(): JSX.Element {
 
                     <ul>
                       <li>
-                        <CheckCircle color="#3CCF8E" /> Cadastramento de até{' '}
+                        <CheckCircle color="#3CCF8E" /> Cadastro de{' '}
                         <strong>{plans.CNPJAmount.basic} CNPJ</strong>
                       </li>
                       <li>
                         <CheckCircle color="#3CCF8E" /> Gerenciamento completo
-                        com <strong>{plans.userAmount.basic} usuários</strong>
+                        com <strong>{plans.userAmount.basic} usuário</strong>
                       </li>
                       <li>
                         <CheckCircle color="#3CCF8E" /> Relatório de Impacto à
@@ -82,10 +82,7 @@ function PlansPage(): JSX.Element {
                       </li>
                     </ul>
 
-                    <Link
-                      href="https://tawk.to/chat/6155e3aa25797d7a8901a454/1fgro2kqi"
-                      target="_blank"
-                    >
+                    <Link href="javascript:void(Tawk_API.toggle())">
                       <button>COMECE JÁ</button>
                     </Link>
 
@@ -108,7 +105,7 @@ function PlansPage(): JSX.Element {
 
                     <ul>
                       <li>
-                        <CheckCircle color="#3CCF8E" /> Cadastramento de até{' '}
+                        <CheckCircle color="#3CCF8E" /> Cadastro de até{' '}
                         <strong>{plans.CNPJAmount.intermediate} CNPJs</strong>
                       </li>
                       <li>
@@ -128,10 +125,7 @@ function PlansPage(): JSX.Element {
                       </li>
                     </ul>
 
-                    <Link
-                      href="https://tawk.to/chat/6155e3aa25797d7a8901a454/1fgro2kqi"
-                      target="_blank"
-                    >
+                    <Link href="javascript:void(Tawk_API.toggle())">
                       <button>COMECE JÁ</button>
                     </Link>
 
@@ -154,7 +148,7 @@ function PlansPage(): JSX.Element {
 
                     <ul>
                       <li>
-                        <CheckCircle color="#3CCF8E" /> Cadastramento de até{' '}
+                        <CheckCircle color="#3CCF8E" /> Cadastro de até{' '}
                         <strong>{plans.CNPJAmount.advanced} CNPJs</strong>
                       </li>
                       <li>
@@ -172,10 +166,7 @@ function PlansPage(): JSX.Element {
                       </li>
                     </ul>
 
-                    <Link
-                      href="https://tawk.to/chat/6155e3aa25797d7a8901a454/1fgro2kqi"
-                      target="_blank"
-                    >
+                    <Link href="javascript:void(Tawk_API.toggle())">
                       <button>COMECE JÁ</button>
                     </Link>
 
@@ -198,7 +189,7 @@ function PlansPage(): JSX.Element {
 
                     <ul>
                       <li>
-                        <CheckCircle color="#3CCF8E" /> Cadastramento de até{' '}
+                        <CheckCircle color="#3CCF8E" /> Cadastro de até{' '}
                         <strong>
                           {plans.CNPJAmount.platinum} CNPJs ou mais
                         </strong>
@@ -260,7 +251,7 @@ function PlansPage(): JSX.Element {
                       {plans.CNPJAmount.advanced}
                     </td>
                     <td data-label={plans.plansType.platinum}>
-                      {plans.CNPJAmount.platinum}
+                      {plans.CNPJAmount.platinum} ou mais
                     </td>
                   </tr>
                   <tr>
@@ -661,8 +652,7 @@ function PlansPage(): JSX.Element {
 
                     <td className="plansBtn">
                       <a
-                        href="https://tawk.to/chat/6155e3aa25797d7a8901a454/1fgro2kqi"
-                        target="_blank"
+                        href="javascript:void(Tawk_API.toggle())"
                         rel="noreferrer"
                       >
                         Comece já
@@ -670,13 +660,12 @@ function PlansPage(): JSX.Element {
                     </td>
 
                     <td className="plansBtn">
-                      <a href="#intermediate">Comece já</a>
+                      <a href="javascript:void(Tawk_API.toggle())">Comece já</a>
                     </td>
 
                     <td className="plansBtn">
                       <a
-                        href="https://tawk.to/chat/6155e3aa25797d7a8901a454/1fgro2kqi"
-                        target="_blank"
+                        href="javascript:void(Tawk_API.toggle())"
                         rel="noreferrer"
                       >
                         Comece já
@@ -685,8 +674,7 @@ function PlansPage(): JSX.Element {
 
                     <td className="plansBtn">
                       <a
-                        href="https://tawk.to/chat/6155e3aa25797d7a8901a454/1fgro2kqi"
-                        target="_blank"
+                        href="javascript:void(Tawk_API.toggle())"
                         rel="noreferrer"
                       >
                         Consulte

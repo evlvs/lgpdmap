@@ -71,17 +71,17 @@ function Partners(): JSX.Element {
         <img
           src="./assets/partners/unina.png"
           alt="Unina"
-          className={styles.partner}
+          className={styles.partnerH}
         />
         <img
           src="./assets/partners/sekur.png"
           alt="Sekur"
-          className={styles.partner}
+          className={styles.partnerH}
         />
         <img
           src="./assets/partners/vapza.png"
           alt="Vapza"
-          className={styles.partner}
+          className={styles.partnerH}
         />
       </div>
     </section>

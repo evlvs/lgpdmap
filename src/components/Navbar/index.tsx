@@ -53,8 +53,8 @@ function Navbar(): JSX.Element {
         </li>
         <li>
           <Link
-            href="https://tawk.to/chat/6155e3aa25797d7a8901a454/1fgro2kqi"
-            target="_blank"
+            
+            href="javascript:void(Tawk_API.toggle())"
           >
             <a className={styles.callBtn}>Fale com um Especialista</a>
           </Link>
